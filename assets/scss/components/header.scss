@@ -1,0 +1,68 @@
+header {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  background: url(..//..//img//image1.png) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.navbar {
+  height: 130px; // Явная высота nav
+  display: flex;
+  justify-content: space-around; // Элементы по краям и центрируются
+  align-items: center; // Центрирование по вертикали
+
+  .logo {
+    margin-bottom: 17px;
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 40px; // Вы можете регулировать размер шрифта
+      line-height: 70px; // Совпадает с высотой nav для центрирования
+    }
+  }
+
+  .nav-list {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center; // Центрирование по вертикали
+      list-style: none;
+      padding: 0; // Убираем отступы у UL
+      gap: 15px;
+
+      a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 21px;
+      }
+
+      li {
+        padding: 0 10px;
+
+        &:hover {
+          transition: transform 0.3s ease;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+header {
+  .main-text-header {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    flex-wrap: wrap;
+
+    .left-text {
+      width: 25%;
+      font-size: 36px;
+    }
+    .right-text {
+      width: 35%;
+      font-size: 70px;
+    }
+  }
+}
