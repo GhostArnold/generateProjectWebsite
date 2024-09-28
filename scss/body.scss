@@ -20,5 +20,14 @@ html {
   body {
     font-family: Arial, Verdana, sans-serif;
     padding-top: 80px;
-    margin: 0;    
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+    #48387C 10%,
+    #544584 20%,
+    #675A92 30%,
+    #6E6197 35%,
+    #776C9D 50%,
+    #978EB4 74%,
+    #F7F7F7 100%
+  );
   }
