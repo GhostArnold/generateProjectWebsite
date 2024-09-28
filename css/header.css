@@ -1,29 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100&display=swap");
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-img {
-  max-width: 100%;
-}
-
-body {
-  font-family: Arial, Verdana, sans-serif;
-  padding-top: 80px;
-  margin: 0;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -67,6 +42,22 @@ body {
   margin: auto;
 }
 
+.logo-img {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .menu__list {
   display: flex;
   align-items: center;
@@ -92,7 +83,7 @@ h1 {
 }
 
 .img-panel {
-  background-image: url("./header.png");
+  background-image: url("../img/header.png");
   width: 100%;
   height: 600px;
   position: relative;
