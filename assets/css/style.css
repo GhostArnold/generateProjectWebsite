@@ -37,15 +37,27 @@ header {
 
 header .main-text-header {
   display: flex;
-  justify-content: space-around;
   color: white;
-  flex-wrap: wrap; }
-  header .main-text-header .left-text {
-    width: 25%;
-    font-size: 36px; }
-  header .main-text-header .right-text {
-    width: 35%;
-    font-size: 70px; }
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 20px;
+  padding: 20px 0;
+  align-items: center; }
+  header .main-text-header .left-text-block {
+    flex: 1;
+    display: flex;
+    justify-content: center; }
+    header .main-text-header .left-text-block .left-text {
+      width: 70%;
+      font-size: 36px; }
+  header .main-text-header .right-text-block {
+    flex: 1;
+    display: flex;
+    justify-content: center; }
+    header .main-text-header .right-text-block .right-text {
+      width: 75%;
+      font-size: 70px; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
