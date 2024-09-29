@@ -48,7 +48,8 @@ header {
     }
   }
 }
-
+// Анимация появления
+@include appereance-animation;
 header {
   .main-text-header {
     display: flex;
@@ -63,6 +64,8 @@ header {
       flex: 1;
       display: flex;
       justify-content: center;
+      // Анимация появления
+      animation: fadeIn 1.7s ease-in-out;
       .left-text {
         width: 70%;
         font-size: 36px;
@@ -72,6 +75,8 @@ header {
       flex: 1;
       display: flex;
       justify-content: center;
+      // Анимация появления
+      animation: fadeIn 1.7s ease-in-out;
       .right-text {
         width: 75%;
         font-size: 70px;
