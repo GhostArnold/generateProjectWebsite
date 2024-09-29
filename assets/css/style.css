@@ -376,11 +376,16 @@ template {
 
 .first-section {
   display: flex;
-  margin: 30px 0;
-  width: 80%;
-  margin: 0 auto;
+  margin: 30px 85px;
   align-items: center;
   flex-wrap: wrap; }
+@keyframes bounce {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-10px); }
+  100% {
+    transform: translateY(0); } }
   .first-section .block-one {
     flex: 1;
     border: 2px solid black;
@@ -393,14 +398,34 @@ template {
     justify-content: end;
     margin-right: 40px;
     margin-left: 20px; }
-@keyframes bounce {
-  0% {
-    transform: translateY(0); }
-  50% {
-    transform: translateY(-10px); }
-  100% {
-    transform: translateY(0); } }
     .first-section .block-two .block-two-img img {
       width: 320px; }
+
+.second-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 35px; }
+  .second-section .block-one {
+    flex: 1;
+    display: flex;
+    justify-content: center; }
+    .second-section .block-one .block-one-text {
+      width: 70%;
+      border: 2px solid black;
+      border-radius: 25px;
+      padding: 20px;
+      background-color: #fff; }
+  .second-section .block-two {
+    flex: 1;
+    display: flex;
+    justify-content: center; }
+    .second-section .block-two .block-two-text {
+      width: 70%;
+      border: 2px solid black;
+      border-radius: 25px;
+      padding: 30px 20px;
+      background-color: #fff; }
 
 /*# sourceMappingURL=style.css.map */

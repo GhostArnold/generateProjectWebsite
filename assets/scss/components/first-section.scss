@@ -1,8 +1,9 @@
 .first-section {
+  // Анимация генератора
+  @include animation-generate;
+
   display: flex;
-  margin: 30px 0;
-  width: 80%;
-  margin: 0 auto;
+  margin: 30px 85px;
   align-items: center;
   flex-wrap: wrap;
   .block-one {
@@ -16,17 +17,6 @@
   .block-two {
     animation: bounce 2s infinite;
 
-    @keyframes bounce {
-      0% {
-        transform: translateY(0);
-      }
-      50% {
-        transform: translateY(-10px);
-      }
-      100% {
-        transform: translateY(0);
-      }
-    }
     flex: 1.5;
     display: flex;
     justify-content: end;

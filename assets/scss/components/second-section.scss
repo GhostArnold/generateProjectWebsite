@@ -1,0 +1,31 @@
+.second-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 35px;
+  .block-one {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    .block-one-text {
+      width: 70%;
+      border: 2px solid black;
+      border-radius: 25px;
+      padding: 20px;
+      background-color: #fff;
+    }
+  }
+  .block-two {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    .block-two-text {
+      width: 70%;
+      border: 2px solid black;
+      border-radius: 25px;
+      padding: 30px 20px;
+      background-color: #fff;
+    }
+  }
+}
