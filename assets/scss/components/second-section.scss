@@ -4,8 +4,29 @@
   align-items: center;
   background-color: #f4f4f4;
   padding: 35px;
+
+  // Эффект курсора при печати
+  .appear-text::after {
+    content: '|';
+    display: inline-block;
+    margin-left: 5px;
+    opacity: 1;
+    animation: blink 0.7s infinite;
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
   .block-one {
     flex: 1;
+    min-height: 470px;
     display: flex;
     justify-content: center;
     .block-one-text {
@@ -18,6 +39,7 @@
   }
   .block-two {
     flex: 1;
+    min-height: 470px;
     display: flex;
     justify-content: center;
     .block-two-text {

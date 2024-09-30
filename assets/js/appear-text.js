@@ -19,7 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
           textElement.innerHTML += text[index];
           index++;
         }
-        setTimeout(type, 10);
+        setTimeout(type, 13);
+      } else {
+        // Удаляем курсор после завершения печати
+        textElement.querySelector('::after').style.display = 'none';
       }
     }
 
@@ -28,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Настройки для Intersection Observer
   const options = {
-    threshold: 0.3, // Процент видимости элемента (0-1)
+    threshold: 0.1, // Процент видимости элемента (0-1)
   };
 
   // Callback функция для Intersection Observer
