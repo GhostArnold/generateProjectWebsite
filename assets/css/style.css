@@ -94,6 +94,9 @@ section {
     text-align: center;
     margin-bottom: 40px; }
 
+.last {
+  margin: 0; }
+
 /**
  * Render the `main` element consistently in IE.
  */
@@ -378,6 +381,49 @@ template {
 [hidden] {
   display: none; }
 
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+  background: url(..//..//img//footer.png) no-repeat;
+  background-size: cover; }
+  footer form {
+    backdrop-filter: blur(5px);
+    font-size: 22px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.588);
+    width: 100%;
+    max-width: 400px; }
+  footer label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; }
+  footer input[type='text'],
+  footer input[type='email'],
+  footer textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px; }
+  footer textarea {
+    resize: none; }
+  footer button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; }
+  footer button:hover {
+    background-color: #0056b3; }
+
 .first-section {
   display: flex;
   margin: 30px 85px;
@@ -493,5 +539,85 @@ template {
     justify-content: center; }
     .third-section .block-three .block-three-img {
       width: 70%; }
+
+.table {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: #f4f4f4; }
+  .table table {
+    width: 80%;
+    background-color: #fff;
+    border-collapse: collapse; }
+  .table th,
+  .table td {
+    border: 1.5px solid black;
+    padding: 8px;
+    text-align: center; }
+  .table th {
+    background-color: #f2f2f2; }
+
+.fourth-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f4f4f4;
+  padding: 40px 0; }
+  .fourth-section .block-one {
+    flex: 1.4;
+    display: flex;
+    justify-content: center; }
+    .fourth-section .block-one .block-one-text {
+      margin: 0 20px;
+      width: 60%;
+      min-width: 200px;
+      border: 2px dashed black;
+      padding: 20px;
+      border-radius: 70px;
+      background-color: #fff; }
+  .fourth-section .block-two {
+    flex: 1; }
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+  background: url(..//..//img//footer.png) no-repeat;
+  background-size: cover; }
+  footer form {
+    backdrop-filter: blur(5px);
+    font-size: 22px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.588);
+    width: 100%;
+    max-width: 400px; }
+  footer label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold; }
+  footer input[type='text'],
+  footer input[type='email'],
+  footer textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px; }
+  footer textarea {
+    resize: none; }
+  footer button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; }
+  footer button:hover {
+    background-color: #0056b3; }
 
 /*# sourceMappingURL=style.css.map */

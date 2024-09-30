@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
           textElement.innerHTML += text[index];
           index++;
         }
-        setTimeout(type, 13);
+        setTimeout(type, 11.5);
       } else {
         // Удаляем курсор после завершения печати
         textElement.querySelector('::after').style.display = 'none';
