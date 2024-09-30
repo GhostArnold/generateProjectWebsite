@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  body {
+    font-family: Arial, Verdana, sans-serif;
+    padding-top: 80px;
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+    #48387C 10%,
+    #544584 20%,
+    #675A92 30%,
+    #6E6197 35%,
+    #776C9D 50%,
+    #978EB4 74%,
+    #F7F7F7 100%
+  );
+  }
