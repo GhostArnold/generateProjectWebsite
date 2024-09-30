@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/body.css">
-    <link rel="stylesheet" href="./css/section.css">
+    <link rel="stylesheet" href="./scss/section.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/gellary.css">
+    <link rel="stylesheet" href="./css/source.css">
+    <link rel="stylesheet" href="./css/advantages.css">
+    <link rel="stylesheet" href="./css/hiden-section.css">
+    <link rel="stylesheet" href="./css/table.css">
     <title>Generate</title>
   </head>
-  <body>
+
     <header id="header" class="header">
       <div class="container header__container">
           <a href="#" class="logo">
@@ -39,7 +44,6 @@
                   </li>
               </ul>
           </nav>
-      </div>
     </header>
     <div class="img-panel">
       <div class="pihta-text">
@@ -54,6 +58,7 @@
         </div>
       </div>
     </div>
+  </div>
     <section class="main-text">
     <div class="application-areas">
       <h2>СФЕРЫ ПРИМЕНЕНИЯ ИСТОЧНИКОВ ТОКА ПИХТА</h2>
@@ -94,222 +99,188 @@
       </ul>
       </div>
     </div>
+  </section>
 
 
-    <div class="description-img">
-    <div class="generator-description">
-      <h2>Описание элементов переносного генератора:</h2>
-      <div class="description-block">
-        <h3>Фото 1: Вид спереди (главная панель)</h3>
-        <ul>
-          <li>
-            <span class="description-label">1. Выключатель насоса и заряда аккумулятора:</span>
-            <span class="description-text">Включает/выключает работу насоса, подающего электролит, и зарядку внешнего аккумулятора.</span>
-          </li>
-          <li>
-            <span class="description-label">2. Выключатель внешней нагрузки:</span>
-            <span class="description-text">Подает/отключает напряжение на внешнюю нагрузку.</span>
-          </li>
-          <li>
-            <span class="description-label">3. USB порт:</span>
-            <span class="description-text">Позволяет заряжать устройства от USB.</span>
-          </li>
-          <li>
-            <span class="description-label">4. Ваттметр:</span>
-            <span class="description-text">Отображает потребляемую мощность.</span>
-          </li>
-          <li>
-            <span class="description-label">5. Индикатор температуры электролита:</span>
-            <span class="description-text">Показывает текущую температуру электролита.</span>
-          </li>
-          <li>
-            <span class="description-label">6. Вентиляторы охлаждения (2 шт.):</span>
-            <span class="description-text">Обеспечивают охлаждение электрохимических элементов.</span>
-          </li>
-          <li>
-            <span class="description-label">7. Преобразователи напряжения (2 шт.):</span>
-            <span class="description-text">Преобразуют постоянный ток от топливных элементов в переменный ток нужного напряжения.</span>
-          </li>
-          <li>
-            <span class="description-label">8. Индикаторы тока и напряжения:</span>
-            <span class="description-text">Отображают ток и напряжение на выходе генератора.</span>
-          </li>
-          <li>
-            <span class="description-label">9. Аккумулятор:</span>
-            <span class="description-text">Встроенный аккумулятор 1,2 ампера, 12 вольт</span>
-          </li>
-          <li>
-          <span class="description-label">10. Гнездо подключения:</span>
-          <span class="description-text">Нагрузки 12 воль</span>
-        </li>
-          <li>
-            <span class="description-label">11. Насос</span>
-            <span class="description-text"></span>
-          </li>
-          <li>
-            <span class="description-label">12. Бак для электролита</span>
-            <span class="description-text"></span>
-          </li>
-        </ul>
-        <h3>Левая панель:</h3>
-          <ul>
-            <li>
-              <span class="description-label">13. Кулеры для подачи воздуха к катодам топливных элементов(4шт)</span>
-              <span class="description-text"></span>
-            </li>
-            <li>
-              <span class="description-label">14. Кран для слива электролита</span>
-              <span class="description-text"></span>
-            </li>
-          </ul>
-          <h3>Правая панель</h3>
-          <ul>
-            <li>
-              <span class="description-label">15. Топливный элемент (6 штук)</span>
-              <span class="description-text"></span>
-            </li>
-          </ul>
-          <h3>Задняя панель</h3>
-          <ul>
-            <li>
-              <span class="description-label">16. Штуцер:</span>
-              <span class="description-text">Для выпуска водорода</span>
-            </li>
-            <li>
-              <span class="description-label">17. Охладитель электролита</span>
-              <span class="description-text"></span>
-            </li>
-            <li>
-              <span class="description-label">18. Заливная горловина</span>
-              <span class="description-text"></span>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <img class="main-generator" src="./assets/images/main-generator.png" alt="">
-      <img class="two-generators" src="./assets/images/two-generators.png" alt="">
-      <img class="back-generator" src="./assets/images/back-generator.png" alt="">
+    <div class="advantages">
+      <div class="advantages-box">
+      <h2>ПРЕИМУЩЕСТВА ИЗДЕЛИЙ СЕРИИ «ПИХТА»</h2>
+      <div class="text-box">
+      <ul class="advantages-list">
+        <li class="advantages-list-item">1. Экологически чистое топливо ( алюминий, магний );</li>
+        <li class="advantages-list-item">2. Безопасность хранения топлива и его эксплуатация;</li>
+        <li class="advantages-list-item">3. Компактность и небольшой вес для транспортировки;</li>
+        <li class="advantages-list-item">4. Длительный срок хранения топлива;</li>
+        <li class="advantages-list-item">5. Мгновенный запуск в работу и бесшумность в эксплуатации;</li>
+        <li class="advantages-list-item">6. Возможность утилизации остатков топлива ( алюминия )<br>и его применения в удобрениях ( магния );</li>
+        <li class="advantages-list-item">7. Длительный срок эксплуатации, около 10 тысяч часов, до<br>капитального ремонта ( замены топливных элементов );</li>
+        <li class="advantages-list-item">8. Эксплуатация изделий в районах с низкой температурой<br>окружающего воздуха.</li>
+      </ul>
+    </div>
+    </div>
+
+    </div>
+
+
+    <section class="hidden"> 
+      <div class="hidden-text">
+      <div class="third-section"> 
+        <div class="block-one"> 
+          <div class="block-one-img"> 
+            <img src="./img/img1.png" alt="" /> 
+          </div> 
+        </div> 
+        <div class="block-two"> 
+          <div class="block-two-text"> 
+            <h3>Главная панель</h3> 
+            <p> 
+              1. Выключатель работы насоса и заряда АКБ;<br /> 
+              2. Выключатель внешней нагрузки;<br /> 
+              3. Блок для подключения входа USB;<br /> 
+              4. Ваттметр;<br /> 
+              5. Индикатор температуры электролита;<br /> 
+              6. Кулеры охлаждения - 2 шт.;<br /> 
+              7. Преобразователи напряжения - 2 шт.;<br /> 
+              8. Индикаторы тока и напряжения нагрузки;<br /> 
+              9. Аккумулятор 1,2 ампера, 12 вольт;<br /> 
+              10. Гнездо подключения нагрузки 12 вольт;<br /> 
+              11. Насос;<br /> 
+              12. Бак для электролита. 
+            </p> 
+            <h3>Левая панель</h3> 
+            <p> 
+              13. Кулеры для подачи воздуха к катодам топливных элементов (4 
+              шт.);<br /> 
+              14. Кран для слива электролита.<br /> 
+            </p> 
+            <h3>Правая панель</h3> 
+            <p>15. Топливные элементы (6 штук).<br /></p> 
+            <h3>Задняя панель</h3> 
+            <p> 
+              16. Штуцер для выпуска водорода;<br /> 
+              17. Охладитель электролита;<br /> 
+              18. Заливная горловина. 
+            </p> 
+          </div> 
+        </div> 
+        <div class="block-three"> 
+          <div class="block-three-img"> 
+            <img src="./img/img2.png" alt="" /> 
+            <img src="./img/img3.png" alt="" /> 
+          </div> 
+        </div> 
+      </div> 
     </div>
     </section>
 
-
-    <div class="slide">
-      <h2 class="slide__title">Источники питания</h2>
-      <div class="slide__content">
-        <div class="source">
-          <h3 class="source__title">Переносный источник тока ПИХТА - 6P</h3>
-          <ul class="source__specs">
-            <li class="source__spec">
-              <span class="source__spec-label">Вес:</span>
-              <span class="source__spec-value">от 12 до 16 кг</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Размеры:</span>
-              <span class="source__spec-value">22 * 30 * 60 см</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Мощность:</span>
-              <span class="source__spec-value">240 Ватт (макс)</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Напряжение холостого хода:</span>
-              <span class="source__spec-value">10 Вольт</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Ток короткого замыкания:</span>
-              <span class="source__spec-value">60 Ампер</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Емкость:</span>
-              <span class="source__spec-value">240 Ач</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Энергоемкость:</span>
-              <span class="source__spec-value">3800 Ватт*час</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Удельная энергоемкость:</span>
-              <span class="source__spec-value">152 Ватт*час/кг</span>
-            </li>
-          </ul>
-        </div>
-        <div class="source">
-          <h3 class="source__title">Настольный источник тока ПИХТА - 22</h3>
-          <ul class="source__specs">
-            <li class="source__spec">
-              <span class="source__spec-label">Вес:</span>
-              <span class="source__spec-value">40 кг</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Размеры:</span>
-              <span class="source__spec-value">45 * 45 * 50 см</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Мощность:</span>
-              <span class="source__spec-value">880 Ватт (макс)</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Напряжение холостого хода:</span>
-              <span class="source__spec-value">33 Вольт</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Ток короткого замыкания:</span>
-              <span class="source__spec-value">60 Ампер</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Емкость:</span>
-              <span class="source__spec-value">320 Ач</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Энергоемкость:</span>
-              <span class="source__spec-value">5120 Ватт*час</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Удельная энергоемкость:</span>
-              <span class="source__spec-value">113 Ватт*час/кг</span>
-            </li>
-          </ul>
-        </div>
-        <div class="source">
-          <h3 class="source__title">Напольный, передвижной источник тока ПИХТА - 22 М</h3>
-          <ul class="source__specs">
-            <li class="source__spec">
-              <span class="source__ spec-label">Вес:</span>
-              <span class="source__spec-value">60 кг</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Размеры:</span>
-              <span class="source__spec-value">50 * 50 * 60 см</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Мощность:</span>
-              <span class="source__spec-value">1760 Ватт (макс)</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Напряжение холостого хода:</span>
-              <span class="source__spec-value">33 Вольт</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Ток короткого замыкания:</span>
-              <span class="source__spec-value">60 Ампер</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Емкость:</span>
-              <span class="source__spec-value">480 Ач</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Энергоемкость:</span>
-              <span class="source__spec-value">8448 Ватт*час</span>
-            </li>
-            <li class="source__spec">
-              <span class="source__spec-label">Удельная энергоемкость:</span>
-              <span class="source__spec-value">141 Ватт*час/кг</span>
-            </li>
-          </ul>
-        </div>
+    <div class="gallery">
+      <div class="gallery-item">
+          <img src="./img/pihta-6P.png" alt="Image" class="gallery-image">
+          <div class="gallery-overlay">
+            <div class="gallery-text">Текст описания изображения 1</div>
+          </div>
       </div>
-    </div>
+      <div class="gallery-item">
+          <img src="./img/pihta-22.png" alt="Image" class="gallery-image">
+          <div class="gallery-overlay">
+            <div class="gallery-text">Вес: 40 кг
+              Размеры: 45 * 45 * 50 см
+              Мощность: 880 Ватт (макс)
+              Напряжение холостого хода: 33 Вольт
+              Ток короткого замыкания: 60 Ампер
+              Емкость: 320 Ач
+              Энергоемкость: 5120 Ватт*час
+              Удельная энергоемкость: 113 Ватт*час/кг</div>
+          </div>
+      </div>
+      <div class="gallery-item">
+          <img src="./img/pihta22M.png" alt="Image" class="gallery-image">
+          <div class="gallery-overlay">
+            <div class="gallery-text">Текст описания изображения 3</div>
+          </div>
+      </div>
+  </div>
 
+
+
+
+  <section class="hidden last"> 
+    <div class="fourth-section"> 
+      <div class="block-one"> 
+        <div class="block-one-text"> 
+          <h2>Общие характеристики</h2> 
+          <p> 
+            Общие характеристики 1. 1 гр. алюминия генерирует энергию 3,6 втч, 
+            магния - 2,76 втч. 2. Время работы установки, до замены анодного 
+            топлива - 16 часов. 
+          </p> 
+        </div> 
+      </div> 
+      <div class="block-two"> 
+        <div class="block-two-img"> 
+          <img src="./img/telegram-cloud-document-2-5465566666953875555.jpg" alt="" /> 
+        </div> 
+      </div> 
+    </div> 
+    <div class="table"> 
+      <table> 
+        <tr> 
+          <th></th> 
+          <th>Переносный источник тока<br />ПИХТА - 6 Р</th> 
+          <th>Настольный источник тока<br />ПИХТА - 22</th> 
+          <th>Напольный, передвижной источник тока<br />ПИХТА - 22 М</th> 
+        </tr> 
+        <tr> 
+          <td>Вес</td> 
+          <td>от 12 до 16 кг.</td> 
+          <td>40 кг.</td> 
+          <td>70 кг.</td> 
+        </tr> 
+        <tr> 
+          <td>Размеры</td> 
+          <td>22 * 30 * 60 см.</td> 
+          <td>45 * 45 * 50 см.</td> 
+          <td>50 * 50 * 125 см.</td> 
+        </tr> 
+        <tr> 
+          <td>Мощность</td> 
+          <td>240 втт. max</td> 
+          <td>880 втт. max</td> 
+          <td>880 втт. max</td> 
+        </tr> 
+        <tr> 
+          <td>Напряжение холостого хода</td> 
+          <td>10 вольт</td> 
+          <td>33 вольт</td> 
+          <td>33 вольт</td> 
+        </tr> 
+        <tr> 
+          <td>Ток короткого замыкания</td> 
+          <td>60 ампер</td> 
+          <td>60 ампер</td> 
+          <td>60 ампер</td> 
+        </tr> 
+        <tr> 
+          <td>Емкость</td> 
+          <td>240 Ач</td> 
+          <td>320 Ач</td> 
+          <td>320 Ач</td> 
+        </tr> 
+        <tr> 
+          <td>Энергоемкость</td> 
+          <td>3800 втч.</td> 
+          <td>5120 втч.</td> 
+          <td>5120 втч.</td> 
+        </tr> 
+        <tr> 
+          <td>Удельная энергоемкость</td> 
+          <td>152 втч/кг.</td> 
+          <td>113 втч/кг.</td> 
+          <td>53 втч/кг.</td> 
+        </tr> 
+      </table> 
+    </div> 
+  </section>
     
     <footer>
   <div class="footer-container">
@@ -333,6 +304,7 @@
     </form>
   </div>
 </footer>
-    <script src="../js/script.js"></script>
+<script src="./js/img.js"></script>
+<script src="../js/script.js"></script>
   </body>
 </html>

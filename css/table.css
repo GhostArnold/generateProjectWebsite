@@ -1,0 +1,44 @@
+.table {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: #4178b5;
+}
+.table table {
+  width: 80%;
+  background-color: #4178b5;
+  border-collapse: collapse;
+}
+.table th,
+.table td {
+  border: 1.5px solid white;
+  padding: 8px;
+  text-align: center;
+}
+.table th {
+  background-color: #295991;
+}
+
+.fourth-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #4178b5;
+  padding: 40px 0;
+}
+.fourth-section .block-one {
+  flex: 1.4;
+  display: flex;
+  justify-content: center;
+}
+.fourth-section .block-one .block-one-text {
+  margin: 0 20px;
+  width: 60%;
+  min-width: 200px;
+  border: 2px solid white;
+  padding: 20px;
+  border-radius: 70px;
+  background-color: #295991;
+}
+.fourth-section .block-two {
+  flex: 1;
+}/*# sourceMappingURL=table.css.map */
