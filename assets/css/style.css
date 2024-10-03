@@ -1,11 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
 header {
+  padding: 100px;
   width: 100%;
   height: 500px;
   margin: 0 auto;
   background: url(..//..//img//image1.png) no-repeat center center fixed;
   background-size: cover; }
+
 
 .navbar {
   height: 130px;
@@ -35,6 +37,34 @@ header {
       .navbar .nav-list ul li:hover {
         transition: transform 0.3s ease;
         transform: scale(1.1); }
+        .fixed-navbar {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          z-index: 9999;
+          transition: box-shadow .3s, top .3s;
+          height: 130px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          transition: 0.3s;
+        }
+        
+        .fixed-navbar_mini {
+          box-shadow: 0px 0px 30px -11px rgba(0,0,0,0.8);
+          backdrop-filter: blur(8px);
+          -webkit-backdrop-filter: blur(8px);
+          top: -30px;
+          background: rgba(0, 0, 255, 0.456);
+        }
+
+
+        
+
+
+
+
 
 @keyframes fadeIn {
   from {
