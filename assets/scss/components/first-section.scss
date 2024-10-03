@@ -1,0 +1,31 @@
+.first-section {
+  // Анимация генератора
+  @include animation-generate;
+
+  display: flex;
+  margin: 30px 85px;
+  align-items: center;
+  flex-wrap: wrap;
+  .block-one {
+    flex: 1;
+    border: 2px solid black;
+    padding: 20px;
+    min-width: 320px;
+    .block-one-text {
+    }
+  }
+  .block-two {
+    animation: bounce 2s infinite;
+
+    flex: 1.5;
+    display: flex;
+    justify-content: end;
+    margin-right: 40px;
+    margin-left: 20px;
+    .block-two-img {
+      img {
+        width: 320px;
+      }
+    }
+  }
+}
