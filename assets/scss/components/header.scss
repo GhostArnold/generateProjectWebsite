@@ -2,23 +2,67 @@ header {
   width: 100%;
   height: 500px;
   margin: 0 auto;
-  background: url(..//..//img//image1.png) no-repeat center center fixed;
+  background: url(./img//image1.png) no-repeat center center fixed;
   background-size: cover;
+
+  @media (max-width: 768px) {
+    height: 500px;
+  }
+
+  @media (max-width: 480px) {
+    height: 800px;
+    background-size: 100% 100%;
+  }
 }
 
 .navbar {
-  height: 130px; // Явная высота nav
+  height: 130px;
   display: flex;
-  justify-content: space-around; // Элементы по краям и центрируются
-  align-items: center; // Центрирование по вертикали
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
 
   .logo {
     margin-bottom: 17px;
+
     a {
       text-decoration: none;
       color: #fff;
-      font-size: 40px; // Вы можете регулировать размер шрифта
-      line-height: 70px; // Совпадает с высотой nav для центрирования
+      font-size: 40px;
+      line-height: 70px;
+    }
+  }
+
+  .header__burger-btn {
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color:  white;
+    position: relative;
+    right: 0;
+
+    span {
+      position: absolute;
+      width: 30px;
+      height: 3px;
+      background-color: black;
+      left: 5px;
+
+      &:nth-child(1) {
+        transform: translateY(-11px)
+      }
+
+      &:nth-child(3) {
+        transform: translateY(10px)
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: block;
+      position: absolute;
+      top: 40px;
+      right: 20px;
     }
   }
 
@@ -26,15 +70,45 @@ header {
     ul {
       display: flex;
       justify-content: center;
-      align-items: center; // Центрирование по вертикали
+      align-items: center;
       list-style: none;
-      padding: 0; // Убираем отступы у UL
+      padding: 0;
       gap: 15px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        transition: all 0.3s ease-in-out;
+        transform: translateY(-100%);
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+      }
+
+      &.active {
+        @media (max-width: 768px) {
+          transform: translateY(0);
+          opacity: 1;
+          visibility: visible;
+           border-radius: 16px;
+        }
+      }
 
       a {
         text-decoration: none;
         color: #fff;
         font-size: 21px;
+
+        @media (max-width: 768px) {
+          color: black;
+          display: block;
+          padding: 10px 0;
+        }
       }
 
       li {
@@ -49,48 +123,44 @@ header {
   }
 }
 
-.fixed-navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-  transition: box-shadow 0.3s, top 0.3s;
-  height: 130px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  transition: 0.3s;
-}
-
-.fixed-navbar_mini {
-  box-shadow: 0px 0px 30px -11px rgba(0,0,0,0.8);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  top: -30px;
-  background: rgba(0, 0, 255, 0.456);
-}
-
 .main-text-header {
   display: flex;
   color: white;
   flex-wrap: wrap;
   justify-content: space-around;
   width: 90%;
-  margin: 0 20px; // центрирование блока
-  padding: 20px 0; // добавление отступов сверху и снизу
+  margin: 0 20px;
+  padding: 20px 0;
   align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left-text-block {
     flex: 1;
     display: flex;
     justify-content: center;
-    // Анимация появления
-    animation: fadeIn 1.7s ease-in-out;
+    animation: fadeIn 1.7s ease-in-out ;
+
+    @media (max-width: 768px) {
+      order: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     .left-text {
       width: 70%;
+      min-width: 300px;
       font-size: 36px;
+
+      @media (max-width: 768px) {
+        min-width: 100%;
+        font-size: 35px;
+        text-align: center;
+      }
     }
   }
 
@@ -98,15 +168,33 @@ header {
     flex: 1;
     display: flex;
     justify-content: center;
-    // Анимация появления
     animation: fadeIn 1.7s ease-in-out;
+
+    @media (max-width: 768px) {
+      order: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
     .right-text {
       width: 75%;
       font-size: 70px;
+
+      @media (max-width: 768px) {
+        min-width: 100%;
+        font-size: 50px;
+        text-align: center;
+ }
     }
   }
 }
 
-// Анимация появления
-@include appereance-animation;
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,43 @@
+.third-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+.third-section .fade-in-left {
+  opacity: 0;
+  transform: translateX(-60px);
+  transition: all 0.5s ease-out;
+}
+.third-section .fade-in-right {
+  opacity: 0;
+  transform: translateX(60px);
+  transition: all 0.5s ease-out;
+}
+.third-section .visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.third-section .block-one {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.third-section .block-one .block-one-img {
+  width: 80%;
+}
+.third-section .block-two {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.third-section .block-two .block-two-text {
+  min-width: 250px;
+  width: 85%;
+}
+.third-section .block-three {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+.third-section .block-three .block-three-img {
+  width: 70%;
+}/*# sourceMappingURL=third-section.css.map */

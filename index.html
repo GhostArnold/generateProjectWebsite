@@ -9,16 +9,20 @@
   </head>
   <body>
     <header>
-      <nav class="navbar fixed-navbar">
+      <nav class="navbar">
         <div class="logo">
           <a href=""><h2>Пихта</h2></a>
         </div>
+        <button class="header__burger-btn"><span></span>
+          <span></span>
+          <span></span>
+        </button>
         <div class="nav-list">
           <ul>
-            <li><a href="#first-section">Section 1</a></li>
-            <li><a href="#second-section">Section 2</a></li>
-            <li><a href="#third-section">Section 3</a></li>
-            <li><a href="#fourth-section">Section 4</a></li>
+            <li><a href="#first-section">Главная</a></li>
+            <li><a href="#second-section">О нас</a></li>
+            <li><a href="#third-section">Характеристи</a></li>
+            <li><a href="#fourth-section">Контакты</a></li>
           </ul>
         </div>
       </nav>
@@ -39,22 +43,24 @@
       <div class="first-section">
         <div class="block-one">
           <div class="block-one-text">
-            <h2>СФЕРЫ ПРИМЕНЕНИЯ ИСТОЧНИКОВ ТОКА ПИХТА</h2>
-            1. Получение эл. энергии, тепла и света в экстремальных условиях;<br />
-            2. В резервных источниках тока;<br />
+            <h2 class ="lang" key="scope-of-application-h2">СФЕРЫ ПРИМЕНЕНИЯ ИСТОЧНИКОВ ТОКА ПИХТА</h2>
+            <div class ="lang" key="scope-of-application" style="white-space: pre-line">
+            1. Получение эл. энергии, тепла и света в экстремальных условиях;
+            2. В резервных источниках тока;
             3. На авто, водном транспорте и в летательных средствах для зарядки
-            аккумуляторных батарей;<br />
+            аккумуляторных батарей;
             4. Для геологических экспедиций, мобильных групп разной
             направленности, рыбаков, охотников, туристов, МЧС и в других сферах
-            жизнедеятельности человека;<br />
-            5.navbar .nav-listоении территорий Крайнего Севера и в других местах с низкой
-            температурой окружающего воздуха;<br />
+            жизнедеятельности человека;
+            5.Освоении территорий Крайнего Севера и в других местах с низкой
+            температурой окружающего воздуха;
             6. Подзарядка аккумуляторных батарей во время движения транспортных
-            средств;<br />
+            средств;
             7. Зарядка АКБ смартфонов, паур банков для телефонов, ноутбуков и
-            др. орг. техники;<br />
+            др. орг. техники;
             8. Зарядка мощных АКБ, для солнечных панелей и ветрогенераторов, в
             отсутствие излучения солнца и движения ветра.
+          </div>
           </div>
         </div>
         <div class="block-two">
@@ -252,5 +258,7 @@
     <script src="./assets/js/right-left-animation.js"></script>
     <script src="./assets/js/scrol_list.js"></script>
     <script src="./assets/js/fix_header.js"></script>
+    <script src="./assets/js/translate.js"></script>
+    <script src="./assets/js/burger.js"></script>
   </body>
 </html>
