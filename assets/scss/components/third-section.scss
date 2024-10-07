@@ -28,7 +28,7 @@
   }
 
   .block-one .block-one-img {
-    width: 80%;
+    width: 100%;
   }
 
   .block-two .block-two-text {
@@ -41,5 +41,13 @@
   }
 }
 
-@media (max-width: 750px) {
+
+@media (max-width: 400px) {
+  .block-one .block-one-img {
+    img{
+      width: 100px;
+      height: auto;
+    }
+  }
 }
+

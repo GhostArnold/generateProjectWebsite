@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   align-items: center;
   background-color: #f4f4f4;
-  padding: 35px;
+  padding: 35px 0;
 }
 .second-section .appear-text::after {
   content: "|";
@@ -22,7 +22,7 @@
 }
 .second-section .block-one {
   flex: 1;
-  min-height: 470px;
+  min-height: 655px;
   display: flex;
   justify-content: center;
 }
@@ -35,7 +35,7 @@
 }
 .second-section .block-two {
   flex: 1;
-  min-height: 470px;
+  min-height: 650px;
   display: flex;
   justify-content: center;
 }
@@ -45,4 +45,22 @@
   border-radius: 25px;
   padding: 30px 20px;
   background-color: #fff;
+}
+
+@media (min-width: 300px) and (max-width: 750px) {
+  .second-section .block-one {
+    margin-bottom: 25px;
+  }
+  .second-section .block-one h2 {
+    font-size: 24px;
+  }
+  .second-section .block-one .block-one-text {
+    font-size: 20px;
+  }
+  .second-section .block-two h2 {
+    font-size: 22px;
+  }
+  .second-section .block-two .block-two-text {
+    font-size: 20px;
+  }
 }/*# sourceMappingURL=second-section.css.map */

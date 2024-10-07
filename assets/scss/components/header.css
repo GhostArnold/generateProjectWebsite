@@ -1,58 +1,201 @@
-/*
-Error: Undefined mixin 'appereance-animation'.
-        on line 52 of D:\GenerateProjectWithMax\assets\scss\components\header.scss, in `appereance-animation'
-        from line 52 of D:\GenerateProjectWithMax\assets\scss\components\header.scss
+header {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  background: url(../image1.png) no-repeat center center fixed;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  header {
+    height: 500px;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    height: 600px;
+    width: 100%;
+  }
+}
 
-47:       }
-48:     }
-49:   }
-50: }
-51: // Анимация появления
-52: @include appereance-animation;
-53: header {
-54:   .main-text-header {
-55:     display: flex;
-56:     color: white;
-57:     flex-wrap: wrap;
+.navbar {
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.navbar .logo {
+  margin-bottom: 17px;
+}
+.navbar .logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 40px;
+  line-height: 70px;
+}
+.navbar .header__burger-btn {
+  display: none;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: white;
+  position: relative;
+  right: 0;
+}
+.navbar .header__burger-btn span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  left: 5px;
+}
+.navbar .header__burger-btn span:nth-child(1) {
+  transform: translateY(-11px);
+}
+.navbar .header__burger-btn span:nth-child(3) {
+  transform: translateY(10px);
+}
+@media (max-width: 768px) {
+  .navbar .header__burger-btn {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+  }
+}
+.navbar .nav-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  gap: 15px;
+}
+@media (max-width: 768px) {
+  .navbar .nav-list ul {
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+  }
+}
+@media (max-width: 768px) {
+  .navbar .nav-list ul.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    border-radius: 16px;
+  }
+}
+.navbar .nav-list ul a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 21px;
+}
+@media (max-width: 768px) {
+  .navbar .nav-list ul a {
+    color: black;
+    display: block;
+    padding: 10px 0;
+  }
+}
+.navbar .nav-list ul li {
+  padding: 0 10px;
+}
+.navbar .nav-list ul li:hover {
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+}
 
-Backtrace:
-D:\GenerateProjectWithMax\assets\scss\components\header.scss:52:in `appereance-animation'
-D:\GenerateProjectWithMax\assets\scss\components\header.scss:52
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
-D:/programs/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
-D:/programs/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
-D:/programs/koala/bin/sass:22:in `load'
-D:/programs/koala/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'appereance-animation'.\A         on line 52 of D:\GenerateProjectWithMax\assets\scss\components\header.scss, in `appereance-animation'\A         from line 52 of D:\GenerateProjectWithMax\assets\scss\components\header.scss\A \A 47:       }\A 48:     }\A 49:   }\A 50: }\A 51: // Анимация появления\A 52: @include appereance-animation;\A 53: header {\A 54:   .main-text-header {\A 55:     display: flex;\A 56:     color: white;\A 57:     flex-wrap: wrap;"; }
+.main-text-header {
+  display: flex;
+  color: white;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 90%;
+  margin: 0 20px;
+  padding: 20px 0;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .main-text-header {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.main-text-header .left-text-block {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 1.7s ease-in-out;
+}
+@media (max-width: 768px) {
+  .main-text-header .left-text-block {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.main-text-header .left-text-block .left-text {
+  width: 70%;
+  min-width: 300px;
+  font-size: 36px;
+}
+@media (max-width: 768px) {
+  .main-text-header .left-text-block .left-text {
+    min-width: 100%;
+    font-size: 35px;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .main-text-header .left-text-block {
+    min-width: 100%;
+    margin-top: 15px;
+    font-size: 35px;
+    text-align: center;
+  }
+}
+.main-text-header .right-text-block {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 1.7s ease-in-out;
+}
+@media (max-width: 768px) {
+  .main-text-header .right-text-block {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.main-text-header .right-text-block .right-text {
+  width: 75%;
+  font-size: 70px;
+}
+@media (max-width: 768px) {
+  .main-text-header .right-text-block .right-text {
+    min-width: 100%;
+    font-size: 50px;
+    text-align: center;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=header.css.map */
