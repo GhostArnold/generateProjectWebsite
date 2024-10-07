@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   align-items: center;
   background-color: #f4f4f4;
-  padding: 35px;
+  padding: 35px 0;
 
   // Эффект курсора при печати
   .appear-text::after {
@@ -26,10 +26,11 @@
 
   .block-one {
     flex: 1;
-    min-height: 470px;
+    min-height: 555px;
     display: flex;
     justify-content: center;
     .block-one-text {
+      font-size: 18px;
       width: 70%;
       border: 2px solid black;
       border-radius: 25px;
@@ -39,15 +40,38 @@
   }
   .block-two {
     flex: 1;
-    min-height: 470px;
+    min-height: 550px;
     display: flex;
     justify-content: center;
     .block-two-text {
+      font-size: 18px;
       width: 70%;
       border: 2px solid black;
       border-radius: 25px;
       padding: 30px 20px;
       background-color: #fff;
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 750px) {
+  .second-section {
+    .block-one {
+      margin-bottom: 25px;
+      h2 {
+        font-size: 24px;
+      }
+      .block-one-text {
+        font-size: 20px;
+      }
+    }
+    .block-two {
+      h2 {
+        font-size: 22px;
+      }
+      .block-two-text {
+        font-size: 20px;
+      }
     }
   }
 }

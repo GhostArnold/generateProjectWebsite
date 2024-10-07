@@ -68,6 +68,7 @@ header {
       animation: fadeIn 1.7s ease-in-out;
       .left-text {
         width: 70%;
+        min-width: 300px;
         font-size: 36px;
       }
     }
@@ -80,6 +81,54 @@ header {
       .right-text {
         width: 75%;
         font-size: 70px;
+      }
+    }
+  }
+}
+
+@media (min-width: 300px) and (max-width: 840px) {
+  header {
+    min-height: 700px;
+    .main-text-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Центрирование по вертикали для всего контейнера */
+
+      .left-text-block {
+        order: 2;
+        display: flex;
+        justify-content: center; /* Центрирование содержимого внутри блока */
+        align-items: center; /* Центрирование содержимого внутри блока */
+
+        .left-text {
+          min-width: 100%;
+          font-size: 35px;
+          text-align: center; /* Центрирование текста по горизонтали */
+        }
+      }
+
+      .right-text-block {
+        order: 1;
+        display: flex;
+        justify-content: center; /* Центрирование содержимого внутри блока */
+        align-items: center; /* Центрирование содержимого внутри блока */
+
+        .right-text {
+          min-width: 100%;
+          font-size: 50px;
+          text-align: center; /* Центрирование текста по горизонтали */
+        }
+      }
+    }
+  }
+}
+@media (min-width: 475px) and (max-width: 840px) {
+  header {
+    .main-text-header {
+      .right-text-block {
+        margin-bottom: 70px;
+        .right-text {
+        }
       }
     }
   }

@@ -10,7 +10,7 @@
     flex: 1;
     border: 2px solid black;
     padding: 20px;
-    min-width: 320px;
+    min-width: 315px;
     .block-one-text {
     }
   }
@@ -24,7 +24,47 @@
     margin-left: 20px;
     .block-two-img {
       img {
-        width: 320px;
+      }
+    }
+  }
+}
+@media (min-width: 300px) and (max-width: 1000px) {
+  .first-section {
+    .block-one {
+      .block-one-text {
+        font-size: 20px;
+      }
+    }
+    .block-two {
+      display: flex;
+      justify-content: center;
+      .block-two-img {
+        img {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .first-section {
+    display: flex;
+    justify-content: center;
+    .block-one {
+      h2 {
+        font-size: 24px;
+      }
+      .block-one-text {
+      }
+    }
+  }
+  .block-two {
+    display: flex;
+    justify-content: center;
+    .block-two-img {
+      img {
+        width: 300px;
+        height: 450px;
       }
     }
   }
