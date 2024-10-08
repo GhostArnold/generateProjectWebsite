@@ -69,3 +69,20 @@
     }
   }
 }
+
+@media (max-width: 380px) {
+  .first-section {
+    display: flex;
+    justify-content: center;
+    .block-one {
+      min-width: 230px;
+
+      h2 {
+        font-size: 24px;
+      }
+      .block-one-text {
+        font-size: 14px;
+      }
+    }
+  }
+}

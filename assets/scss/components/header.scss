@@ -134,6 +134,46 @@ header {
   }
 }
 
+// Для мелких мобил
+@media (max-width: 480px) {
+  header {
+    .main-text-header {
+      display: flex;
+      color: white;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      width: 90%;
+      margin: 0 20px; // центрирование блока
+      padding: 20px 0; // добавление отступов сверху и снизу
+      align-items: center;
+      .left-text-block {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        // Анимация появления
+        animation: fadeIn 1.7s ease-in-out;
+        .left-text {
+          width: 70%;
+          min-width: 300px;
+          font-size: 26px;
+        }
+      }
+      .right-text-block {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        // Анимация появления
+        animation: fadeIn 1.7s ease-in-out;
+        .right-text {
+          width: 75%;
+          font-size: 40px;
+        }
+      }
+    }
+  }
+}
+
 // burger
 body.no-scroll {
   overflow: hidden;

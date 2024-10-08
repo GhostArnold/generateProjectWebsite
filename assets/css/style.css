@@ -103,6 +103,34 @@ header .main-text-header {
 @media (min-width: 475px) and (max-width: 840px) {
   header .main-text-header .right-text-block {
     margin-bottom: 70px; } }
+@media (max-width: 480px) {
+  header .main-text-header {
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    margin: 0 20px;
+    padding: 20px 0;
+    align-items: center; }
+    header .main-text-header .left-text-block {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      animation: fadeIn 1.7s ease-in-out; }
+      header .main-text-header .left-text-block .left-text {
+        width: 70%;
+        min-width: 300px;
+        font-size: 26px; }
+    header .main-text-header .right-text-block {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      animation: fadeIn 1.7s ease-in-out; }
+      header .main-text-header .right-text-block .right-text {
+        width: 75%;
+        font-size: 40px; } }
 body.no-scroll {
   overflow: hidden; }
 
@@ -549,6 +577,16 @@ footer {
     .block-two .block-two-img img {
       width: 300px;
       height: 450px; } }
+@media (max-width: 380px) {
+  .first-section {
+    display: flex;
+    justify-content: center; }
+    .first-section .block-one {
+      min-width: 230px; }
+      .first-section .block-one h2 {
+        font-size: 24px; }
+      .first-section .block-one .block-one-text {
+        font-size: 14px; } }
 .second-section {
   display: flex;
   flex-wrap: wrap;
