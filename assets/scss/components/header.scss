@@ -85,71 +85,6 @@ header {
     }
   }
 }
-header ul li {
-  display: none;
-}
-
-header .nav-list #burger-toggle:checked ~ ul {
-  top: 142px;
-  bottom: 0;
-}
-
-header .nav-list label {
-  display: none;
-}
-
-header .nav-list #burger-toggle {
-  display: none;
-}
-
-header .nav-list #burger-toggle:checked ~ label::after {
-  transform: rotate(45deg);
-  bottom: 10px;
-}
-
-header .nav-list #burger-toggle:checked ~ label::before {
-  transform: rotate(-45deg);
-  top: 12px;
-}
-
-header .nav-list #burger-toggle:checked ~ label span {
-  transform: rotate(-45deg);
-  top: 12px;
-}
-
-@media (max-width: 784px) {
-  header .nav-list label {
-    display: block;
-    position: relative;
-    margin-top: 30px;
-    height: 25px;
-    width: 30px;
-    cursor: pointer;
-  }
-
-  header .nav-list label::before,
-  header .nav-list label::after,
-  header .nav-list label span {
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    transition: 0.3s;
-    content: '';
-  }
-
-  header .nav-list label::before {
-    top: 0;
-  }
-
-  header .nav-list label::after {
-    bottom: 0;
-  }
-
-  header .nav-list label span {
-    top: 10px;
-  }
-}
 
 @media (min-width: 300px) and (max-width: 840px) {
   header {
@@ -195,6 +130,72 @@ header .nav-list #burger-toggle:checked ~ label span {
         .right-text {
         }
       }
+    }
+  }
+}
+
+// burger
+body.no-scroll {
+  overflow: hidden;
+}
+
+header {
+  .hamburger {
+    display: none;
+    cursor: pointer;
+
+    .bar {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      background-color: white;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+      position: fixed;
+      left: -100%;
+      top: 0;
+      gap: 0;
+      flex-direction: column;
+      background-color: #262626;
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .nav-item {
+      margin: 16px 0;
+    }
+
+    .nav-menu.active {
+      left: 0;
+      background-color: black; /* Чёрный фон на активном меню */
+    }
+
+    .hamburger.active {
+      background-color: black; /* Чёрный фон для активной кнопки гамбургера */
     }
   }
 }

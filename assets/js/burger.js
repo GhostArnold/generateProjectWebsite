@@ -1,19 +1,16 @@
-const burgerBtn = document.querySelector('.navbar .header__burger-btn');
-const navList = document.querySelector('.navbar .nav-list ul');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
 
-burgerBtn.addEventListener('click', () => {
-  navList.classList.toggle('active');
-  console.log(burgerBtn);
-  console.log(navList);
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navMenu.classList.toggle('active');
+  document.body.classList.toggle('no-scroll'); // Переключение no-scroll на body
 });
 
-navList.addEventListener('click', (e) => {
-  if (e.target.tagName === 'A') {
-    navList.classList.remove('active');
-  }
-  console.log(burgerBtn);
-  console.log(navList);
-});
-
-console.log(burgerBtn);
-console.log(navList);
+document.querySelectorAll('.nav-link').forEach((n) =>
+  n.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navMenu.classList.remove('active');
+    document.body.classList.remove('no-scroll'); // Удаление no-scroll при клике на ссылку
+  })
+);
