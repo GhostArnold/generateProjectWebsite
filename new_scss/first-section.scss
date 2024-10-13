@@ -14,9 +14,21 @@
       flex: 1.2;
       .block {
         font-size: 27px;
-        border: 1px solid black;
+        border: 3px solid #273e67;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 20px;
+        width: 578px;
+        margin: 20px;
+        padding: 10px;
+        .block-article {
+          font-size: 30px;
+          color: #273e67;
+        }
+        .block-text {
+          width: 80%;
+        }
       }
     }
     .image {

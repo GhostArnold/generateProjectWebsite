@@ -11,9 +11,19 @@
     flex: 1.2; }
     .first-section .block-one .four-blocks .block {
       font-size: 27px;
-      border: 1px solid black;
+      border: 3px solid #273e67;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-around;
+      align-items: center;
+      border-radius: 20px;
+      width: 578px;
+      margin: 20px;
+      padding: 10px; }
+      .first-section .block-one .four-blocks .block .block-article {
+        font-size: 30px;
+        color: #273e67; }
+      .first-section .block-one .four-blocks .block .block-text {
+        width: 80%; }
   .first-section .block-one .image {
     flex: 1; }
 
