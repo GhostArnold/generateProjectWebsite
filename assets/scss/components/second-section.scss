@@ -39,7 +39,6 @@
   }
   .block-two {
     flex: 1;
-    min-height: 650px;
     display: flex;
     justify-content: center;
     .block-two-text {
@@ -48,6 +47,7 @@
       border-radius: 25px;
       padding: 30px 20px;
       background-color: #fff;
+      text-align: center;
     }
   }
 }
