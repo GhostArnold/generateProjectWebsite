@@ -1,0 +1,20 @@
+.first-section .underline {
+  color: #273e67;
+  font-size: 50px;
+  width: 759px;
+  margin-left: 120px;
+  border-bottom: 1px solid black; }
+.first-section .block-one {
+  display: flex;
+  flex-wrap: wrap; }
+  .first-section .block-one .four-blocks {
+    flex: 1.2; }
+    .first-section .block-one .four-blocks .block {
+      font-size: 27px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-between; }
+  .first-section .block-one .image {
+    flex: 1; }
+
+/*# sourceMappingURL=first-section.css.map */
