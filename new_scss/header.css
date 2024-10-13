@@ -1,10 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+body {
+  margin: 0;
+}
+
 header {
   width: 100%;
-  height: 500px;
+  height: 740px;
   margin: 0 auto;
-  background: url(../image1.png) no-repeat center center fixed;
   background-size: cover;
+  background-image: url(../loon-image-original\ 1.png);
 }
 @media (max-width: 768px) {
   header {
@@ -21,18 +24,24 @@ header {
 .navbar {
   height: 130px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
 }
 .navbar .logo {
-  margin-bottom: 17px;
-  margin-right: 194px;
+  margin-left: 120px;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0 75px 0 75px;
 }
 .navbar .logo a {
   text-decoration: none;
-  color: #fff;
+  color: #273E67;
   font-size: 40px;
   line-height: 70px;
+}
+.navbar .logo h2 {
+  margin: 2.7px 0;
+  font-size: 50px;
 }
 .navbar .header__burger-btn {
   display: none;
@@ -64,13 +73,18 @@ header {
     right: 20px;
   }
 }
+.navbar .nav-list {
+  background-color: #fff;
+  border-radius: 20px;
+  margin-right: 61px;
+  padding: auto auto;
+}
 .navbar .nav-list ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: 22.2px 116.01px;
   list-style: none;
   padding: 0;
-  gap: 15px;
+  gap: 40px;
 }
 @media (max-width: 768px) {
   .navbar .nav-list ul {
@@ -98,8 +112,8 @@ header {
 }
 .navbar .nav-list ul a {
   text-decoration: none;
-  color: #fff;
-  font-size: 21px;
+  color: #273E67 !important;
+  font-size: 15px;
 }
 @media (max-width: 768px) {
   .navbar .nav-list ul a {
@@ -109,86 +123,87 @@ header {
   }
 }
 .navbar .nav-list ul li {
-  padding: 0 10px;
+  transition: 0.3s;
 }
 .navbar .nav-list ul li:hover {
   transition: transform 0.3s ease;
   transform: scale(1.1);
 }
-
-.main-text-header {
+.navbar .main-text-header {
   display: flex;
-  flex-direction: column; /* Add this line */
   color: white;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 90%;
   margin: 0 20px;
   padding: 20px 0;
+  align-items: center;
 }
 @media (max-width: 768px) {
-  .main-text-header {
+  .navbar .main-text-header {
+    flex-direction: column;
     align-items: center;
   }
 }
-.main-text-header .left-text-block {
-  order: 2; /* Add this line */
+.navbar .main-text-header .left-text-block {
   flex: 1;
   display: flex;
   justify-content: center;
   animation: fadeIn 1.7s ease-in-out;
 }
 @media (max-width: 768px) {
-  .main-text-header .left-text-block {
+  .navbar .main-text-header .left-text-block {
+    order: 2;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-.main-text-header .left-text-block .left-text {
+.navbar .main-text-header .left-text-block .left-text {
   width: 70%;
   min-width: 300px;
   font-size: 36px;
 }
 @media (max-width: 768px) {
-  .main-text-header .left-text-block .left-text {
+  .navbar .main-text-header .left-text-block .left-text {
     min-width: 100%;
     font-size: 35px;
     text-align: center;
   }
 }
 @media (max-width: 400px) {
-  .main-text-header .left-text-block {
+  .navbar .main-text-header .left-text-block {
     min-width: 100%;
     margin-top: 15px;
     font-size: 35px;
     text-align: center;
   }
 }
-.main-text-header .right-text-block {
-  order: 1; /* Add this line */
+.navbar .main-text-header .right-text-block {
   flex: 1;
   display: flex;
   justify-content: center;
   animation: fadeIn 1.7s ease-in-out;
 }
 @media (max-width: 768px) {
-  .main-text-header .right-text-block {
+  .navbar .main-text-header .right-text-block {
+    order: 1;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-.main-text-header .right-text-block .right-text {
+.navbar .main-text-header .right-text-block .right-text {
   width: 75%;
   font-size: 70px;
 }
 @media (max-width: 768px) {
-  .main-text-header .right-text-block .right-text {
+  .navbar .main-text-header .right-text-block .right-text {
     min-width: 100%;
     font-size: 50px;
     text-align: center;
   }
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -196,4 +211,33 @@ header {
   100% {
     opacity: 1;
   }
+}
+
+.main-text-header {
+  display: flex;
+  flex-direction: column; /* stack elements vertically */
+  justify-content: center; /* center elements horizontally */
+  align-items: center; /* center elements vertically */
+  color: white;
+  /* add background color for demo purposes */
+  margin-top: 91px;
+}
+.main-text-header hr {
+  background-color: #fff;
+  width: 881px;
+  border-style: none;
+  height: 3px;
+}
+.main-text-header .up-text-block {
+  margin-bottom: 20px; /* add margin between blocks */
+}
+.main-text-header .up-text-block .up-text {
+  font-size: 70px;
+  text-align: center; /* center text horizontally */
+}
+.main-text-header .down-text-blok .down-text {
+  font-size: 27px;
+  text-align: center;
+  display: inline-block; /* add this property to make text wrap correctly */
+  width: 100%; /* add this property to make text wrap correctly */
 }/*# sourceMappingURL=header.css.map */
