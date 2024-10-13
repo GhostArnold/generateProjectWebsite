@@ -17,7 +17,7 @@ header {
       height: 600px;
       width: 100%;
     }
-  }
+  
 
 
   .navbar {
@@ -123,7 +123,7 @@ header {
         a {
           text-decoration: none;
           color: #273E67 !important;
-          font-size: 15px;
+          font-size: 25px;
           
           @media (max-width: 768px) {
             color: black;
@@ -254,12 +254,13 @@ header {
       }
     }
 
-    .down-text-blok{
-        .down-text{
+    .down-text-block{
+        .down-text {
             font-size: 27px;
             text-align: center;
-            display: inline-block; /* add this property to make text wrap correctly */
-            width: 100%; /* add this property to make text wrap correctly */
+           
         }
     }
+    
   }
+}

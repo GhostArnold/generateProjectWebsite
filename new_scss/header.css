@@ -20,30 +20,29 @@ header {
     width: 100%;
   }
 }
-
-.navbar {
+header .navbar {
   height: 130px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.navbar .logo {
+header .navbar .logo {
   margin-left: 120px;
   background-color: #fff;
   border-radius: 20px;
   padding: 0 75px 0 75px;
 }
-.navbar .logo a {
+header .navbar .logo a {
   text-decoration: none;
   color: #273E67;
   font-size: 40px;
   line-height: 70px;
 }
-.navbar .logo h2 {
+header .navbar .logo h2 {
   margin: 2.7px 0;
   font-size: 50px;
 }
-.navbar .header__burger-btn {
+header .navbar .header__burger-btn {
   display: none;
   width: 40px;
   height: 40px;
@@ -52,34 +51,34 @@ header {
   position: relative;
   right: 0;
 }
-.navbar .header__burger-btn span {
+header .navbar .header__burger-btn span {
   position: absolute;
   width: 30px;
   height: 3px;
   background-color: black;
   left: 5px;
 }
-.navbar .header__burger-btn span:nth-child(1) {
+header .navbar .header__burger-btn span:nth-child(1) {
   transform: translateY(-11px);
 }
-.navbar .header__burger-btn span:nth-child(3) {
+header .navbar .header__burger-btn span:nth-child(3) {
   transform: translateY(10px);
 }
 @media (max-width: 768px) {
-  .navbar .header__burger-btn {
+  header .navbar .header__burger-btn {
     display: block;
     position: absolute;
     top: 40px;
     right: 20px;
   }
 }
-.navbar .nav-list {
+header .navbar .nav-list {
   background-color: #fff;
   border-radius: 20px;
   margin-right: 61px;
   padding: auto auto;
 }
-.navbar .nav-list ul {
+header .navbar .nav-list ul {
   display: flex;
   margin: 22.2px 116.01px;
   list-style: none;
@@ -87,7 +86,7 @@ header {
   gap: 40px;
 }
 @media (max-width: 768px) {
-  .navbar .nav-list ul {
+  header .navbar .nav-list ul {
     flex-direction: column;
     align-items: center;
     transition: all 0.3s ease-in-out;
@@ -103,33 +102,33 @@ header {
   }
 }
 @media (max-width: 768px) {
-  .navbar .nav-list ul.active {
+  header .navbar .nav-list ul.active {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
     border-radius: 16px;
   }
 }
-.navbar .nav-list ul a {
+header .navbar .nav-list ul a {
   text-decoration: none;
   color: #273E67 !important;
-  font-size: 15px;
+  font-size: 25px;
 }
 @media (max-width: 768px) {
-  .navbar .nav-list ul a {
+  header .navbar .nav-list ul a {
     color: black;
     display: block;
     padding: 10px 0;
   }
 }
-.navbar .nav-list ul li {
+header .navbar .nav-list ul li {
   transition: 0.3s;
 }
-.navbar .nav-list ul li:hover {
+header .navbar .nav-list ul li:hover {
   transition: transform 0.3s ease;
   transform: scale(1.1);
 }
-.navbar .main-text-header {
+header .navbar .main-text-header {
   display: flex;
   color: white;
   flex-wrap: wrap;
@@ -140,65 +139,65 @@ header {
   align-items: center;
 }
 @media (max-width: 768px) {
-  .navbar .main-text-header {
+  header .navbar .main-text-header {
     flex-direction: column;
     align-items: center;
   }
 }
-.navbar .main-text-header .left-text-block {
+header .navbar .main-text-header .left-text-block {
   flex: 1;
   display: flex;
   justify-content: center;
   animation: fadeIn 1.7s ease-in-out;
 }
 @media (max-width: 768px) {
-  .navbar .main-text-header .left-text-block {
+  header .navbar .main-text-header .left-text-block {
     order: 2;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-.navbar .main-text-header .left-text-block .left-text {
+header .navbar .main-text-header .left-text-block .left-text {
   width: 70%;
   min-width: 300px;
   font-size: 36px;
 }
 @media (max-width: 768px) {
-  .navbar .main-text-header .left-text-block .left-text {
+  header .navbar .main-text-header .left-text-block .left-text {
     min-width: 100%;
     font-size: 35px;
     text-align: center;
   }
 }
 @media (max-width: 400px) {
-  .navbar .main-text-header .left-text-block {
+  header .navbar .main-text-header .left-text-block {
     min-width: 100%;
     margin-top: 15px;
     font-size: 35px;
     text-align: center;
   }
 }
-.navbar .main-text-header .right-text-block {
+header .navbar .main-text-header .right-text-block {
   flex: 1;
   display: flex;
   justify-content: center;
   animation: fadeIn 1.7s ease-in-out;
 }
 @media (max-width: 768px) {
-  .navbar .main-text-header .right-text-block {
+  header .navbar .main-text-header .right-text-block {
     order: 1;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-.navbar .main-text-header .right-text-block .right-text {
+header .navbar .main-text-header .right-text-block .right-text {
   width: 75%;
   font-size: 70px;
 }
 @media (max-width: 768px) {
-  .navbar .main-text-header .right-text-block .right-text {
+  header .navbar .main-text-header .right-text-block .right-text {
     min-width: 100%;
     font-size: 50px;
     text-align: center;
@@ -212,8 +211,7 @@ header {
     opacity: 1;
   }
 }
-
-.main-text-header {
+header .main-text-header {
   display: flex;
   flex-direction: column; /* stack elements vertically */
   justify-content: center; /* center elements horizontally */
@@ -222,22 +220,20 @@ header {
   /* add background color for demo purposes */
   margin-top: 91px;
 }
-.main-text-header hr {
+header .main-text-header hr {
   background-color: #fff;
   width: 881px;
   border-style: none;
   height: 3px;
 }
-.main-text-header .up-text-block {
+header .main-text-header .up-text-block {
   margin-bottom: 20px; /* add margin between blocks */
 }
-.main-text-header .up-text-block .up-text {
+header .main-text-header .up-text-block .up-text {
   font-size: 70px;
   text-align: center; /* center text horizontally */
 }
-.main-text-header .down-text-blok .down-text {
+header .main-text-header .down-text-block .down-text {
   font-size: 27px;
   text-align: center;
-  display: inline-block; /* add this property to make text wrap correctly */
-  width: 100%; /* add this property to make text wrap correctly */
 }/*# sourceMappingURL=header.css.map */
