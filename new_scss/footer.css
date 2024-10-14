@@ -66,12 +66,16 @@ footer form .feedback-btn .back-form .message textarea {
   width: 100%;
 }
 footer form .feedback-btn .button-submit {
+  display: flex;
   background-color: #273E67;
   color: #fff;
   border-radius: 20px;
-  padding: 21px 386px 21px 20px;
+  padding: 21px 45px 21px 20px;
   margin-bottom: 50px;
   cursor: pointer;
+}
+footer form .feedback-btn .button-submit img {
+  margin-left: 20px;
 }
 footer form .feedback-btn .button-submit input[type=submit] {
   all: unset;

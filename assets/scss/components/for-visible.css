@@ -1,17 +1,17 @@
 @charset "UTF-8";
 .hidden {
   opacity: 0;
-  transform: translateY(30px);
-  /* начальная позиция снизу */
-  transition: all 1.17s; }
+  transform: translateY(30px); /* начальная позиция снизу */
+  transition: all 1.17s;
+}
 
 .show {
   opacity: 1;
-  transform: translateY(0);
-  /* позиция, когда элемент видим */ }
+  transform: translateY(0); /* позиция, когда элемент видим */
+}
 
 @media (prefers-reduced-motion) {
   .hidden {
-    transition: none; } }
-
-/*# sourceMappingURL=for-visible.css.map */
+    transition: none;
+  }
+}/*# sourceMappingURL=for-visible.css.map */

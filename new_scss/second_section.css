@@ -1,73 +1,85 @@
 .second-section {
-  color: #273E67; }
-  .second-section .block-one {
-    padding-left: 120px;
-    padding-right: 120px; }
-    .second-section .block-one .block-one-text .from-developers {
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      font-size: 27px; }
-      .second-section .block-one .block-one-text .from-developers hr {
-        width: 720px;
-        background-color: #273E67;
-        height: 3px !important;
-        border-style: none;
-        margin-left: 0;
-        display: flex; }
-      .second-section .block-one .block-one-text .from-developers h2 {
-        margin: 0; }
-      .second-section .block-one .block-one-text .from-developers span {
-        margin-left: 176px; }
-    .second-section .block-one .block-one-text .appear-text-first {
-      background-color: #273E67;
-      border-radius: 20px;
-      color: white;
-      padding: 58px 50px;
-      width: calc(100% - 120px);
-      font-size: 27px;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400; }
-  .second-section .advantages {
-    align-items: center;
-    justify-content: center;
-    margin: 0 120px; }
-    .second-section .advantages h3 {
-      text-align: center !important;
-      font-size: 27px;
-      font-style: bold; }
-    .second-section .advantages p {
-      text-align: center !important;
-      font-size: 27px; }
-    .second-section .advantages hr {
-      margin-top: 20px;
-      width: 698px;
-      background-color: #273E67;
-      height: 3px !important;
-      border-style: none; }
-    .second-section .advantages .blocks {
-      display: flex;
-      margin-top: 50px;
-      justify-content: space-between; }
-      .second-section .advantages .blocks .first-block {
-        width: 100%;
-        background-color: #273E67;
-        border-radius: 20px;
-        color: white;
-        padding: 25px 47px;
-        font-size: 27px;
-        font-style: bold;
-        text-align: center; }
-      .second-section .advantages .blocks .second-block {
-        width: 100%;
-        margin-left: 44px;
-        background-color: #273E67;
-        border-radius: 20px;
-        color: white;
-        padding: 25px 47px;
-        font-size: 27px;
-        font-style: bold;
-        text-align: center; }
-
-/*# sourceMappingURL=second_section.css.map */
+  color: #273E67;
+}
+.second-section .block-one {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+.second-section .block-one .block-one-text .from-developers {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  font-size: 27px;
+}
+.second-section .block-one .block-one-text .from-developers hr {
+  width: 720px;
+  background-color: #273E67;
+  height: 3px !important;
+  border-style: none;
+  margin-left: 0;
+  display: flex;
+}
+.second-section .block-one .block-one-text .from-developers h2 {
+  margin: 0;
+}
+.second-section .block-one .block-one-text .from-developers span {
+  margin-left: 176px;
+}
+.second-section .block-one .block-one-text .appear-text-first {
+  background-color: #273E67;
+  border-radius: 20px;
+  color: white;
+  padding: 58px 50px;
+  width: calc(100% - 120px);
+  font-size: 27px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+}
+.second-section .advantages {
+  align-items: center;
+  justify-content: center;
+  margin: 0 120px;
+}
+.second-section .advantages h3 {
+  text-align: center !important;
+  font-size: 27px;
+  font-style: bold;
+}
+.second-section .advantages p {
+  text-align: center !important;
+  font-size: 27px;
+}
+.second-section .advantages hr {
+  margin-top: 20px;
+  width: 698px;
+  background-color: #273E67;
+  height: 3px !important;
+  border-style: none;
+}
+.second-section .advantages .blocks {
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-between;
+}
+.second-section .advantages .blocks .first-block {
+  width: 100%;
+  background-color: #273E67;
+  border-radius: 20px;
+  color: white;
+  padding: 25px 47px;
+  font-size: 27px;
+  font-style: bold;
+  text-align: center;
+}
+.second-section .advantages .blocks .second-block {
+  width: 100%;
+  margin-left: 44px;
+  background-color: #273E67;
+  border-radius: 20px;
+  color: white;
+  padding: 25px 47px;
+  font-size: 27px;
+  font-style: bold;
+  text-align: center;
+}/*# sourceMappingURL=second_section.css.map */
