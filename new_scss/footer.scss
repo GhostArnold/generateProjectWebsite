@@ -1,0 +1,84 @@
+
+footer{ 
+    background-size: cover;
+    background-size: 100% 100%;
+    background-position: center;
+    display: flex;
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
+    background: url('./foter-image.png') no-repeat center / cover;
+    color: #fff;
+    margin-top: 30px;
+    form{
+        display: flex;
+        margin-left: 120px;
+    .feedback-text{
+        display: flex;
+        border: 3px solid #273E67;
+        border-radius: 20px;
+        justify-content: center;
+        // padding: 54px 14px;
+        height: 89px;
+        width: 567px;
+
+        margin-right: 66px;
+        font-size: 50px;
+        text-align: center;
+        align-items: center;
+        background-color: white;
+        color:#273E67;
+    }
+    .feedback-btn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+    .back-form{
+        margin-bottom: 20px;
+        display: flex;
+        background-color: #273E67;
+        color: white;
+        border-radius: 20px;
+        flex-direction: column;
+        align-items: center;
+        width: 577px;
+        .inputs{
+            margin: 20px 45px 20px 20px;
+            width: calc(100% - 60px);
+            input{
+                margin-top: 10px;
+                border-radius: 18px;
+                width: 100%;
+                background: #fff;
+                border: none;
+                height: 60px;
+
+            }
+        }
+        .message{
+            width: calc(100% - 60px);
+            margin: 20px 45px 20px 20px;
+            textarea{
+                margin-top: 10px;
+                border-radius: 18px;
+                height: 60px;
+                width: 100%;
+            }
+        }
+    }
+    .button-submit{
+        background-color: #273E67;
+        color: #fff;
+        border-radius: 20px;
+        padding: 21px 386px 21px 20px;
+        margin-bottom: 50px;
+        cursor: pointer;
+        
+    }
+    .button-submit input[type="submit"]{
+        all:unset;
+    }
+    }
+}
+}
