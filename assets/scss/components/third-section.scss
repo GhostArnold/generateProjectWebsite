@@ -1,0 +1,53 @@
+.third-section {
+  display: flex;
+  flex-wrap: wrap;
+  .fade-in-left {
+    opacity: 0;
+    transform: translateX(-60px);
+    transition: all 0.5s ease-out;
+  }
+
+  .fade-in-right {
+    opacity: 0;
+    transform: translateX(60px);
+    transition: all 0.5s ease-out;
+  }
+
+  .visible {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .block-one,
+  .block-two,
+  .block-three {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Для соответствия по умолчанию */
+  }
+
+  .block-one .block-one-img {
+    width: 100%;
+  }
+
+  .block-two .block-two-text {
+    min-width: 350px;
+    width: 85%;
+  }
+
+  .block-three .block-three-img {
+    width: 70%;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .block-one .block-one-img {
+    img{
+      width: 100px;
+      height: auto;
+    }
+  }
+}
+

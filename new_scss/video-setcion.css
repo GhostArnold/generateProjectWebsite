@@ -1,0 +1,52 @@
+section {
+  margin-left: 120px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+section .video-blocks {
+  display: flex;
+  flex-direction: row;
+}
+section .video-blocks .blocks {
+  margin-right: 30%;
+  border: 3px solid #273E67;
+  height: 179.94px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+}
+section .video-blocks .blocks .span {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 45px 20px 20px;
+}
+section .video-blocks .blocks:last-child {
+  margin-right: 0;
+}
+section .video-blocks .blocks .video-btn {
+  background-color: #273E67;
+  color: white;
+  display: flex;
+  border-radius: 20px;
+  max-width: 100%;
+  padding: 10px;
+  bottom: 0;
+  margin-top: auto;
+  cursor: pointer;
+}
+section .video-blocks .blocks .video-btn h2 {
+  display: inline;
+  flex: 0 0 auto;
+  font-size: 17px;
+}
+section .video-blocks .blocks .video-btn img {
+  margin-left: 20px;
+  display: inline;
+  flex: 0 0 auto;
+  max-width: 248px;
+  height: auto;
+  margin-right: 65px;
+}/*# sourceMappingURL=video-setcion.css.map */

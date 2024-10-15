@@ -1,0 +1,106 @@
+.first-section {
+  .underline {
+    color: #273e67;
+    font-size: 50px;
+    width: 759px;
+    margin-left: 120px;
+    border-bottom: 1px solid black;
+  }
+  .block-one {
+    display: flex;
+    flex-wrap: wrap;
+    .four-blocks {
+      flex: 1.2;
+      .block {
+        font-size: 27px;
+        border: 3px solid #273e67;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 20px;
+        width: 578px;
+        margin: 20px;
+        margin-left: 120px;
+        padding: 10px;
+        .block-article {
+          font-size: 30px;
+          color: #273e67;
+        }
+        .block-text {
+          width: 80%;
+        }
+      }
+    }
+    .image {
+      flex: 1;
+      width: 570px;
+      height: 928px;
+      margin-left: 101px;
+    }
+  }
+
+  .block-two {
+    display: flex;
+    flex-wrap: wrap;
+    .four-blocks {
+      flex: 1.2;
+      .first-two-blocks{
+        display: flex;
+        margin-top: -120px;
+      .block {
+        font-size: 27px;
+        border: 3px solid #273e67;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 20px;
+        width: 578px;
+        margin: 0 20px 20px 120px;
+        margin-left: 120px;
+        padding: 10px;
+        .block-article {
+          padding: 10px;
+          display: flex;
+          font-size: 30px;
+          color: black;
+            h1{
+              color: #273e67 !important;
+            }
+        }
+        .block-text {
+          margin-left: 40px;
+          width: 80%;
+        }
+      }
+      }
+      .second-two-blocks{
+        display: flex;
+        .block {
+          font-size: 27px;
+          border: 3px solid #273e67;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border-radius: 20px;
+          width: 578px;
+          margin: 0 20px 0 120px;
+          padding: 10px;
+          .block-article {
+            padding: 10px;
+            display: flex;
+            font-size: 30px;
+            color: black;
+            h1{
+              color: #273e67 !important;
+            }
+          }
+          .block-text {
+            margin-left: 40px;
+            width: 80%;
+          }
+        }
+        }
+    }
+
+}
+}
