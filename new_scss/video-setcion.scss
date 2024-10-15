@@ -24,26 +24,39 @@
 
 
 section{
-    margin-left: 120px;
+
     display: flex;
     flex-direction:row;
-    align-items: center;
+    justify-content: center;
     .videos{
 
+    .text{
+        font-size: 50px;
+        color: #273E67;
+        hr{
+            width: 73%;
+            background-color:#273E67;
+            height: 3px!important;
+            border-style: none;
+            margin-left: 0;
+            display: flex;
+        }
     }
     .video-blocks{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
 
     
     
     .blocks{
-        margin-right: 30%;
+        margin-right: 15%;
         border: 3px solid #273E67;
         height: 179.94px;
         border-radius: 25px;
         display: flex;
         flex-direction: column;
+        color:#273E67;
         .span{
             display: flex;
             flex-direction: column;
@@ -56,13 +69,14 @@ section{
         }
         &:last-child{
             margin-right: 0;
+
             
         }
         .video-btn{
             background-color: #273E67;
             color: white;
             display: flex;
-            border-radius: 20px;
+            border-radius: 15px;
             max-width: 100%;
             padding: 10px;
             bottom: 0;
@@ -88,6 +102,6 @@ section{
     }
 }
 
-
+    }
 
 }
