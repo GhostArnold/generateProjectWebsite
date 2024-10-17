@@ -3,6 +3,10 @@ section {
   flex-direction: row;
   justify-content: center;
 }
+section .videos {
+  margin-left: 120px;
+  margin-right: 120px;
+}
 section .videos .text {
   font-size: 50px;
   color: #273E67;

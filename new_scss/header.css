@@ -55,7 +55,7 @@ header .navbar .header__burger-btn span {
   position: absolute;
   width: 30px;
   height: 3px;
-  background-color: black;
+  background-color: #273E67;
   left: 5px;
 }
 header .navbar .header__burger-btn span:nth-child(1) {
@@ -113,7 +113,7 @@ header .mobile-nav {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #262626;
+  background-color: #273E67;
   display: flex;
   justify-content: center;
   align-items: center;

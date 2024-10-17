@@ -4,15 +4,19 @@ body {
 section{
   display: flex;
   flex-direction: column;
+  
 .table {
     display: block;
     padding: 30px 0;
     background-color: white;
+    display: flex;
+    justify-content: center;
+    
    
 
 
     table {
-      width: 100%; /* make the table full-width */
+      width: 80%; /* make the table full-width */
       background-color: white;
       border-collapse: collapse;
       box-sizing: border-box;
