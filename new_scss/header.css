@@ -127,6 +127,7 @@ header .mobile-nav.active {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 35px;
 }
 header .mobile-nav ul {
   flex-direction: column;
@@ -136,7 +137,7 @@ header .mobile-nav ul {
 header .mobile-nav ul a {
   text-decoration: none;
   color: white;
-  font-size: 15px;
+  font-size: 25px;
   padding: 10px 0;
 }
 @media (max-width: 768px) {
@@ -157,7 +158,7 @@ header .main-text-header {
 }
 header .main-text-header hr {
   background-color: #fff;
-  width: 881px;
+  width: 50%;
   border-style: none;
   height: 3px;
 }

@@ -143,6 +143,8 @@ body {
         display: flex; // изменено с block на flex
         align-items: center;
         justify-content: center; // добавлено для центрирования
+        font-size: 35px;
+
       }
   
       ul {
@@ -153,7 +155,7 @@ body {
         a {
           text-decoration: none;
           color: white;
-          font-size: 15px;
+          font-size: 25px;
           padding: 10px 0;
         }
       }
@@ -179,7 +181,7 @@ body {
   
       hr {
         background-color: #fff;
-        width: 881px;
+        width: 50%;
         border-style: none;
         height: 3px;
       }
