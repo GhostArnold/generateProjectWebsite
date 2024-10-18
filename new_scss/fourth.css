@@ -1,0 +1,112 @@
+@charset "UTF-8";
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+section .table {
+  display: block;
+  padding: 30px 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+section .table table {
+  width: 80%; /* make the table full-width */
+  background-color: white;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 100px;
+}
+section .table table th {
+  background-color: #273E67;
+  font-weight: bold;
+  color: white;
+  border: 1.5px solid white;
+  padding: 5px;
+}
+section .table table th:first-child {
+  border-bottom-left-radius: 10px;
+}
+section .table table th:last-child {
+  border-bottom-right-radius: 10px;
+}
+section .table table td {
+  border: 1.5px solid #273E67; /* добавить границу для ячеек таблицы */
+  text-align: center;
+  color: #273E67;
+}
+section .fourth-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 40px 0;
+}
+section .fourth-section .block-one {
+  flex: 1.4;
+  display: flex;
+  justify-content: center;
+}
+section .fourth-section .block-one .block-one-text {
+  margin: 0 20px;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  background-color: #273E67;
+  padding: 20px;
+  border-radius: 20px;
+}
+section .fourth-section .block-one .block-one-text .numbers-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: white;
+}
+section .fourth-section .block-one .block-one-text .numbers-text .numbers {
+  margin-right: 20px;
+  flex: 0 0 80px;
+  font-weight: bold;
+  padding: 5px;
+  background-color: white;
+  color: #273E67;
+  display: flex;
+  font-size: 60px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+section .fourth-section .block-two {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .fourth-section {
+    flex-direction: column;
+  }
+  .fourth-section .block-one,
+  .fourth-section .block-two {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .fourth-section .block-one .block-one-text,
+  .fourth-section .block-two .block-one-text {
+    width: 100%;
+  }
+  .fourth-section .block-one .block-one-text .numbers-text:last-child,
+  .fourth-section .block-two .block-one-text .numbers-text:last-child {
+    margin-top: 20px;
+  }
+  .fourth-section .block-one-text {
+    width: 90%;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=fourth.css.map */

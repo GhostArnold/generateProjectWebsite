@@ -1,0 +1,144 @@
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    .videos {
+        margin-left: 120px;
+        margin-right: 120px;
+
+        .text {
+            font-size: 50px;
+            color: #273E67;
+            font-weight: bold;
+
+            hr {
+                width: 73%;
+                background-color: #273E67;
+                height: 3px !important;
+                border-style: none;
+                margin-left: 0;
+                display: flex;
+            }
+        }
+
+        .video-blocks {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .blocks {
+                margin-right: 15%;
+                border: 3px solid #273E67;
+                height: 179.94px;
+                border-radius: 25px;
+                display: flex;
+                flex-direction: column;
+                color: #273E67;
+
+                .span {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin: 20px 45px 20px 20px;
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                .video-btn {
+                    background-color: #273E67;
+                    color: white;
+                    display: flex;
+                    border-radius: 15px;
+                    max-width: 100%;
+                    padding: 10px;
+                    bottom: 0;
+                    margin-top: auto;
+                    cursor: pointer;
+
+                    h2 {
+                        display: inline;
+                        flex: 0 0 auto;
+                        font-size: 17px;
+                    }
+
+                    img {
+                        margin-left: 20px;
+                        display: inline;
+                        flex: 0 0 auto;
+                        max-width: 248px;
+                        height: auto;
+                        margin-right: 65px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Медиа-запрос для планшетов и мобильных устройств
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; // Изменяем направление на колонку
+
+        .videos {
+            margin-left: 0; // Убираем отступы
+            margin-right: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .text {
+                width: 75%;
+                font-size: 50px; // Уменьшаем размер шрифта для текста
+            }
+
+            .video-blocks {
+                flex-direction: column; // Блоки располагаются друг под другом
+                align-items: center; // Центрируем блоки
+
+                .blocks {
+                    margin-right: 0; // Убираем правый отступ
+                    margin-bottom: 20px; // Добавляем отступ между блоками
+
+                    &:last-child {
+                        margin-bottom: 0; // Убираем отступ у последнего блока
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Медиа-запрос для мобильных устройств с меньшей шириной экрана
+@media (max-width: 480px) {
+    section {
+        .videos {
+            .text {
+                margin-left: 2%;
+                font-size: 30px; // Уменьшаем размер шрифта для текста
+            }
+
+            .video-blocks {
+                .blocks {
+                    height: auto; // Убираем фиксированную высоту
+                    width: 100%; // Задаем ширину 100% для блоков
+                    margin-bottom: 15px; // Уменьшаем отступ между блоками
+
+                    .video-btn {
+                        padding: 8px; // Уменьшаем отступы кнопки
+                        h2 {
+                            font-size: 14px; // Уменьшаем размер шрифта заголовка
+                        }
+                        img {
+                            max-width: 150px; // Уменьшаем максимальную ширину изображения
+                            margin-right: 20px; // Уменьшаем правый отступ
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
