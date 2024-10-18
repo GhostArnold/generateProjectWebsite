@@ -1,97 +1,112 @@
-.second-section{
-    font-family: 'Roboto', sans-serif;
-    color: #273E67;
+.second-section {
+  .appeal {
+    margin: 0 auto;
+    width: 80%;
 
-    .block-one{
-        padding-left:120px;
-        padding-right:120px;
-        .block-one-text{
-            
-            
-    .from-developers{
-        display: flex; 
-        flex-direction: column; 
-        justify-content: end;
-        font-size: 27px;
-        hr{
-            width: 720px;
-            background-color:#273E67;
-            height: 3px !important;
-            border-style: none;
-            margin-left: 0;
-            display: flex;
-;
-        }
-        h2{
-            margin: 0;
-        }
-        span{
-            margin-left: 176px;
+    .block-one {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
 
+      .article-appeal {
+        color: #273e67;
+        font-size: 20px;
+        h1 {
+          width: 70%;
+          text-align: end;
         }
-    }
-    
-    .appear-text-first{
-        background-color: #273E67;
+        .underline {
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -10px; /* Отступ 10px внизу */
+            height: 2px; /* Толщина линии */
+            background-color: #273e67; /* Синий цвет подчеркивания */
+          }
+        }
+      }
+
+      .text-appeal {
+        padding: 25px 0px;
+        background-color: #273e67;
         border-radius: 20px;
-        color: white;
-        padding: 58px 50px;
-        width: calc(100% - 120px);
-        font-size: 27px;
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 400;
-        font-family: 'Roboto', sans-serif;
-    }
-    
-}
-}   
-
-    .advantages{
-        align-items: center;
-        justify-content: center;
-        margin: 0 120px;
-        h3{
-            text-align: center !important;
-            font-size: 27px;
-            font-style: bold;
-        }
-        p{
-            text-align: center !important;
-            font-size: 27px;
-        }
-    hr{
-        margin-top: 20px;
-        width: 698px;
-        background-color:#273E67;
-        height: 3px !important;
-        border-style: none;
-    }
-    .blocks{
+        color: #fff;
+        font-size: 19px;
         display: flex;
-        margin-top: 50px;
-        justify-content: space-between;
-        .first-block{
-            width: 100%;
-            background-color: #273E67;
-            border-radius: 20px;
-            color: white;
-            padding: 25px 47px;
-            font-size: 27px;
-            font-style: bold;
-            text-align: center;
+        justify-content: center;
+        line-height: 25px;
+
+        span {
+          font-weight: 900;
+          font-size: 22px;
         }
-        .second-block{
-            width: 100%;
-            margin-left: 44px;
-            background-color: #273E67;
-            border-radius: 20px;
-            color: white;
-            padding: 25px 47px;
-            font-size: 27px;
-            font-style: bold;
-            text-align: center;
+
+        p {
+          width: 80%;
         }
+      }
     }
-}
+
+    .block-two {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .article-appeal {
+        text-align: center;
+        color: #273e67;
+        font-size: 20px;
+
+        .underline {
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 75%;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            bottom: -10px; /* Отступ 10px внизу */
+            height: 2px; /* Толщина линии */
+            background-color: #273e67; /* Синий цвет подчеркивания */
+          }
+        }
+      }
+
+      .two-blocks {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        // flex-wrap: wrap;
+        .block {
+          display: flex;
+          justify-content: center;
+          padding: 25px 15px;
+          background-color: #273e67;
+          border-radius: 20px;
+          color: #fff;
+          font-size: 19px;
+          line-height: 25px;
+          p {
+            width: 85%;
+          }
+        }
+        @media (max-width: 600px) {
+          flex-wrap: wrap;
+        }
+      }
+
+      .ready-text {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        p {
+          width: 90%;
+        }
+      }
+    }
+  }
 }

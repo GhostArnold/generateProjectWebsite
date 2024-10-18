@@ -1,107 +1,105 @@
-// <section>
-//       <div class="videos">
-//              ВИДЕО О НАШЕЙ РАЗРАБОТКЕ
-//         <div class="video-blocks">
-//           <div class="blocks">
-//             Изделия серии ПИХТА<br>и уникальные топливные элементы
-//             <div class="video-btn">
-//               СМОТРЕТЬ ВИДЕО
-//               <img src="./new_scss/strelochka.svg" alt="">
-//             </div>
-//           </div>
-//           <div class="blocks">
-//             Демонстранция генераторов ПИХТА
-//             <div class="video-btn">
-//               СМОТРЕТЬ ВИДЕО
-//               <img src="./new_scss/strelochka.svg" alt="">
-//             </div>
-//           </div>
-//         </div>
-
-//       </div>
-
-//     </section>
-
-
-section{
-
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    .videos{
-
-    .text{
-        font-size: 50px;
-        color: #273E67;
-        hr{
-            width: 73%;
-            background-color:#273E67;
-            height: 3px!important;
-            border-style: none;
-            margin-left: 0;
-            display: flex;
-        }
-    }
-    .video-blocks{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-
-    
-    
-    .blocks{
-        margin-right: 15%;
-        border: 3px solid #273E67;
-        height: 179.94px;
-        border-radius: 25px;
-        display: flex;
-        flex-direction: column;
-        color:#273E67;
-        .span{
-            display: flex;
-            flex-direction: column;
-            font-size: 20px;
-            font-weight: bold;
-            margin: 20px 45px 20px 20px;
-        }
-        &:first-child{
-            
-        }
-        &:last-child{
-            margin-right: 0;
-
-            
-        }
-        .video-btn{
-            background-color: #273E67;
-            color: white;
-            display: flex;
-            border-radius: 15px;
-            max-width: 100%;
-            padding: 10px;
-            bottom: 0;
-            margin-top: auto;
-
-            cursor: pointer;
-    
-            h2{
-                display: inline;
-                flex: 0 0 auto;
-                font-size: 17px;
-            }
-            img{
-                margin-left: 20px;
-                display: inline;
-                flex: 0 0 auto;
-                max-width: 248px;
-                height: auto;
-                margin-right: 65px;
-                
-            }
-        }
-    }
+.video-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
+.videos {
+  .text {
+    margin-left: 20px;
+    font-size: 50px;
+    color: #273e67;
+    hr {
+      width: 100%;
+      background-color: #273e67;
     }
+  }
+  .video-blocks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 50px;
 
+    .blocks {
+      border: 3px solid #273e67;
+      min-height: 179.94px;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      color: #273e67;
+      .span {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 20px 45px 20px 20px;
+      }
+
+      .video-btn {
+        background-color: #273e67;
+        color: white;
+        display: flex;
+        border-radius: 15px;
+        max-width: 100%;
+        padding: 10px;
+        bottom: 0;
+        margin-top: auto;
+
+        cursor: pointer;
+
+        h2 {
+          display: inline;
+          flex: 0 0 auto;
+          font-size: 17px;
+        }
+        img {
+          margin-left: 20px;
+          display: inline;
+          flex: 0 0 auto;
+          max-width: 248px;
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .video-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videos {
+    .text {
+      margin-left: 0;
+      font-size: 30px;
+
+      hr {
+        width: 100%;
+      }
+    }
+    .video-blocks {
+      gap: 20px;
+
+      .blocks {
+        width: 90%;
+        min-height: auto;
+        border-radius: 15px;
+        .span {
+          font-size: 16px;
+          margin: 10px 20px 10px 10px;
+        }
+        .video-btn {
+          padding: 5px;
+          h2 {
+            font-size: 14px;
+          }
+          img {
+            max-width: 100px;
+          }
+        }
+      }
+    }
+  }
 }

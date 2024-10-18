@@ -1,65 +1,78 @@
-section {
+.video-section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-}
-section .videos .text {
-  font-size: 50px;
-  color: #273E67;
-}
-section .videos .text hr {
-  width: 73%;
-  background-color: #273E67;
-  height: 3px !important;
-  border-style: none;
-  margin-left: 0;
-  display: flex;
-}
-section .videos .video-blocks {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-section .videos .video-blocks .blocks {
-  margin-right: 15%;
-  border: 3px solid #273E67;
-  height: 179.94px;
-  border-radius: 25px;
-  display: flex;
-  flex-direction: column;
-  color: #273E67;
-}
-section .videos .video-blocks .blocks .span {
-  display: flex;
-  flex-direction: column;
-  font-size: 20px;
-  font-weight: bold;
-  margin: 20px 45px 20px 20px;
-}
-section .videos .video-blocks .blocks:last-child {
-  margin-right: 0;
-}
-section .videos .video-blocks .blocks .video-btn {
-  background-color: #273E67;
-  color: white;
-  display: flex;
-  border-radius: 15px;
-  max-width: 100%;
-  padding: 10px;
-  bottom: 0;
-  margin-top: auto;
-  cursor: pointer;
-}
-section .videos .video-blocks .blocks .video-btn h2 {
-  display: inline;
-  flex: 0 0 auto;
-  font-size: 17px;
-}
-section .videos .video-blocks .blocks .video-btn img {
+  justify-content: center; }
+
+.videos .text {
   margin-left: 20px;
-  display: inline;
-  flex: 0 0 auto;
-  max-width: 248px;
-  height: auto;
-  margin-right: 65px;
-}/*# sourceMappingURL=video-setcion.css.map */
+  font-size: 50px;
+  color: #273e67; }
+  .videos .text hr {
+    width: 100%;
+    background-color: #273e67; }
+.videos .video-blocks {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px; }
+  .videos .video-blocks .blocks {
+    border: 3px solid #273e67;
+    min-height: 179.94px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    color: #273e67; }
+    .videos .video-blocks .blocks .span {
+      display: flex;
+      flex-direction: column;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px 45px 20px 20px; }
+    .videos .video-blocks .blocks .video-btn {
+      background-color: #273e67;
+      color: white;
+      display: flex;
+      border-radius: 15px;
+      max-width: 100%;
+      padding: 10px;
+      bottom: 0;
+      margin-top: auto;
+      cursor: pointer; }
+      .videos .video-blocks .blocks .video-btn h2 {
+        display: inline;
+        flex: 0 0 auto;
+        font-size: 17px; }
+      .videos .video-blocks .blocks .video-btn img {
+        margin-left: 20px;
+        display: inline;
+        flex: 0 0 auto;
+        max-width: 248px;
+        height: auto; }
+
+@media (max-width: 768px) {
+  .video-section {
+    flex-direction: column;
+    align-items: center; }
+
+  .videos .text {
+    margin-left: 0;
+    font-size: 30px; }
+    .videos .text hr {
+      width: 100%; }
+  .videos .video-blocks {
+    gap: 20px; }
+    .videos .video-blocks .blocks {
+      width: 90%;
+      min-height: auto;
+      border-radius: 15px; }
+      .videos .video-blocks .blocks .span {
+        font-size: 16px;
+        margin: 10px 20px 10px 10px; }
+      .videos .video-blocks .blocks .video-btn {
+        padding: 5px; }
+        .videos .video-blocks .blocks .video-btn h2 {
+          font-size: 14px; }
+        .videos .video-blocks .blocks .video-btn img {
+          max-width: 100px; } }
+
+/*# sourceMappingURL=video-setcion.css.map */
