@@ -66,4 +66,45 @@ section .videos .video-blocks .blocks .video-btn img {
   max-width: 248px;
   height: auto;
   margin-right: 65px;
+}
+
+@media (max-width: 768px) {
+  section {
+    flex-direction: column;
+  }
+  section .videos {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  section .videos .video-blocks {
+    flex-direction: column;
+    align-items: center;
+  }
+  section .videos .video-blocks .blocks {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  section .videos .video-blocks .blocks:last-child {
+    margin-bottom: 0;
+  }
+}
+@media (max-width: 480px) {
+  section .videos .text {
+    font-size: 30px;
+  }
+  section .videos .video-blocks .blocks {
+    height: auto;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  section .videos .video-blocks .blocks .video-btn {
+    padding: 8px;
+  }
+  section .videos .video-blocks .blocks .video-btn h2 {
+    font-size: 14px;
+  }
+  section .videos .video-blocks .blocks .video-btn img {
+    max-width: 150px;
+    margin-right: 20px;
+  }
 }/*# sourceMappingURL=video-setcion.css.map */

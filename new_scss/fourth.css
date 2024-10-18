@@ -51,7 +51,6 @@ section .fourth-section .block-one {
   flex: 1.4;
   display: flex;
   justify-content: center;
-  justify-content: center;
 }
 section .fourth-section .block-one .block-one-text {
   margin: 0 20px;
@@ -85,4 +84,29 @@ section .fourth-section .block-one .block-one-text .numbers-text .numbers {
 }
 section .fourth-section .block-two {
   flex: 1;
+}
+
+@media (max-width: 768px) {
+  .fourth-section {
+    flex-direction: column;
+  }
+  .fourth-section .block-one,
+  .fourth-section .block-two {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .fourth-section .block-one .block-one-text,
+  .fourth-section .block-two .block-one-text {
+    width: 100%;
+  }
+  .fourth-section .block-one .block-one-text .numbers-text:last-child,
+  .fourth-section .block-two .block-one-text .numbers-text:last-child {
+    margin-top: 20px;
+  }
+  .fourth-section .block-one-text {
+    width: 90%;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=fourth.css.map */
