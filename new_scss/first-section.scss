@@ -3,14 +3,21 @@
     color: #273e67;
     font-size: 50px;
     width: 759px;
-    margin-left: 120px;
-    border-bottom: 3px solid #273e67;;
+    margin-left: 0;
+    border-bottom: 3px solid #273e67;
   }
+
   .block-one {
     display: flex;
     flex-wrap: wrap;
+
     .four-blocks {
       flex: 1.2;
+
+      .img1 {
+        display: block; // img1 отображается по умолчанию
+      }
+
       .block {
         font-size: 27px;
         border: 3px solid #273e67;
@@ -18,63 +25,45 @@
         justify-content: space-around;
         align-items: center;
         border-radius: 20px;
-        width: 578px;
+        width: 65%;
         margin: 20px;
-        margin-left: 120px;
+        margin-left: 0;
         padding: 10px;
+
         .block-article {
           font-size: 30px;
           color: #273e67;
         }
+
         .block-text {
           width: 80%;
         }
       }
     }
+
     .image {
       flex: 1;
       width: 570px;
       height: 928px;
-      margin-left: 101px;
+      margin-left: 0;
     }
   }
 
   .block-two {
     display: flex;
     flex-wrap: wrap;
+
+    .img2{
+      display: none;
+    }
+
     .four-blocks {
       flex: 1.2;
-      .first-two-blocks{
+
+      .first-two-blocks {
         display: flex;
-        margin-top: -90px;
-      .block {
-        font-size: 27px;
-        border: 3px solid #273e67;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 20px;
-        width: 578px;
-        margin: 0 20px 20px 120px;
-        margin-left: 120px;
-        padding: 10px;
-        .block-article {
-          padding: 10px;
-          display: flex;
-          font-size: 30px;
-          color: black;
-            h1{
-              color: #273e67 !important;
-            }
-        }
-        .block-text {
-          margin-left: 40px;
-          width: 80%;
-        }
-      }
-      }
-      .second-two-blocks{
-        display: flex;
+
+
         .block {
           font-size: 27px;
           border: 3px solid #273e67;
@@ -82,25 +71,95 @@
           justify-content: space-around;
           align-items: center;
           border-radius: 20px;
-          width: 578px;
-          margin: 0 20px 0 120px;
+          width: 65%;
+          margin: 0 20px 20px 0;
           padding: 10px;
+
           .block-article {
             padding: 10px;
             display: flex;
             font-size: 30px;
             color: black;
-            h1{
+
+            h1 {
               color: #273e67 !important;
             }
           }
+
           .block-text {
             margin-left: 40px;
             width: 80%;
           }
         }
+      }
+
+      .second-two-blocks {
+        display: flex;
+
+        .block {
+          font-size: 27px;
+          border: 3px solid #273e67;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          border-radius: 20px;
+          width: 50%;
+          margin: 0 auto;
+          padding: 10px;
+          
+          .block-article {
+            padding: 10px;
+            display: flex;
+            font-size: 30px;
+            color: black;
+
+            h1 {
+              color: #273e67 !important;
+            }
+          }
+
+          .block-text {
+            margin-left: 40px;
+            width: 80%;
+          }
         }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {// Мобильная адаптация
+  .block{
+    width: 60%;
+  }
+
+    .img1 {
+      display: none; // Скрываем img1 на мобильных устройствах
+    }
+    .image2{
+      display: block;
+      .img2 {
+        display: block; // Показываем img2 на мобильных устройствах
+        width: 100%; // img2 занимает всю ширину
+        height: auto; // Поддержка пропорций изображения
+      }
     }
 
-}
+    .block-two {
+      flex-direction: column; // Устанавливаем вертикальное направление для блоков
+
+
+      .first-two-blocks {
+        flex-direction: column; // Блоки располагаются друг под другом
+      }
+
+      .second-two-blocks {
+        flex-direction: column; // Блоки располагаются друг под другом
+        .block{
+          &:last-child{
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
 }
