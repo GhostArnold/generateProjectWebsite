@@ -190,13 +190,24 @@
 
       .first-two-blocks {
         flex-direction: column; // Блоки располагаются друг под другом
+        .block{
+        &:last-child{
+          margin-top: 0 !important;
+        }
+        &:first-child{
+          margin-top: 0 !important;
+        }
+        }
       }
 
       .second-two-blocks {
         flex-direction: column; // Блоки располагаются друг под другом
         .block {
-          &:last-child {
-            margin-top: 20px;
+          &:last-child{
+            margin-top: 0 !important;
+          }
+          &:first-child{
+            margin-top: 0 !important;
           }
         }
       }

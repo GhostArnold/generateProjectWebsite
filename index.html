@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./new_scss/fourth.css" />
     <link rel="stylesheet" href="./new_scss/mobile-table.css" />
     <link rel="stylesheet" href="./new_scss/base/normalize.css" /> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Generate</title>
   </head>
   <body>
@@ -33,9 +34,9 @@
           <a href=""><h2>ПИХТА</h2></a>
         </div>
         <button class="header__burger-btn">
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </button>
         <div class="nav-list desktop-nav">
           <ul>
@@ -168,54 +169,6 @@
 
         </div>
       </div>
-      <section id="second-section" class="hidden">
-        <div class="second-section">
-          <div class="block-one">
-            <div class="block-one-text">
-              <div class="from-developers">
-                <h2>
-                  ОБРАЩЕНИЕ ОТ РАЗРАБОТЧИКОВ<br>ИЗДЕЛИЯ - ПЕРСОНАЛЬНОГО<br><span>ГЕНЕРАТОРА ТОКА</span>
-                </h2>
-                <hr>
-              </div>
-              <p class="appear-text-first">
-                Всем заинтересованным лицам, производителям электро-технических изделий,предлагаем принять участие в производстве <strong>ПЕРСОНАЛЬНЫХ НЕЗАВИСИМЫХ ИСТОЧНИКОВ</strong>, которые будут востребованы у населения и всех,
-                кто выполняет задачи вдали от источников энергообеспечения.
-              </p>
-            </div>
-          </div>
-          <div class="advantages">
-            <h3>Наш генератор тока разработан в нескольких вариантах:</h3>
-            <hr>
-            <div class="blocks">
-            <div class="first-block">В переносном варианте,<br>в виде походного рюкзака.</div>
-            <div class="second-block">В настольном<br>и напольном вариантах.</div>
-          </div>
-          <p>Готовы Вам предоставить техническую документацию, по каждому виду изделий,<br>сертификаты на их производство и продажу в торговых сетях, другую юридическую<br>поддержку. Надеемся на сотрудничество с Вами, на взаимовыгодных условиях.</p>
-          </div>
-          <div class="block-two">
-            <div class="block-two-text">
-              <h2>ПРЕИМУЩЕСТВА ИЗДЕЛИЙ СЕРИИ «ПИХТА»</h2>
-              <p class="appear-text">
-                1. Экологически чистое топливо ( алюминий, магний );<br />
-                2. Безопасность хранения топлива и его эксплуатация;<br />
-                3. Компактность и небольшой вес для транспортировки;<br />
-                4. Длительный срок хранения топлива;<br />
-                5. Мгновенный запуск в работу и бесшумность в эксплуатации;<br />
-                6. Возможность утилизации остатков топлива ( алюминия ) и его
-                применения в удобрениях ( магния );<br />
-                7. Длительный срок эксплуатации, около 10 тысяч часов, до
-                капитального ремонта ( замены топливных элементов );<br />
-                8. Эксплуатация изделий в районах с низкой температурой
-                окружающего воздуха.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-    </section>
   </div>
 </div>
 <section id="second-section" class="hidden">
@@ -253,7 +206,7 @@
 </section>
 <section id="third-section" class="hidden">
 <div class="third-section">
-  <h1>ПРЕИМУЩЕСТВА ИЗДЕЛИЙ СЕРИИ «ПИХТА»</h1>
+  <!-- <h1>ПРЕИМУЩЕСТВА ИЗДЕЛИЙ СЕРИИ «ПИХТА»</h1> -->
   <div class="advantages">
     <div class="block">
       <div class="block-numb">1</div>
@@ -391,12 +344,12 @@
       </div>
       
     
-<section>
+<section class="section-slider">
   <div class="slider active" id="slide1">
     <div class="mobile-table">
       <table>
           <tr><th></th><th>Переносный<br>источник тока<br>ПИХТА - 6 Р</th></tr>
-          <tr><td>Вес</td><td>от 12 до 16 кг.</td></tr>
+          <tr><td>Вес</td><td class="no-border">от 12 до 16 кг.</td></tr>
           <tr><td>Размеры</td><td>22 * 30 * 60 см.</td></tr>
           <tr><td>Мощность</td><td>240 втт. max</td></tr>
           <tr><td>Напряжение<br>холостого хода</td><td>10 вольт</td></tr>
@@ -412,7 +365,7 @@
     <div class="mobile-table">
       <table>
           <tr><th></th><th>Напольный,<br>передвижной<br>источник тока<br>ПИХТА - 22 М</th></tr>
-          <tr><td>Вес</td><td>40 кг.</td></tr>
+          <tr><td>Вес</td><td  class="no-border">40 кг.</td></tr>
           <tr><td>Размеры</td><td>45 * 45 * 50 см.</td></tr>
           <tr><td>Мощность</td><td>880 втт. max</td></tr>
           <tr><td>Напряжение<br>холостого хода</td><td>33 вольт</td></tr>
@@ -428,7 +381,7 @@
     <div class="mobile-table">
       <table>
           <tr><th></th><th>ПИХТА - 22 М</th></tr>
-          <tr><td>Вес</td><td>70 кг.</td></tr>
+          <tr><td>Вес</td><td class="no-border">70 кг.</td></tr>
           <tr><td>Размеры</td><td>50 * 50 * 125 см.</td></tr>
           <tr><td>Мощность</td><td>880 втт. max</td></tr>
           <tr><td>Напряжение<br>холостого хода</td><td>33 вольт</td></tr>
@@ -436,10 +389,14 @@
           <tr><td>Емкость</td><td>320 Ач</td></tr>
           <tr><td>Энергоемкость</td><td>5120 втч.</td></tr>
           <tr><td>Удельная<br>энергоемкость</td><td>53 втч/кг.</td></tr>
-      </table>
-      </div>
-      
+      </table> 
   </div>
+</div>
+<div class="slider-indicators">
+  <div class="indicator" data-slide="0"></div>
+  <div class="indicator" data-slide="1"></div>
+  <div class="indicator" data-slide="2"></div>
+</div>
   <div class="navigation">
     <button id="prev">Назад</button>
     <button id="next">Вперед</button>
@@ -508,6 +465,9 @@
   </div>
         </div>
   </footer>
+
+  
+  
     <script src="./assets/js/appear-text.js"></script>
     <script src="./assets/js/visile-section.js"></script>
     <script src="./assets/js/right-left-animation.js"></script>

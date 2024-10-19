@@ -1,12 +1,16 @@
-section {
-    position: relative; // Устанавливаем относительное позиционирование для контейнера
-    overflow: hidden; // Скрываем переполнение
+.section-slider {
+    display: none;
 
     .slider {
         display: none; // Скрыть все слайды по умолчанию
         opacity: 0; // Начальная прозрачность
         transition: opacity 0.2s ease, transform 0.5s ease; // Плавный переход для изменения прозрачности
         height: 300px; // Фиксированная высота для слайдов
+
+        &.enter-reverse {
+            opacity: 0; // Начальная прозрачность при входе
+            transform: translateX(-100%); // Позиция слева за пределами экрана
+        }
 
         &.active {
             display: block; // Показать только активный слайд
@@ -24,11 +28,13 @@ section {
         }
 
         .mobile-table {
+            margin-top: -100px; 
             display: block;
-            padding: 30px 0;
+            padding: 0;
             background-color: white;
             display: flex;
             justify-content: center;
+            width: 100%;
 
             h2 {
                 text-align: center;
@@ -37,9 +43,9 @@ section {
             }
 
             table {
-                width: 80%; // Ширина таблицы
+                width: 95%; // Ширина таблицы
                 max-width: 600px; // Максимальная ширина таблицы
-                height: 300px; // Фиксированная высота таблицы
+                height: 250px; // Фиксированная высота таблицы
                 background-color: white;
                 border-collapse: collapse;
                 box-sizing: border-box;
@@ -47,43 +53,82 @@ section {
                 border-radius: 10px;
                 overflow: hidden; // Обрезка углов
                 table-layout: fixed; // Фиксированная компоновка таблицы
-
+            
                 th, td {
                     overflow: hidden; // Скрыть переполнение текста
                     text-overflow: ellipsis; // Показать многоточие, если текст длинный
                     white-space: nowrap; // Запретить перенос текста
+                    font-size: 20px;
+            
+                    &:first-child {
+                        border-top: 1.5px solid white; // Установите границу для первой ячейки
+                    }
                 }
-
+            
                 th {
                     background-color: #273E67;
                     font-weight: bold;
                     color: white;
                     border: 1.5px solid white;
-                    padding: 5px;
-
+                    padding: 0 auto;
+                    height: 79.9px;
+                    font-size: 27px;
+                    border-bottom: none !important;
+            
                     &:first-child {
                         border-bottom-left-radius: 10px; // Скругление угла
+                        border: 1.5px solid #1a2a4c;
+                        border-bottom: none; // Убираем нижнюю границу
                     }
-
+            
                     &:last-child {
                         border-bottom-right-radius: 10px; // Скругление угла
+                        border: 1.5px solid #1a2a4c;
                     }
                 }
-
+            
                 td {
                     border: 1.5px solid #273E67; // Граница для ячеек таблицы
                     text-align: center;
                     color: #273E67; // Цвет текста
+                    &.no-border {
+                        border-top: none; // Убираем границу
+                    }
                 }
+               
             }
         }
+    }
+
+    .slider-indicators {
+        display: flex;
+        justify-content: center;
+        margin-top: 180px; /* Отступ сверху */
+
+    }
+    
+    .indicator {
+        width: 10px; /* Ширина индикатора */
+        height: 6px; /* Высота индикатора */
+        border-radius: 50%; /* Круглая форма */
+        background-color: white; /* Цвет по умолчанию */
+        border: 1px solid #1a2a4c;
+        margin: 0 5px; /* Отступы между индикаторами */
+        transition: background-color 0.3s ease; /* Плавный переход цвета */
+    }
+
+    .indicator.active {
+        background-color: #1a2a4c; /* Цвет активного индикатора */
     }
 
     .navigation {
         margin: 20px 0; // Отступы сверху и снизу
         text-align: center; // Центрирование кнопок
-        margin-top: 150px;
-
+        margin-top: 30px;
+        display: flex; // Используем flexbox для расположения кнопок
+        justify-content: space-between; // Размещаем кнопки по краям
+        width: 100%; // Ширина навигации на всю ширину родителя
+    
         button {
             padding: 10px 15px;
             cursor: pointer;
@@ -91,11 +136,23 @@ section {
             color: white; // Цвет текста кнопок
             border: none; // Убираем границу
             border-radius: 5px; // Скругление углов
-            margin: 0 5px; // Отступ между кнопками
+            margin: 0; // Убираем отступ между кнопками
 
+            &:first-child {
+                margin-left: 10px; // Отступ слева для первой кнопки
+            }
+    
+            &:last-child {
+                margin-right: 10px; // Отступ справа для последней кнопки
+            }
+    
             &:hover {
                 background-color: #1a2a4c; // Цвет при наведении
             }
         }
+    }
+
+    @media(max-width: 769px){
+        display: block;
     }
 }

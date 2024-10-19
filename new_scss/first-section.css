@@ -157,11 +157,20 @@
   .first-section .block-two .first-two-blocks {
     flex-direction: column;
   }
+  .first-section .block-two .first-two-blocks .block:last-child {
+    margin-top: 0 !important;
+  }
+  .first-section .block-two .first-two-blocks .block:first-child {
+    margin-top: 0 !important;
+  }
   .first-section .block-two .second-two-blocks {
     flex-direction: column;
   }
   .first-section .block-two .second-two-blocks .block:last-child {
-    margin-top: 20px;
+    margin-top: 0 !important;
+  }
+  .first-section .block-two .second-two-blocks .block:first-child {
+    margin-top: 0 !important;
   }
 }
 @media (max-width: 768px) {

@@ -30,6 +30,23 @@ footer form .feedback-text {
   background-color: white;
   color: #273E67;
 }
+@media (max-width: 380px) {
+  footer form .feedback-text {
+    height: 1000px;
+  }
+}
+@media (max-width: 320px) {
+  footer form .feedback-text {
+    height: 1000px;
+  }
+}
+@media (max-width: 460px) {
+  footer form .feedback-text {
+    height: 135px;
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+}
 footer form .feedback-btn {
   display: flex;
   flex-direction: column;
