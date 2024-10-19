@@ -99,6 +99,12 @@ section {
 
 // Медиа-запрос для мобильных устройств
 @media (max-width: 768px) {
+  .table{
+    display: none;
+    table{
+      display: none;
+    }
+  }
   .fourth-section {
     flex-direction: column; // Изменяем направление на колонку
 

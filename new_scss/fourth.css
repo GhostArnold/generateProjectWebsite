@@ -87,6 +87,12 @@ section .fourth-section .block-two {
 }
 
 @media (max-width: 768px) {
+  .table {
+    display: none;
+  }
+  .table table {
+    display: none;
+  }
   .fourth-section {
     flex-direction: column;
   }

@@ -1,6 +1,9 @@
 body {
   margin: 0;
 }
+body.no-scroll {
+  overflow: hidden;
+}
 
 header {
   width: 100%;
@@ -172,7 +175,4 @@ header .main-text-header .up-text-block .up-text {
 header .main-text-header .down-text-block .down-text {
   font-size: 27px;
   text-align: center;
-}
-header body.no-scroll {
-  overflow: hidden;
 }/*# sourceMappingURL=header.css.map */

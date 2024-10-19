@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./new_scss/footer.css" />
     <link rel="stylesheet" href="./new_scss/video-setcion.css" />
     <link rel="stylesheet" href="./new_scss/fourth.css" />
+    <link rel="stylesheet" href="./new_scss/mobile-table.css" />
     <link rel="stylesheet" href="./new_scss/base/normalize.css" /> 
     <title>Generate</title>
   </head>
@@ -331,7 +332,7 @@
         </div>
       </div>
       <div class="table">
-        <!-- <table>
+        <table class="desktop-table">
           <tr>
             <th></th>
             <th>Переносный источник тока<br />ПИХТА - 6 Р</th>
@@ -388,7 +389,66 @@
           </tr>
         </table>
       </div>
-    </section> -->
+      
+    
+<section>
+  <div class="slider active" id="slide1">
+    <div class="mobile-table">
+      <table>
+          <tr><th></th><th>Переносный<br>источник тока<br>ПИХТА - 6 Р</th></tr>
+          <tr><td>Вес</td><td>от 12 до 16 кг.</td></tr>
+          <tr><td>Размеры</td><td>22 * 30 * 60 см.</td></tr>
+          <tr><td>Мощность</td><td>240 втт. max</td></tr>
+          <tr><td>Напряжение<br>холостого хода</td><td>10 вольт</td></tr>
+          <tr><td>Ток короткого<br>замыкания</td><td>60 ампер</td></tr>
+          <tr><td>Емкость</td><td>240 Ач</td></tr>
+          <tr><td>Энергоемкость</td><td>3800 втч.</td></tr>
+          <tr><td>Удельная<br>энергоемкость</td><td>152 втч/кг.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="slider" id="slide2">
+    <div class="mobile-table">
+      <table>
+          <tr><th></th><th>Напольный,<br>передвижной<br>источник тока<br>ПИХТА - 22 М</th></tr>
+          <tr><td>Вес</td><td>40 кг.</td></tr>
+          <tr><td>Размеры</td><td>45 * 45 * 50 см.</td></tr>
+          <tr><td>Мощность</td><td>880 втт. max</td></tr>
+          <tr><td>Напряжение<br>холостого хода</td><td>33 вольт</td></tr>
+          <tr><td>Ток короткого<br>замыкания</td><td>60 ампер</td></tr>
+          <tr><td>Емкость</td><td>320 Ач</td></tr>
+          <tr><td>Энергоемкость</td><td>5120 втч.</td></tr>
+          <tr><td>Удельная<br>энергоемкость</td><td>113 втч/кг.</td></tr>
+      </table>
+      </div>
+  </div>
+
+  <div class="slider" id="slide3">
+    <div class="mobile-table">
+      <table>
+          <tr><th></th><th>ПИХТА - 22 М</th></tr>
+          <tr><td>Вес</td><td>70 кг.</td></tr>
+          <tr><td>Размеры</td><td>50 * 50 * 125 см.</td></tr>
+          <tr><td>Мощность</td><td>880 втт. max</td></tr>
+          <tr><td>Напряжение<br>холостого хода</td><td>33 вольт</td></tr>
+          <tr><td>Ток короткого<br>замыкания</td><td>60 ампер</td></tr>
+          <tr><td>Емкость</td><td>320 Ач</td></tr>
+          <tr><td>Энергоемкость</td><td>5120 втч.</td></tr>
+          <tr><td>Удельная<br>энергоемкость</td><td>53 втч/кг.</td></tr>
+      </table>
+      </div>
+      
+  </div>
+  <div class="navigation">
+    <button id="prev">Назад</button>
+    <button id="next">Вперед</button>
+    </div>
+  </div>
+</section>
+    </section>
+
+
 
 
     
@@ -455,5 +515,6 @@
     <script src="./assets/js/fix_header.js"></script>
     <script src="./assets/js/translate.js"></script>
     <script src="./assets/js/burger.js"></script>
+    <script src="./assets/js/slider-table.js"></script>
   </body>
 </html>

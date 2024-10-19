@@ -1,0 +1,86 @@
+section {
+  position: relative;
+  overflow: hidden;
+}
+section .slider {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.5s ease;
+  height: 300px;
+}
+section .slider.active {
+  display: block;
+  opacity: 1;
+}
+section .slider.enter {
+  opacity: 0;
+  transform: translateX(100%);
+}
+section .slider.leave {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+section .slider .mobile-table {
+  display: block;
+  padding: 30px 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+section .slider .mobile-table h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #273E67;
+}
+section .slider .mobile-table table {
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+  background-color: white;
+  border-collapse: collapse;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  table-layout: fixed;
+}
+section .slider .mobile-table table th, section .slider .mobile-table table td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+section .slider .mobile-table table th {
+  background-color: #273E67;
+  font-weight: bold;
+  color: white;
+  border: 1.5px solid white;
+  padding: 5px;
+}
+section .slider .mobile-table table th:first-child {
+  border-bottom-left-radius: 10px;
+}
+section .slider .mobile-table table th:last-child {
+  border-bottom-right-radius: 10px;
+}
+section .slider .mobile-table table td {
+  border: 1.5px solid #273E67;
+  text-align: center;
+  color: #273E67;
+}
+section .navigation {
+  margin: 20px 0;
+  text-align: center;
+  margin-top: 150px;
+}
+section .navigation button {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #273E67;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+section .navigation button:hover {
+  background-color: #1a2a4c;
+}/*# sourceMappingURL=mobile-table.css.map */

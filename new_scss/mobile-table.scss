@@ -1,0 +1,101 @@
+section {
+    position: relative; // Устанавливаем относительное позиционирование для контейнера
+    overflow: hidden; // Скрываем переполнение
+
+    .slider {
+        display: none; // Скрыть все слайды по умолчанию
+        opacity: 0; // Начальная прозрачность
+        transition: opacity 0.2s ease, transform 0.5s ease; // Плавный переход для изменения прозрачности
+        height: 300px; // Фиксированная высота для слайдов
+
+        &.active {
+            display: block; // Показать только активный слайд
+            opacity: 1; // Установить полную непрозрачность
+        }
+
+        &.enter {
+            opacity: 0; // Начальная прозрачность при входе
+            transform: translateX(100%); // Позиция справа за пределами экрана
+        }
+
+        &.leave {
+            opacity: 0; // Прозрачность при выходе
+            transform: translateX(-100%); // Позиция слева за пределами экрана
+        }
+
+        .mobile-table {
+            display: block;
+            padding: 30px 0;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+
+            h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                color: #273E67; // Цвет заголовка
+            }
+
+            table {
+                width: 80%; // Ширина таблицы
+                max-width: 600px; // Максимальная ширина таблицы
+                height: 300px; // Фиксированная высота таблицы
+                background-color: white;
+                border-collapse: collapse;
+                box-sizing: border-box;
+                text-align: center;
+                border-radius: 10px;
+                overflow: hidden; // Обрезка углов
+                table-layout: fixed; // Фиксированная компоновка таблицы
+
+                th, td {
+                    overflow: hidden; // Скрыть переполнение текста
+                    text-overflow: ellipsis; // Показать многоточие, если текст длинный
+                    white-space: nowrap; // Запретить перенос текста
+                }
+
+                th {
+                    background-color: #273E67;
+                    font-weight: bold;
+                    color: white;
+                    border: 1.5px solid white;
+                    padding: 5px;
+
+                    &:first-child {
+                        border-bottom-left-radius: 10px; // Скругление угла
+                    }
+
+                    &:last-child {
+                        border-bottom-right-radius: 10px; // Скругление угла
+                    }
+                }
+
+                td {
+                    border: 1.5px solid #273E67; // Граница для ячеек таблицы
+                    text-align: center;
+                    color: #273E67; // Цвет текста
+                }
+            }
+        }
+    }
+
+    .navigation {
+        margin: 20px 0; // Отступы сверху и снизу
+        text-align: center; // Центрирование кнопок
+        margin-top: 150px;
+
+        button {
+            padding: 10px 15px;
+            cursor: pointer;
+            background-color: #273E67; // Цвет фона кнопок
+            color: white; // Цвет текста кнопок
+            border: none; // Убираем границу
+            border-radius: 5px; // Скругление углов
+            margin: 0 5px; // Отступ между кнопками
+
+            &:hover {
+                background-color: #1a2a4c; // Цвет при наведении
+            }
+        }
+    }
+}
