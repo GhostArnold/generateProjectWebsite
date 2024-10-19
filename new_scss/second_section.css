@@ -1,87 +1,97 @@
-.second-section {
-  font-family: "Roboto", sans-serif;
-  color: #273E67;
+@charset "UTF-8";
+.second-section .appeal {
+  margin: 0 auto;
+  width: 80%;
 }
-.second-section .block-one {
-  padding-left: 120px;
-  padding-right: 120px;
+.second-section .appeal .block-one .article-appeal {
+  color: #273e67;
+  font-size: 20px;
 }
-.second-section .block-one .block-one-text .from-developers {
+.second-section .appeal .block-one .article-appeal h1 {
+  width: 70%;
+  text-align: end;
+}
+.second-section .appeal .block-one .article-appeal .underline {
+  position: relative;
+}
+.second-section .appeal .block-one .article-appeal .underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -10px; /* Отступ 10px внизу */
+  height: 2px; /* Толщина линии */
+  background-color: #273e67; /* Синий цвет подчеркивания */
+}
+.second-section .appeal .block-one .text-appeal {
+  padding: 25px 0px;
+  background-color: #273e67;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  line-height: 25px;
+}
+.second-section .appeal .block-one .text-appeal span {
+  font-weight: 900;
+  font-size: 22px;
+}
+.second-section .appeal .block-one .text-appeal p {
+  width: 80%;
+}
+.second-section .appeal .block-two {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  font-size: 27px;
-}
-.second-section .block-one .block-one-text .from-developers hr {
-  width: 720px;
-  background-color: #273E67;
-  height: 3px !important;
-  border-style: none;
-  margin-left: 0;
-  display: flex;
-}
-.second-section .block-one .block-one-text .from-developers h2 {
-  margin: 0;
-}
-.second-section .block-one .block-one-text .from-developers span {
-  margin-left: 176px;
-}
-.second-section .block-one .block-one-text .appear-text-first {
-  background-color: #273E67;
-  border-radius: 20px;
-  color: white;
-  padding: 58px 50px;
-  width: calc(100% - 120px);
-  font-size: 27px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Roboto", sans-serif;
-}
-.second-section .advantages {
-  align-items: center;
   justify-content: center;
-  margin: 0 120px;
 }
-.second-section .advantages h3 {
-  text-align: center !important;
-  font-size: 27px;
-  font-style: bold;
+.second-section .appeal .block-two .article-appeal {
+  text-align: center;
+  color: #273e67;
+  font-size: 20px;
 }
-.second-section .advantages p {
-  text-align: center !important;
-  font-size: 27px;
+.second-section .appeal .block-two .article-appeal .underline {
+  position: relative;
 }
-.second-section .advantages hr {
-  margin-top: 20px;
-  width: 698px;
-  background-color: #273E67;
-  height: 3px !important;
-  border-style: none;
+.second-section .appeal .block-two .article-appeal .underline::after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: -10px; /* Отступ 10px внизу */
+  height: 2px; /* Толщина линии */
+  background-color: #273e67; /* Синий цвет подчеркивания */
 }
-.second-section .advantages .blocks {
+.second-section .appeal .block-two .two-blocks {
   display: flex;
-  margin-top: 50px;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 20px;
 }
-.second-section .advantages .blocks .first-block {
-  width: 100%;
-  background-color: #273E67;
+.second-section .appeal .block-two .two-blocks .block {
+  display: flex;
+  justify-content: center;
+  padding: 25px 15px;
+  background-color: #273e67;
   border-radius: 20px;
-  color: white;
-  padding: 25px 47px;
-  font-size: 27px;
-  font-style: bold;
-  text-align: center;
+  color: #fff;
+  font-size: 19px;
+  line-height: 25px;
 }
-.second-section .advantages .blocks .second-block {
-  width: 100%;
-  margin-left: 44px;
-  background-color: #273E67;
-  border-radius: 20px;
-  color: white;
-  padding: 25px 47px;
-  font-size: 27px;
-  font-style: bold;
-  text-align: center;
+.second-section .appeal .block-two .two-blocks .block p {
+  width: 85%;
+}
+@media (max-width: 600px) {
+  .second-section .appeal .block-two .two-blocks {
+    flex-wrap: wrap;
+  }
+}
+.second-section .appeal .block-two .ready-text {
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+}
+.second-section .appeal .block-two .ready-text p {
+  width: 90%;
 }/*# sourceMappingURL=second_section.css.map */
