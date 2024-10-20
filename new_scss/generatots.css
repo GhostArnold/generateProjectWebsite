@@ -133,4 +133,29 @@
   font-weight: bold;
   color: #273E67;
   font-size: 50px;
+}
+
+.two-generators {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  flex-direction: row;
+  font-size: 30px;
+  font-weight: bold;
+  color: #273E67;
+}
+.two-generators .generator1 {
+  width: 50%;
+  height: 100%;
+  border: 3px solid #273E67;
+  margin: 0 15px auto;
+  border-radius: 20px;
+}
+.two-generators .generator2 {
+  margin: 0 15px auto;
+  width: 50%;
+  height: 250px;
+  border: 3px solid #273E67;
+  border-radius: 20px;
 }/*# sourceMappingURL=generatots.css.map */
