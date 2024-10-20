@@ -1,0 +1,136 @@
+.main-gen {
+  margin: auto auto;
+  height: auto;
+  width: calc(100% - 240px);
+  border: 3px solid #273E67;
+  border-radius: 20px;
+  background-size: cover;
+  display: flex;
+  margin-top: 250px;
+  position: relative;
+}
+.main-gen .main-panel {
+  font-size: 27px;
+  font-weight: bold;
+  padding: 5px 120px;
+  background-color: #273E67;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  color: white;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+.main-gen img {
+  height: 837px;
+  width: 360px;
+  margin: 124px 0 0 0;
+}
+.main-gen .left-side {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-left: 25px;
+}
+.main-gen .left-side .left-bocks {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid #273E67;
+  border-radius: 20px;
+  margin-top: 140px !important;
+  margin-left: auto !important;
+  padding: 0 5px 0 5px;
+  font-weight: 100;
+  font-size: 15px;
+}
+.main-gen .left-side .left-bocks .block-text {
+  margin: auto 0;
+  font-size: 27px;
+}
+.main-gen .left-side .left-bocks:nth-child(1) {
+  margin-left: 55px !important;
+  margin-top: 110px;
+}
+.main-gen .left-side .left-bocks:nth-child(2) {
+  margin-top: 10px !important;
+  margin-left: 150px;
+}
+.main-gen .left-side .left-bocks:nth-child(3) {
+  margin-top: 4px !important;
+  margin-left: 150px;
+}
+.main-gen .left-side .left-bocks:nth-child(4) {
+  margin-top: 7px !important;
+  margin-left: 158px;
+}
+.main-gen .left-side .left-bocks:nth-child(5) {
+  margin-top: 4px !important;
+  margin-left: 150px;
+}
+.main-gen .left-side .left-bocks:nth-child(6) {
+  margin-top: 10px !important;
+  margin-left: 150px;
+}
+.main-gen .left-side .left-bocks:nth-child(7) {
+  margin-top: 4px !important;
+  margin-left: 150px;
+}
+.main-gen .left-side .left-bocks:nth-child(8) {
+  margin-top: 150px !important;
+  margin-left: 150px;
+}
+.main-gen .left-side .left-bocks .advantages {
+  margin-left: 5px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #273E67;
+  font-size: 50px;
+}
+.main-gen .right-side {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+.main-gen .right-side .right-bocks {
+  display: flex;
+  flex-direction: row;
+  border: 3px solid #273E67;
+  border-radius: 20px;
+  margin-top: 127px;
+  margin-left: 10px;
+  padding: 0 5px 0 5px;
+  font-weight: 100;
+  font-size: 15px;
+  margin-right: 15px;
+}
+.main-gen .right-side .right-bocks .block-text {
+  margin: auto 0;
+  font-size: 27px;
+}
+.main-gen .right-side .right-bocks:nth-child(1) {
+  margin-left: -5px;
+  margin-top: 135px;
+}
+.main-gen .right-side .right-bocks:nth-child(2) {
+  margin-left: -3px;
+  margin-top: 125px;
+}
+.main-gen .right-side .right-bocks:nth-child(3) {
+  margin-left: -3px;
+  margin-top: 145px;
+}
+.main-gen .right-side .right-bocks:nth-child(4) {
+  margin-left: -3px;
+  margin-top: 260px;
+  width: 180px;
+}
+.main-gen .right-side .right-bocks .advantages {
+  margin-left: 5px;
+  margin-right: 20px;
+  font-weight: bold;
+  color: #273E67;
+  font-size: 50px;
+}/*# sourceMappingURL=generatots.css.map */
