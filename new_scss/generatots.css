@@ -7,286 +7,239 @@
   background-size: cover;
   display: flex;
   margin-top: 30px;
-  position: relative;
-}
-@media (max-width: 1200px) {
-  .main-gen {
-    display: none;
-  }
-}
-.main-gen .main-panel {
-  font-size: 27px;
-  font-weight: bold;
-  padding: 5px 120px;
-  background-color: #273E67;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  color: white;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-}
-.main-gen img {
-  max-height: 100%;
-  max-width: 100%;
-  margin: 124px 0 0 0;
-}
-.main-gen .left-side {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  margin-left: 25px;
-}
-.main-gen .left-side .left-bocks {
-  display: flex;
-  flex-direction: row;
-  border: 3px solid #273E67;
-  border-radius: 20px;
-  margin-top: 140px !important;
-  margin-left: auto !important;
-  padding: 0 5px 0 5px;
-  font-weight: 400;
-  font-size: 15px;
-}
-.main-gen .left-side .left-bocks .block-text {
-  margin: auto 0;
-  font-size: 20px;
-}
-.main-gen .left-side .left-bocks:nth-child(1) {
-  margin-left: 55px !important;
-  margin-top: 150px !important;
-}
-.main-gen .left-side .left-bocks:nth-child(2) {
-  margin-top: 10px !important;
-  margin-left: 150px;
-}
-.main-gen .left-side .left-bocks:nth-child(3) {
-  margin-top: 4px !important;
-  margin-left: 150px;
-}
-.main-gen .left-side .left-bocks:nth-child(4) {
-  margin-top: 12px !important;
-  margin-left: 158px;
-}
-.main-gen .left-side .left-bocks:nth-child(5) {
-  margin-top: 4px !important;
-  margin-left: 150px;
-}
-.main-gen .left-side .left-bocks:nth-child(6) {
-  margin-top: 10px !important;
-  margin-left: 150px;
-}
-.main-gen .left-side .left-bocks:nth-child(7) {
-  margin-top: 4px !important;
-  margin-left: 150px;
-}
-.main-gen .left-side .left-bocks:nth-child(8) {
-  margin-top: 150px !important;
-  margin-left: 150px;
-}
-.main-gen .left-side .left-bocks .advantages {
-  margin-left: 5px;
-  margin-right: 20px;
-  font-weight: bold;
-  color: #273E67;
-  font-size: 50px;
-}
-.main-gen .right-side {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-}
-.main-gen .right-side .right-bocks {
-  display: flex;
-  flex-direction: row;
-  border: 3px solid #273E67;
-  border-radius: 20px;
-  margin-top: 127px;
-  margin-left: 10px;
-  padding: 0 5px 0 5px;
-  font-weight: 400;
-  font-size: 15px;
-  margin-right: 15px;
-}
-.main-gen .right-side .right-bocks .block-text {
-  margin: auto 0;
-  font-size: 27px;
-}
-.main-gen .right-side .right-bocks:nth-child(1) {
-  margin-left: -5px;
-  margin-top: 135px;
-}
-.main-gen .right-side .right-bocks:nth-child(2) {
-  margin-left: -3px;
-  margin-top: 125px;
-}
-.main-gen .right-side .right-bocks:nth-child(3) {
-  margin-left: -3px;
-  margin-top: 145px;
-}
-.main-gen .right-side .right-bocks:nth-child(4) {
-  margin-left: -3px;
-  margin-top: 260px;
-  width: 180px;
-}
-.main-gen .right-side .right-bocks .advantages {
-  margin-left: 5px;
-  margin-right: 20px;
-  font-weight: bold;
-  color: #273E67;
-  font-size: 50px;
-}
+  position: relative; }
+  @media (max-width: 1200px) {
+    .main-gen {
+      display: none; } }
+  .main-gen .main-panel {
+    font-size: 27px;
+    font-weight: bold;
+    padding: 5px 120px;
+    background-color: #273E67;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; }
+  .main-gen img {
+    max-height: 100%;
+    max-width: 100%;
+    margin: 124px 0 0 0; }
+  .main-gen .left-side {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: 25px; }
+    .main-gen .left-side .left-bocks {
+      display: flex;
+      flex-direction: row;
+      border: 3px solid #273E67;
+      border-radius: 20px;
+      margin-top: 140px !important;
+      margin-left: auto !important;
+      padding: 0 5px 0 5px;
+      font-weight: 400;
+      font-size: 15px; }
+      .main-gen .left-side .left-bocks .block-text {
+        margin: auto 0;
+        font-size: 20px; }
+      .main-gen .left-side .left-bocks:nth-child(1) {
+        margin-left: 55px !important;
+        margin-top: 150px !important; }
+      .main-gen .left-side .left-bocks:nth-child(2) {
+        margin-top: 10px !important;
+        margin-left: 150px; }
+      .main-gen .left-side .left-bocks:nth-child(3) {
+        margin-top: 4px !important;
+        margin-left: 150px; }
+      .main-gen .left-side .left-bocks:nth-child(4) {
+        margin-top: 12px !important;
+        margin-left: 158px; }
+      .main-gen .left-side .left-bocks:nth-child(5) {
+        margin-top: 4px !important;
+        margin-left: 150px; }
+      .main-gen .left-side .left-bocks:nth-child(6) {
+        margin-top: 10px !important;
+        margin-left: 150px; }
+      .main-gen .left-side .left-bocks:nth-child(7) {
+        margin-top: 4px !important;
+        margin-left: 150px; }
+      .main-gen .left-side .left-bocks:nth-child(8) {
+        margin-top: 150px !important;
+        margin-left: 150px; }
+      .main-gen .left-side .left-bocks .advantages {
+        margin-left: 5px;
+        margin-right: 20px;
+        font-weight: bold;
+        color: #273E67;
+        font-size: 50px; }
+  .main-gen .right-side {
+    display: flex;
+    flex-direction: column;
+    margin: 0; }
+    .main-gen .right-side .right-bocks {
+      display: flex;
+      flex-direction: row;
+      border: 3px solid #273E67;
+      border-radius: 20px;
+      margin-top: 127px;
+      margin-left: 10px;
+      padding: 0 5px 0 5px;
+      font-weight: 400;
+      font-size: 15px;
+      margin-right: 15px; }
+      .main-gen .right-side .right-bocks .block-text {
+        margin: auto 0;
+        font-size: 27px; }
+      .main-gen .right-side .right-bocks:nth-child(1) {
+        margin-left: -5px;
+        margin-top: 135px; }
+      .main-gen .right-side .right-bocks:nth-child(2) {
+        margin-left: -3px;
+        margin-top: 125px; }
+      .main-gen .right-side .right-bocks:nth-child(3) {
+        margin-left: -3px;
+        margin-top: 145px; }
+      .main-gen .right-side .right-bocks:nth-child(4) {
+        margin-left: -3px;
+        margin-top: 260px;
+        width: 180px; }
+      .main-gen .right-side .right-bocks .advantages {
+        margin-left: 5px;
+        margin-right: 20px;
+        font-weight: bold;
+        color: #273E67;
+        font-size: 50px; }
 
 .generators {
   display: flex;
-  flex-direction: column;
-}
-.generators .two-generators {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  margin-bottom: 50px;
-  flex-direction: row;
-  font-size: 30px;
-  font-weight: bold;
-  color: #273E67;
-}
-@media (max-width: 1200px) {
+  flex-direction: column; }
   .generators .two-generators {
-    display: none;
-  }
-}
-.generators .two-generators .generator1 {
-  width: 50%;
-  height: 100%;
-  border: 3px solid #273E67;
-  margin: 0 15px auto;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-}
-.generators .two-generators .generator1 .generator1-block {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.generators .two-generators .generator1 .generator1-block img {
-  right: 0;
-  float: right;
-  margin-left: 230px;
-}
-.generators .two-generators .generator1 .generator1-block .block {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  border: 3px solid #273E67;
-  border-radius: 20px;
-  height: auto;
-  max-height: 350px;
-  max-width: 200px;
-  padding: 10px;
-  margin-left: 80px;
-  z-index: 1;
-  margin-top: 0;
-}
-.generators .two-generators .generator1 .generator1-block .block .advantages {
-  margin-left: 5px;
-  margin-right: 20px;
-  font-weight: bold;
-  color: #273E67;
-  font-size: 50px;
-}
-.generators .two-generators .generator1 .generator1-block .block .block-text {
-  font-size: 27px;
-  color: black;
-}
-.generators .two-generators .generator1 .second-block {
-  display: flex;
-  flex-direction: column;
-  border: 3px solid #273E67;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  max-width: 250px;
-  margin-left: 150px;
-  padding: 5px;
-}
-.generators .two-generators .generator1 .second-block .advantages {
-  font-size: 50px;
-}
-.generators .two-generators .generator1 .second-block .block-text {
-  color: black;
-}
-.generators .two-generators .generator2 {
-  margin: 0 15px auto;
-  width: 50%;
-  height: auto;
-  border: 3px solid #273E67;
-  border-radius: 20px;
-}
-.generators .two-generators .generator2 img {
-  height: auto;
-  width: 500px;
-  margin-top: -90px;
-  margin-left: 45px;
-  z-index: 999999;
-}
-.generators .two-generators .generator2 .first-two-generator2-bloks {
-  display: flex;
-  flex-direction: row;
-}
-.generators .two-generators .generator2 .first-two-generator2-bloks .block {
-  margin-left: 25px;
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  border: 3px solid #273E67;
-  border-radius: 20px;
-  margin-right: 10px;
-  padding: 10px;
-  max-width: 300px;
-  height: 100%;
-  overflow-y: auto;
-  font-size: 20px;
-  color: #273E67;
-}
-.generators .two-generators .generator2 .first-two-generator2-bloks .block .advantages {
-  font-size: 50px;
-}
-.generators .two-generators .generator2 .first-two-generator2-bloks .block .block-text {
-  color: black;
-  font-size: 27px;
-}
-.generators .two-generators .generator2 .second-two-generator2-bloks {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  font-size: 20px;
-  color: #273E67;
-  margin-left: 10px;
-}
-.generators .two-generators .generator2 .second-two-generator2-bloks .block {
-  margin-top: -125px;
-  margin-bottom: 130px;
-  width: 250px;
-  max-height: 150px !important;
-  margin-left: 265px;
-  display: flex;
-  flex-direction: row;
-  border: 3px solid #273E67;
-  border-radius: 20px;
-}
-.generators .two-generators .generator2 .second-two-generator2-bloks .block .advantages {
-  font-size: 50px;
-  margin-right: 10px;
-}
-.generators .two-generators .generator2 .second-two-generator2-bloks .block .block-text {
-  color: black;
-  font-size: 27px;
-}
-.generators .two-generators .generator2 .second-two-generator2-bloks .block:last-child {
-  margin-bottom: 27px !important;
-}/*# sourceMappingURL=generatots.css.map */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    flex-direction: row;
+    font-size: 30px;
+    font-weight: bold;
+    color: #273E67; }
+    @media (max-width: 1200px) {
+      .generators .two-generators {
+        display: none; } }
+    .generators .two-generators .generator1 {
+      width: 50%;
+      height: 100%;
+      border: 3px solid #273E67;
+      margin: 0 15px auto;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column; }
+      .generators .two-generators .generator1 .generator1-block {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .generators .two-generators .generator1 .generator1-block img {
+          right: 0;
+          float: right;
+          margin-left: 230px; }
+        .generators .two-generators .generator1 .generator1-block .block {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          border: 3px solid #273E67;
+          border-radius: 20px;
+          height: auto;
+          max-height: 350px;
+          max-width: 200px;
+          padding: 10px;
+          margin-left: 80px;
+          z-index: 1;
+          margin-top: 0; }
+          .generators .two-generators .generator1 .generator1-block .block .advantages {
+            margin-left: 5px;
+            margin-right: 20px;
+            font-weight: bold;
+            color: #273E67;
+            font-size: 50px; }
+          .generators .two-generators .generator1 .generator1-block .block .block-text {
+            font-size: 27px;
+            color: black; }
+      .generators .two-generators .generator1 .second-block {
+        display: flex;
+        flex-direction: column;
+        border: 3px solid #273E67;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        max-width: 250px;
+        margin-left: 150px;
+        padding: 5px; }
+        .generators .two-generators .generator1 .second-block .advantages {
+          font-size: 50px; }
+        .generators .two-generators .generator1 .second-block .block-text {
+          color: black; }
+    .generators .two-generators .generator2 {
+      margin: 0 15px auto;
+      width: 50%;
+      height: auto;
+      border: 3px solid #273E67;
+      border-radius: 20px; }
+      .generators .two-generators .generator2 img {
+        height: auto;
+        width: 500px;
+        margin-top: -90px;
+        margin-left: 45px;
+        z-index: 999999; }
+      .generators .two-generators .generator2 .first-two-generator2-bloks {
+        display: flex;
+        flex-direction: row; }
+        .generators .two-generators .generator2 .first-two-generator2-bloks .block {
+          margin-left: 25px;
+          margin-top: 50px;
+          display: flex;
+          flex-direction: column;
+          border: 3px solid #273E67;
+          border-radius: 20px;
+          margin-right: 10px;
+          padding: 10px;
+          max-width: 300px;
+          height: 100%;
+          overflow-y: auto;
+          font-size: 20px;
+          color: #273E67; }
+          .generators .two-generators .generator2 .first-two-generator2-bloks .block .advantages {
+            font-size: 50px; }
+          .generators .two-generators .generator2 .first-two-generator2-bloks .block .block-text {
+            color: black;
+            font-size: 27px; }
+      .generators .two-generators .generator2 .second-two-generator2-bloks {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        font-size: 20px;
+        color: #273E67;
+        margin-left: 10px; }
+        .generators .two-generators .generator2 .second-two-generator2-bloks .block {
+          margin-top: -125px;
+          margin-bottom: 130px;
+          width: 250px;
+          max-height: 150px !important;
+          margin-left: 265px;
+          display: flex;
+          flex-direction: row;
+          border: 3px solid #273E67;
+          border-radius: 20px; }
+          .generators .two-generators .generator2 .second-two-generator2-bloks .block .advantages {
+            font-size: 50px;
+            margin-right: 10px; }
+          .generators .two-generators .generator2 .second-two-generator2-bloks .block .block-text {
+            color: black;
+            font-size: 27px; }
+          .generators .two-generators .generator2 .second-two-generator2-bloks .block:last-child {
+            margin-bottom: 27px !important; }
+
+/*# sourceMappingURL=generatots.css.map */

@@ -1,97 +1,94 @@
 @charset "UTF-8";
 .second-section .appeal {
   margin: 0 auto;
-  width: 80%;
-}
-.second-section .appeal .block-one .article-appeal {
-  color: #273e67;
-  font-size: 20px;
-}
-.second-section .appeal .block-one .article-appeal h1 {
-  width: 70%;
-  text-align: end;
-}
-.second-section .appeal .block-one .article-appeal .underline {
-  position: relative;
-}
-.second-section .appeal .block-one .article-appeal .underline::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -10px; /* Отступ 10px внизу */
-  height: 2px; /* Толщина линии */
-  background-color: #273e67; /* Синий цвет подчеркивания */
-}
-.second-section .appeal .block-one .text-appeal {
-  padding: 25px 0px;
-  background-color: #273e67;
-  border-radius: 20px;
-  color: #fff;
-  font-size: 19px;
-  display: flex;
-  justify-content: center;
-  line-height: 25px;
-}
-.second-section .appeal .block-one .text-appeal span {
-  font-weight: 900;
-  font-size: 22px;
-}
-.second-section .appeal .block-one .text-appeal p {
-  width: 80%;
-}
-.second-section .appeal .block-two {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.second-section .appeal .block-two .article-appeal {
-  text-align: center;
-  color: #273e67;
-  font-size: 20px;
-}
-.second-section .appeal .block-two .article-appeal .underline {
-  position: relative;
-}
-.second-section .appeal .block-two .article-appeal .underline::after {
-  content: "";
-  position: absolute;
-  width: 75%;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  bottom: -10px; /* Отступ 10px внизу */
-  height: 2px; /* Толщина линии */
-  background-color: #273e67; /* Синий цвет подчеркивания */
-}
-.second-section .appeal .block-two .two-blocks {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-}
-.second-section .appeal .block-two .two-blocks .block {
-  display: flex;
-  justify-content: center;
-  padding: 25px 15px;
-  background-color: #273e67;
-  border-radius: 20px;
-  color: #fff;
-  font-size: 19px;
-  line-height: 25px;
-}
-.second-section .appeal .block-two .two-blocks .block p {
-  width: 85%;
-}
-@media (max-width: 600px) {
-  .second-section .appeal .block-two .two-blocks {
-    flex-wrap: wrap;
-  }
-}
-.second-section .appeal .block-two .ready-text {
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-}
-.second-section .appeal .block-two .ready-text p {
-  width: 90%;
-}/*# sourceMappingURL=second_section.css.map */
+  width: 80%; }
+  .second-section .appeal .block-one .article-appeal {
+    color: #273e67;
+    font-size: 20px; }
+    .second-section .appeal .block-one .article-appeal h1 {
+      width: 70%;
+      text-align: end; }
+    .second-section .appeal .block-one .article-appeal .underline {
+      position: relative; }
+      .second-section .appeal .block-one .article-appeal .underline::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        /* Отступ 10px внизу */
+        height: 2px;
+        /* Толщина линии */
+        background-color: #273e67;
+        /* Синий цвет подчеркивания */ }
+    @media (max-width: 670px) {
+      .second-section .appeal .block-one .article-appeal {
+        display: flex;
+        justify-content: center; }
+        .second-section .appeal .block-one .article-appeal h1 {
+          text-align: center;
+          font-size: 30px;
+          width: 100%; } }
+  .second-section .appeal .block-one .text-appeal {
+    padding: 25px 0px;
+    background-color: #273e67;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 19px;
+    display: flex;
+    justify-content: center;
+    line-height: 25px; }
+    .second-section .appeal .block-one .text-appeal span {
+      font-weight: 900;
+      font-size: 22px; }
+    .second-section .appeal .block-one .text-appeal p {
+      width: 80%; }
+  .second-section .appeal .block-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .second-section .appeal .block-two .article-appeal {
+      text-align: center;
+      color: #273e67;
+      font-size: 20px; }
+      .second-section .appeal .block-two .article-appeal .underline {
+        position: relative; }
+        .second-section .appeal .block-two .article-appeal .underline::after {
+          content: '';
+          position: absolute;
+          width: 75%;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          bottom: -10px;
+          /* Отступ 10px внизу */
+          height: 2px;
+          /* Толщина линии */
+          background-color: #273e67;
+          /* Синий цвет подчеркивания */ }
+    .second-section .appeal .block-two .two-blocks {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px; }
+      .second-section .appeal .block-two .two-blocks .block {
+        display: flex;
+        justify-content: center;
+        padding: 25px 15px;
+        background-color: #273e67;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 19px;
+        line-height: 25px; }
+        .second-section .appeal .block-two .two-blocks .block p {
+          width: 85%; }
+      @media (max-width: 600px) {
+        .second-section .appeal .block-two .two-blocks {
+          flex-wrap: wrap; } }
+    .second-section .appeal .block-two .ready-text {
+      font-size: 18px;
+      display: flex;
+      justify-content: center; }
+      .second-section .appeal .block-two .ready-text p {
+        width: 90%; }
+
+/*# sourceMappingURL=second_section.css.map */

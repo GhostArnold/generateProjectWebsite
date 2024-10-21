@@ -1,112 +1,121 @@
 .second-section {
-    .appeal {
-      margin: 0 auto;
-      width: 80%;
-  
-      .block-one {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
-  
-        .article-appeal {
-          color: #273e67;
-          font-size: 20px;
-          h1 {
-            width: 70%;
-            text-align: end;
-          }
-          .underline {
-            position: relative;
-            &::after {
-              content: '';
-              position: absolute;
-              left: 0;
-              right: 0;
-              bottom: -10px; /* Отступ 10px внизу */
-              height: 2px; /* Толщина линии */
-              background-color: #273e67; /* Синий цвет подчеркивания */
-            }
+  .appeal {
+    margin: 0 auto;
+    width: 80%;
+
+    .block-one {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+
+      .article-appeal {
+        color: #273e67;
+        font-size: 20px;
+        h1 {
+          width: 70%;
+          text-align: end;
+        }
+        .underline {
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -10px; /* Отступ 10px внизу */
+            height: 2px; /* Толщина линии */
+            background-color: #273e67; /* Синий цвет подчеркивания */
           }
         }
-  
-        .text-appeal {
-          padding: 25px 0px;
+        @media (max-width: 670px) {
+          display: flex;
+          justify-content: center;
+          h1 {
+            text-align: center;
+            font-size: 30px;
+            width: 100%;
+          }
+        }
+      }
+
+      .text-appeal {
+        padding: 25px 0px;
+        background-color: #273e67;
+        border-radius: 20px;
+        color: #fff;
+        font-size: 19px;
+        display: flex;
+        justify-content: center;
+        line-height: 25px;
+
+        span {
+          font-weight: 900;
+          font-size: 22px;
+        }
+
+        p {
+          width: 80%;
+        }
+      }
+    }
+
+    .block-two {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .article-appeal {
+        text-align: center;
+        color: #273e67;
+        font-size: 20px;
+
+        .underline {
+          position: relative;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 75%;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            bottom: -10px; /* Отступ 10px внизу */
+            height: 2px; /* Толщина линии */
+            background-color: #273e67; /* Синий цвет подчеркивания */
+          }
+        }
+      }
+
+      .two-blocks {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        // flex-wrap: wrap;
+        .block {
+          display: flex;
+          justify-content: center;
+          padding: 25px 15px;
           background-color: #273e67;
           border-radius: 20px;
           color: #fff;
           font-size: 19px;
-          display: flex;
-          justify-content: center;
           line-height: 25px;
-  
-          span {
-            font-weight: 900;
-            font-size: 22px;
-          }
-  
           p {
-            width: 80%;
+            width: 85%;
           }
+        }
+        @media (max-width: 600px) {
+          flex-wrap: wrap;
         }
       }
-  
-      .block-two {
+
+      .ready-text {
+        font-size: 18px;
         display: flex;
-        flex-direction: column;
         justify-content: center;
-  
-        .article-appeal {
-          text-align: center;
-          color: #273e67;
-          font-size: 20px;
-  
-          .underline {
-            position: relative;
-            &::after {
-              content: '';
-              position: absolute;
-              width: 75%;
-              margin: 0 auto;
-              left: 0;
-              right: 0;
-              bottom: -10px; /* Отступ 10px внизу */
-              height: 2px; /* Толщина линии */
-              background-color: #273e67; /* Синий цвет подчеркивания */
-            }
-          }
-        }
-  
-        .two-blocks {
-          display: flex;
-          justify-content: space-around;
-          gap: 20px;
-          // flex-wrap: wrap;
-          .block {
-            display: flex;
-            justify-content: center;
-            padding: 25px 15px;
-            background-color: #273e67;
-            border-radius: 20px;
-            color: #fff;
-            font-size: 19px;
-            line-height: 25px;
-            p {
-              width: 85%;
-            }
-          }
-          @media (max-width: 600px) {
-            flex-wrap: wrap;
-          }
-        }
-  
-        .ready-text {
-          font-size: 18px;
-          display: flex;
-          justify-content: center;
-          p {
-            width: 90%;
-          }
+        p {
+          width: 90%;
         }
       }
     }
   }
+}

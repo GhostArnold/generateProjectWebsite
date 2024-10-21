@@ -751,11 +751,11 @@ footer {
 .table {
   display: block;
   padding: 30px 0;
-  background-color: #f4f4f4; }
+  background-color: #273E67; }
   .table table {
     width: 100%;
     /* make the table full-width */
-    background-color: #fff;
+    background-color: #273E67;
     border-collapse: collapse;
     box-sizing: border-box; }
     @media (max-width: 400px) {
@@ -792,7 +792,7 @@ footer {
         font-weight: bold;
         color: #333; } }
   .table th, .table td {
-    border: 1.5px solid black;
+    border: 1.5px solid #273E67;
     /* добавить границу для ячеек таблицы */
     text-align: center; }
   @media (max-width: 800px) {
@@ -805,7 +805,7 @@ footer {
 .fourth-section {
   display: flex;
   flex-wrap: wrap;
-  background-color: #f4f4f4;
+  background-color: white;
   padding: 40px 0; }
   .fourth-section .block-one {
     flex: 1.4;
