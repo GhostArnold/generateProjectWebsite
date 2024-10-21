@@ -74,7 +74,7 @@
           justify-content: space-around;
           align-items: center;
           border-radius: 20px;
-          width: calc(65% - 40px); // Учитываем отступы
+          width: calc(65% - 290px); // Учитываем отступы
           margin: 20px;
           padding: 10px;
           .block-article {
@@ -105,7 +105,7 @@
         justify-content: space-around;
         align-items: center;
         border-radius: 20px;
-        width: calc(65% - 40px); // Учитываем отступы
+        width: calc(65% - 290px); // Учитываем отступы
         margin: 20px;
         padding: 10px;
 
@@ -188,6 +188,13 @@
     .block-two {
       flex-direction: column; // Устанавливаем вертикальное направление для блоков
 
+      .img2 {
+        display: block; // Показываем img2 на мобильных устройствах
+        max-width: 280px; // img2 занимает всю ширину
+        max-height: 455px; // Поддержка пропорций изображения
+        margin: 0 auto;
+      }
+
       .first-two-blocks {
         flex-direction: column; // Блоки располагаются друг под другом
         .block{
@@ -225,8 +232,8 @@
 
       .img2 {
         display: block; // Показываем img2 на мобильных устройствах
-        width: 280px; // img2 занимает всю ширину
-        height: 455px; // Поддержка пропорций изображения
+        max-width: 280px; // img2 занимает всю ширину
+        max-height: 455px; // Поддержка пропорций изображения
         margin: 0 auto;
       }
     }

@@ -14,11 +14,11 @@ header {
     background-image: url(../loon-image-original\ 1.png);
 
     @media (max-width: 768px) {
-        height: 500px;
+        height: 600px;
     }
 
     @media (max-width: 480px) {
-        height: 400px; // Изменение высоты для мобильных
+        height: 500px; // Изменение высоты для мобильных
         background-size: cover; // Подгонка изображения
     }
     @media (max-width: 320px) {
@@ -220,9 +220,7 @@ header {
 
         .down-text-block {
             .down-text {
-                .up-text {
-                    font-size: 40px;
-                }
+                font-size: 30px;
             }
         }
     }

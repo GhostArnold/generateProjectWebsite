@@ -64,7 +64,7 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 20px;
-  width: calc(65% - 40px);
+  width: calc(65% - 290px);
   margin: 20px;
   padding: 10px;
 }
@@ -91,7 +91,7 @@
   justify-content: space-around;
   align-items: center;
   border-radius: 20px;
-  width: calc(65% - 40px);
+  width: calc(65% - 290px);
   margin: 20px;
   padding: 10px;
 }
@@ -154,6 +154,12 @@
   .first-section .block-two {
     flex-direction: column;
   }
+  .first-section .block-two .img2 {
+    display: block;
+    max-width: 280px;
+    max-height: 455px;
+    margin: 0 auto;
+  }
   .first-section .block-two .first-two-blocks {
     flex-direction: column;
   }
@@ -182,8 +188,8 @@
   }
   .first-section .image2 .img2 {
     display: block;
-    width: 280px;
-    height: 455px;
+    max-width: 280px;
+    max-height: 455px;
     margin: 0 auto;
   }
   .first-section .block-one .block {

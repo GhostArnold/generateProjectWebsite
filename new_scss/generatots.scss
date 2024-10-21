@@ -6,8 +6,12 @@
     border-radius: 20px;
     background-size: cover;
     display: flex; // основной контейнер
-    margin-top: 250px;
+    margin-top: 30px;
     position: relative;
+    @media(max-width: 1200px ) {
+        display: none;
+        
+    }
 
     .main-panel{
         font-size: 27px;
@@ -26,8 +30,8 @@
     }
 
     img{
-        height: 837px;
-        width: 360px;
+        max-height: 100%;
+        max-width: 100%;
         margin: 124px 0 0 0;
     }
     .left-side {
@@ -44,18 +48,18 @@
             margin-top: 140px !important;
             margin-left: auto !important;
             padding: 0 5px 0 5px;
-            font-weight: 100;
+            font-weight: 400;
             font-size: 15px;
 
             .block-text{
                 margin: auto 0;
-                font-size: 27px;
+                font-size: 20px;
             }
 
 
             &:nth-child(1){
                 margin-left: 55px !important;
-                margin-top: 110px;
+                margin-top: 150px !important;
 
             }
             &:nth-child(2){
@@ -67,7 +71,7 @@
                 margin-left: 150px;
             }
             &:nth-child(4){
-                margin-top: 7px !important;
+                margin-top: 12px !important;
                 margin-left: 158px;
             }
             &:nth-child(5){
@@ -109,7 +113,7 @@
             margin-top: 127px;
             margin-left: 10px;
             padding: 0 5px 0 5px;
-            font-weight: 100;
+            font-weight: 400;
             font-size: 15px;
             margin-right: 15px;
             .block-text{
@@ -149,11 +153,18 @@
     }
 }
 
+.generators{
+    display: flex;
+    flex-direction: column;
 
 .two-generators{
+    @media(max-width: 1200px ) {
+        display: none;
+        
+    }
     display: flex;
     justify-content: center;
-    margin-top: 150px;
+    margin-top: 20px;
     margin-bottom: 50px;
     flex-direction: row;
     font-size: 30px;
@@ -164,15 +175,138 @@
         height: 100%;
         border: 3px solid #273E67;
         margin: 0 15px auto;
-    border-radius: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        .generator1-block{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; // Распределяем пространство между элементами
+            align-items: center; // Центрируем элементы по вертикали
+
+            img{
+                right: 0;
+                float: right;
+                margin-left: 230px;
+
+            }
+            .block{
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                border: 3px solid #273E67;
+                border-radius: 20px;
+                height: auto;
+                max-height: 350px;
+                max-width: 200px;
+                padding: 10px;
+                margin-left: 80px; // Отрицательный отступ, чтобы "заехать" на изображение
+                z-index: 1;
+                margin-top: 0;
+                .advantages{
+                    margin-left: 5px;
+                    margin-right: 20px;
+                    font-weight: bold;
+                    color: #273E67;
+                    font-size: 50px;
+                }
+                .block-text{
+                    font-size: 27px;
+                    color: black;
+                }
+            }
+        }
+
+        .second-block{
+            display: flex;
+            flex-direction: column;
+            border: 3px solid #273E67;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            max-width: 250px;
+            margin-left: 150px;
+            padding: 5px;
+            .advantages{
+                font-size: 50px;
+            }
+            .block-text{
+                color:black;
+            }
+        }
+        
     }
     .generator2{
         margin: 0 15px auto;
         width: 50%;
-        height: 250px;
+        height: auto;
         border: 3px solid #273E67;
         border-radius: 20px;
+        img{
+            height: auto;
+            width: 500px;
+            margin-top: -90px;
+            margin-left: 45px;
+            z-index: 999999;
+        }
+
+        .first-two-generator2-bloks{
+            display:flex;
+            flex-direction: row;
+            .block{
+                margin-left: 25px;
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                border: 3px solid #273E67;
+                border-radius: 20px;
+                margin-right: 10px;
+                padding: 10px;
+                max-width: 300px;
+                height: 100%;
+                overflow-y: auto;
+                font-size: 20px;
+                color: #273E67;
+                .advantages{
+                    font-size: 50px;
+                }
+                .block-text{
+                    color: black;
+                    font-size: 27px;
+                }
+            }
+        }
+        .second-two-generator2-bloks{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            font-size: 20px;
+            color: #273E67;
+            margin-left: 10px;
+            .block{
+                margin-top: -125px;
+                margin-bottom: 130px;
+                width: 250px;
+                max-height: 150px !important;
+                margin-left:265px;
+                display: flex;
+                flex-direction: row;
+                border: 3px solid #273E67;
+                border-radius: 20px;
+                .advantages{
+                    font-size: 50px;
+                    margin-right: 10px;
+                }
+                .block-text{
+                    color: black;
+                    font-size: 27px;
+                }
+                &:last-child{
+                    margin-bottom: 27px !important;
+                }
+            }
+        }
+
     }
 
 }
-
+}

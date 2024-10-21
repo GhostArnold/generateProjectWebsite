@@ -14,12 +14,12 @@ header {
 }
 @media (max-width: 768px) {
   header {
-    height: 500px;
+    height: 600px;
   }
 }
 @media (max-width: 480px) {
   header {
-    height: 400px;
+    height: 500px;
     background-size: cover;
   }
 }
@@ -198,8 +198,8 @@ header .main-text-header .up-text-block .up-text {
   font-size: 70px;
   text-align: center;
 }
-header .main-text-header .down-text-block .down-text .up-text {
-  font-size: 40px;
+header .main-text-header .down-text-block .down-text {
+  font-size: 30px;
 }
 @media (max-width: 480px) {
   header .logo {
