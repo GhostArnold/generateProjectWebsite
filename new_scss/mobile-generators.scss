@@ -6,10 +6,10 @@
     }
 
     .main-generator{
-        margin: 0 auto;
-        padding: 20px;
-        width: calc(100% - 15px);
+        padding: 5px;
+        width: calc(100% - 10px);
         border-radius: 10px;
+        margin-left: 5px;
         border: 3px solid #273E67;
         display: flex;
         flex-direction: row;
@@ -18,8 +18,13 @@
             flex-direction: column;
             padding: 0 auto;
         }
-
+        @media(max-width: 1200px){
+            display: flex;
+            flex-direction: column;
+            padding: 0 auto;
+        }
         .label{
+            float: right;
             font-weight: bold;
             color: white;
             border-radius: 20px;
@@ -31,44 +36,128 @@
             margin: 0 auto;
         }
 
+        
+
         .first-mobile-img{
-            margin: 0 auto;
+            margin: 0;
             display: flex;
+            flex-direction: row;
             width: 100%;
             height: 100%;
             img{
-                width: 100%;
+                width: 50%;
+                height: 100%;
+                margin-top: 200px;
             }
-        }
+            
+        
         .blocks{
+            margin-top: -80px;
             display: flex;
             flex-direction: column;
             width: 100%;
-            @media(max-width: 730px){
-                width: 100% ;
-            }
+            height: 20%;
             .block{
                 border: 3px solid #273E67;
                 border-radius: 20px;
                 margin-top: 10px;
+                margin-left: 15px;
+                margin-right: 0;
+                padding: 3px;
                 display: flex;
                 flex-direction: row;
                 right: 0;
                 align-items: center;
-                width: 100%;
+                width: 90%;
+                &:first-child{
+                    margin-top: 100px;
+                }
                 .advantages{
                     margin-left: 5px;
-                    margin-right: 20px;
+                    margin-right: 10px;
                     font-weight: bold;
                     color: #273E67;
-                    font-size: 50px;
+                    font-size: 30px;
                 }
                 .block-text{
-                    font-size: 27px;
+                    font-size: 17px;
                     color: black;
                 }
             }
 
         }
     }
+    }
+
+
+    .third-generator{
+        margin-top: 15px;
+        padding: 5px;
+        width: calc(100% - 10px);
+        border-radius: 10px;
+        margin-left: 5px;
+        border: 3px solid #273E67;
+        display: flex;
+        flex-direction: column;
+
+        .label{
+            float: right;
+            font-weight: bold;
+            color: white;
+            border-radius: 20px;
+            background-color: #273E67;
+            padding: 15px;
+            font-size: 27px;
+            margin-left: 20px;
+            margin-top: 5px;
+            margin: 0 auto;
+        }
+
+        .block-image{
+            display: flex;
+            margin-top: 15px;
+            flex-direction: row;
+            justify-content: center;
+            img{
+                width: 50%;
+                height: 100%;
+            }
+        
+        .blocks{
+            display: flex;
+            margin-top: -80px;
+            flex-direction: column;
+            .block{
+                border: 3px solid #273E67;
+                border-radius: 20px;
+                margin-top: 10px;
+                margin-left: 15px;
+                margin-right: 0;
+                padding: 3px;
+                display: flex;
+                flex-direction: row;
+                right: 0;
+                align-items: center;
+                width: 90%;
+                &:first-child{
+                    margin-top: 100px;
+                }
+                .advantages{
+                    margin-left: 5px;
+                    margin-right: 10px;
+                    font-weight: bold;
+                    color: #273E67;
+                    font-size: 30px;
+                }
+                .block-text{
+                    font-size: 17px;
+                    color: black;
+                }
+            }
+        }
+    }
+    }
+
+
+
 }
