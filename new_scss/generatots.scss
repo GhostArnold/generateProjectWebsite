@@ -1,3 +1,4 @@
+
 .main-gen {
     margin: auto auto;
     height: auto;
@@ -6,27 +7,22 @@
     border-radius: 20px;
     background-size: cover;
     display: flex; // основной контейнер
+    flex-direction: column;
     margin-top: 30px;
-    position: relative;
+
     @media(max-width: 1200px ) {
         display: none;
         
     }
 
-    .main-panel{
-        font-size: 27px;
-        font-weight: bold;
-        padding: 5px 120px;
-        background-color: #273E67;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: row;
+    .label{
         color: white;
-        position: absolute; // позволяет разместить панель над другими элементами
-        top: 20px; // расстояние от верхней границы контейнера
-        left: 50%; // центрирует по горизонтали
-        transform: translateX(-50%); // корректирует центрирование
-        z-index: 10; // устанавливает уровень наложения, чтобы панель была выше других элементо
+        background-color: #273E67;
+        padding: 15px;
+        margin: 15px auto 0 auto;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: 50px;
     }
 
     img{
@@ -34,6 +30,11 @@
         max-width: 100%;
         margin: 124px 0 0 0;
     }
+    .div-main-gen-block{
+        display: flex;
+        margin-top: -100px !important;
+
+    
     .left-side {
         display: flex; // позволяет располагать элементы внутри
         flex-direction: column; // элементы внутри будут расположены вертикально
@@ -100,11 +101,13 @@
             }
         }
     }
+}
 
     .right-side{
         display: flex; // позволяет располагать элементы внутри
         flex-direction: column; 
         margin: 0;
+        margin-bottom: 15px;
         .right-bocks{
             display: flex; // позволяет располагать элементы внутри
             flex-direction: row; // элементы внутри будут расположены горизонтально
@@ -178,6 +181,13 @@
         border-radius: 20px;
         display: flex;
         flex-direction: column;
+        .label{
+            color: white;
+            background-color: #273E67;
+            padding: 15px;
+            margin: 15px auto 0 auto;
+            border-radius: 20px;
+        }
         .generator1-block{
             display: flex;
             flex-direction: row;
@@ -241,6 +251,16 @@
         height: auto;
         border: 3px solid #273E67;
         border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+
+        .label{
+            color: white;
+            background-color: #273E67;
+            border-radius: 20px;
+            padding: 15px;
+            margin: 15px auto 0 auto;
+        }
         img{
             height: auto;
             width: 500px;

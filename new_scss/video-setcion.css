@@ -1,97 +1,124 @@
 section {
   display: flex;
   flex-direction: row;
-  justify-content: center; }
-  section .videos {
-    margin-left: 120px;
-    margin-right: 120px; }
-    section .videos .text {
-      font-size: 50px;
-      color: #273E67;
-      font-weight: bold; }
-      section .videos .text hr {
-        width: 73%;
-        background-color: #273E67;
-        height: 3px !important;
-        border-style: none;
-        margin-left: 0;
-        display: flex; }
-    section .videos .video-blocks {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between; }
-      section .videos .video-blocks .blocks {
-        margin-right: 15%;
-        border: 3px solid #273E67;
-        height: 179.94px;
-        border-radius: 25px;
-        display: flex;
-        flex-direction: column;
-        color: #273E67; }
-        section .videos .video-blocks .blocks .span {
-          display: flex;
-          flex-direction: column;
-          font-size: 20px;
-          font-weight: bold;
-          margin: 20px 45px 20px 20px; }
-        section .videos .video-blocks .blocks:last-child {
-          margin-right: 0; }
-        section .videos .video-blocks .blocks .video-btn {
-          background-color: #273E67;
-          color: white;
-          display: flex;
-          border-radius: 15px;
-          max-width: 100%;
-          padding: 10px;
-          bottom: 0;
-          margin-top: auto;
-          cursor: pointer; }
-          section .videos .video-blocks .blocks .video-btn h2 {
-            display: inline;
-            flex: 0 0 auto;
-            font-size: 17px; }
-          section .videos .video-blocks .blocks .video-btn img {
-            margin-left: 20px;
-            display: inline;
-            flex: 0 0 auto;
-            max-width: 248px;
-            height: auto;
-            margin-right: 65px; }
+  justify-content: center;
+}
+section .videos {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+section .videos .text {
+  font-size: 50px;
+  color: #273E67;
+  font-weight: bold;
+}
+section .videos .text hr {
+  width: 73%;
+  background-color: #273E67;
+  height: 3px !important;
+  border-style: none;
+  margin-left: 0;
+  display: flex;
+}
+section .videos .video-blocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+section .videos .video-blocks .blocks {
+  margin-right: 15%;
+  border: 3px solid #273E67;
+  height: 179.94px;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  color: #273E67;
+}
+section .videos .video-blocks .blocks .span {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px 45px 20px 20px;
+}
+section .videos .video-blocks .blocks:last-child {
+  margin-right: 0;
+}
+section .videos .video-blocks .blocks .video-btn {
+  background-color: #273E67;
+  color: white;
+  display: flex;
+  border-radius: 15px;
+  max-width: 100%;
+  padding: 10px;
+  bottom: 0;
+  margin-top: auto;
+  cursor: pointer;
+}
+section .videos .video-blocks .blocks .video-btn h2 {
+  display: inline;
+  flex: 0 0 auto;
+  font-size: 17px;
+}
+section .videos .video-blocks .blocks .video-btn img {
+  margin-left: 20px;
+  display: inline;
+  flex: 0 0 auto;
+  max-width: 248px;
+  height: auto;
+  margin-right: 65px;
+}
 
+@media (max-width: 1100px) {
+  section {
+    flex-direction: column !important;
+  }
+}
 @media (max-width: 768px) {
   section {
-    flex-direction: column; }
-    section .videos {
-      margin-left: 0;
-      margin-right: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      section .videos .text {
-        width: 75%;
-        font-size: 50px; }
-      section .videos .video-blocks {
-        flex-direction: column;
-        align-items: center; }
-        section .videos .video-blocks .blocks {
-          margin-right: 0;
-          margin-bottom: 20px; }
-          section .videos .video-blocks .blocks:last-child {
-            margin-bottom: 0; } }
+    flex-direction: column;
+  }
+  section .videos {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .videos .text {
+    width: 75%;
+    font-size: 50px;
+  }
+  section .videos .video-blocks {
+    flex-direction: column;
+    align-items: center;
+  }
+  section .videos .video-blocks .blocks {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  section .videos .video-blocks .blocks:last-child {
+    margin-bottom: 0;
+  }
+}
 @media (max-width: 480px) {
   section .videos .text {
     margin-left: 2%;
-    font-size: 30px; }
+    font-size: 30px;
+  }
   section .videos .video-blocks .blocks {
     height: auto;
     width: 100%;
-    margin-bottom: 15px; }
-    section .videos .video-blocks .blocks .video-btn {
-      padding: 8px; }
-      section .videos .video-blocks .blocks .video-btn h2 {
-        font-size: 14px; }
-      section .videos .video-blocks .blocks .video-btn img {
-        max-width: 150px;
-        margin-right: 20px; } }
-
-/*# sourceMappingURL=video-setcion.css.map */
+    margin-bottom: 15px;
+  }
+  section .videos .video-blocks .blocks .video-btn {
+    padding: 8px;
+  }
+  section .videos .video-blocks .blocks .video-btn h2 {
+    font-size: 14px;
+  }
+  section .videos .video-blocks .blocks .video-btn img {
+    max-width: 150px;
+    margin-right: 20px;
+  }
+}/*# sourceMappingURL=video-setcion.css.map */

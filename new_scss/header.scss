@@ -11,18 +11,18 @@ header {
     height: 740px;
     margin: 0 auto;
     background-size: cover;
-    background-image: url(../loon-image-original\ 1.png);
+    background-image: url(../assets/img/loon-image-original\ 1.png);
 
     @media (max-width: 768px) {
         height: 600px;
     }
 
     @media (max-width: 480px) {
-        height: 500px; // Изменение высоты для мобильных
+        height: 600px; // Изменение высоты для мобильных
         background-size: cover; // Подгонка изображения
     }
     @media (max-width: 320px) {
-        height: 500px; // Изменение высоты для мобильных
+        height: 600px; // Изменение высоты для мобильных
         background-size: cover; // Подгонка изображения
     }
 
@@ -201,6 +201,7 @@ header {
         align-items: center;
         color: white;
         margin-top: 91px;
+        margin-left: 15px;
 
         hr {
             background-color: #fff;
