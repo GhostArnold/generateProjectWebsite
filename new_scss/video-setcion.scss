@@ -12,6 +12,9 @@ section {
             font-size: 50px;
             color: #273E67;
             font-weight: bold;
+            @media (max-width: 1200px) {
+                text-align: center;
+            }
 
             hr {
                 width: 73%;
@@ -20,6 +23,12 @@ section {
                 border-style: none;
                 margin-left: 0;
                 display: flex;
+                @media (max-width: 1200px) {
+                    display: table;
+                    flex-direction: column !important;
+                    margin: 20px auto;
+                    margin-bottom: 25px;
+                }
             }
         }
 
@@ -27,6 +36,11 @@ section {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            @media (max-width: 1200px) {
+                display: table;
+                flex-direction: column !important;
+                margin: 0 auto;
+            }
 
             .blocks {
                 margin-right: 15%;
@@ -36,6 +50,10 @@ section {
                 display: flex;
                 flex-direction: column;
                 color: #273E67;
+                @media (max-width: 1200px) {
+                    margin-bottom: 25px;
+                    margin-right: 0;
+                }
 
                 .span {
                     display: flex;

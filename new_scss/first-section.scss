@@ -10,18 +10,23 @@
     margin: 0 auto;
     margin-left: 2%;
     border-bottom: 3px solid #273e67;
+    @media (max-width: 550px) {
+      font-size: 30px;
+      margin: 0 auto;
+  }
   }
 
   .block-one {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 
     .four-blocks {
-      flex: 1.2;
+      flex: 1;
 
       .img1 {
-        display: block; // img1 отображается по умолчанию
-        
+        display: flex; // img1 отображается по умолчанию
+
       }
 
       .block {
@@ -47,7 +52,7 @@
     }
 
     .image {
-      flex: 1;
+      position: absolute;
       width: 100%; // Измените ширину на 100%
       height: auto; // Поддержка пропорций изображения
     }
@@ -130,7 +135,7 @@
     }
   }
 
-  @media (max-width: 1140px) { // Убедитесь, что у вас есть медиазапрос для ширины 1140px
+  @media (max-width: 995px) { // Убедитесь, что у вас есть медиазапрос для ширины 1140px
     .block {
       width: 90%; // Увеличиваем ширину блоков для ширины 1140px
     }
@@ -169,7 +174,7 @@
 
   @media (max-width: 1024px) { // Плоские устройства
     .block {
-      width: 80%; // Увеличиваем ширину блоков для планшетов
+      width: calc(100% - 30px) !important;
     }
 
     .img1 {
@@ -199,6 +204,7 @@
       .first-two-blocks {
         flex-direction: column; // Блоки располагаются друг под другом
         .block{
+          width: calc(100% - 30px) !important;
         &:last-child{
           margin-top: 0 !important;
         }
@@ -211,6 +217,7 @@
       .second-two-blocks {
         flex-direction: column; // Блоки располагаются друг под другом
         .block {
+          width: calc(100% - 30px) !important;
           &:last-child{
             margin-top: 0 !important;
           }
@@ -242,9 +249,9 @@
 
 
       .block {
-        width:calc(100% - 50px) !important;; // Увеличиваем ширину блоков для мобильных устройств
+        width:calc(100% - 30px)  !important;; // Увеличиваем ширину блоков для мобильных устройств
       .block-text{
-        font-size: 27px;
+        font-size: 22px;
       }
       &:last-child {
         margin-top: 20px;
@@ -259,9 +266,9 @@
       .first-two-blocks {
         flex-direction: column; // Блоки располагаются друг под другом
         .block {
-          width:calc(100% - 50px) !important;; // Увеличиваем ширину блоков для мобильных устройств
+          width:calc(100% - 30px) !important;; // Увеличиваем ширину блоков для мобильных устройств
         .block-text{
-          font-size: 27px;
+          font-size: 22px;
         }
         &:last-child {
           margin-top: 20px;
@@ -273,7 +280,7 @@
       .second-two-blocks {
         flex-direction: column; // Блоки располагаются друг под другом
         .block {
-            width:calc(100% - 50px) !important;; // Увеличиваем ширину блоков для мобильных устройств
+            width:calc(100% - 30px) !important;; // Увеличиваем ширину блоков для мобильных устройств
           .block-text{
             font-size: 27px;
           }

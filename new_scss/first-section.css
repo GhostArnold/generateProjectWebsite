@@ -10,15 +10,22 @@
   margin-left: 2%;
   border-bottom: 3px solid #273e67;
 }
+@media (max-width: 550px) {
+  .first-section .underline {
+    font-size: 30px;
+    margin: 0 auto;
+  }
+}
 .first-section .block-one {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 .first-section .block-one .four-blocks {
-  flex: 1.2;
+  flex: 1;
 }
 .first-section .block-one .four-blocks .img1 {
-  display: block;
+  display: flex;
 }
 .first-section .block-one .four-blocks .block {
   font-size: 27px;
@@ -39,7 +46,7 @@
   width: 80%;
 }
 .first-section .block-one .image {
-  flex: 1;
+  position: absolute;
   width: 100%;
   height: auto;
 }
@@ -108,7 +115,7 @@
   margin-left: 0;
   width: 80%;
 }
-@media (max-width: 1140px) {
+@media (max-width: 995px) {
   .first-section .block {
     width: 90%;
   }
@@ -138,7 +145,7 @@
 }
 @media (max-width: 1024px) {
   .first-section .block {
-    width: 80%;
+    width: calc(100% - 30px) !important;
   }
   .first-section .img1 {
     display: none;
@@ -163,6 +170,9 @@
   .first-section .block-two .first-two-blocks {
     flex-direction: column;
   }
+  .first-section .block-two .first-two-blocks .block {
+    width: calc(100% - 30px) !important;
+  }
   .first-section .block-two .first-two-blocks .block:last-child {
     margin-top: 0 !important;
   }
@@ -171,6 +181,9 @@
   }
   .first-section .block-two .second-two-blocks {
     flex-direction: column;
+  }
+  .first-section .block-two .second-two-blocks .block {
+    width: calc(100% - 30px) !important;
   }
   .first-section .block-two .second-two-blocks .block:last-child {
     margin-top: 0 !important;
@@ -193,10 +206,10 @@
     margin: 0 auto;
   }
   .first-section .block-one .block {
-    width: calc(100% - 50px) !important;
+    width: calc(100% - 30px) !important;
   }
   .first-section .block-one .block .block-text {
-    font-size: 27px;
+    font-size: 22px;
   }
   .first-section .block-one .block:last-child {
     margin-top: 20px;
@@ -208,10 +221,10 @@
     flex-direction: column;
   }
   .first-section .block-two .first-two-blocks .block {
-    width: calc(100% - 50px) !important;
+    width: calc(100% - 30px) !important;
   }
   .first-section .block-two .first-two-blocks .block .block-text {
-    font-size: 27px;
+    font-size: 22px;
   }
   .first-section .block-two .first-two-blocks .block:last-child {
     margin-top: 20px;
@@ -220,7 +233,7 @@
     flex-direction: column;
   }
   .first-section .block-two .second-two-blocks .block {
-    width: calc(100% - 50px) !important;
+    width: calc(100% - 30px) !important;
   }
   .first-section .block-two .second-two-blocks .block .block-text {
     font-size: 27px;

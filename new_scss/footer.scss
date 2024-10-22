@@ -40,6 +40,11 @@ footer {
                 width: 80%;
                 margin: 0 auto 20px auto;
             }
+            @media(max-width: 1200px){
+                height: 135px;
+                width: 80%;
+                margin: 0 auto 20px auto;
+            }
         }
 
         .feedback-btn {

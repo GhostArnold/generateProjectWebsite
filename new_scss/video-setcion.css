@@ -12,6 +12,11 @@ section .videos .text {
   color: #273E67;
   font-weight: bold;
 }
+@media (max-width: 1200px) {
+  section .videos .text {
+    text-align: center;
+  }
+}
 section .videos .text hr {
   width: 73%;
   background-color: #273E67;
@@ -20,10 +25,25 @@ section .videos .text hr {
   margin-left: 0;
   display: flex;
 }
+@media (max-width: 1200px) {
+  section .videos .text hr {
+    display: table;
+    flex-direction: column !important;
+    margin: 20px auto;
+    margin-bottom: 25px;
+  }
+}
 section .videos .video-blocks {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+@media (max-width: 1200px) {
+  section .videos .video-blocks {
+    display: table;
+    flex-direction: column !important;
+    margin: 0 auto;
+  }
 }
 section .videos .video-blocks .blocks {
   margin-right: 15%;
@@ -33,6 +53,12 @@ section .videos .video-blocks .blocks {
   display: flex;
   flex-direction: column;
   color: #273E67;
+}
+@media (max-width: 1200px) {
+  section .videos .video-blocks .blocks {
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
 }
 section .videos .video-blocks .blocks .span {
   display: flex;

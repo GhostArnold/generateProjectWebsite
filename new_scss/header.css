@@ -7,7 +7,7 @@ body.no-scroll {
 
 header {
   width: 100%;
-  height: 740px;
+  height: 100% !important;
   margin: 0 auto;
   background-size: cover;
   background-image: url(../assets/img/loon-image-original\ 1.png);
@@ -19,7 +19,7 @@ header {
 }
 @media (max-width: 480px) {
   header {
-    height: 600px;
+    height: 700px;
     background-size: cover;
   }
 }
@@ -31,7 +31,7 @@ header {
 }
 @media (max-width: 380px) {
   header {
-    height: 500px;
+    height: 700px;
     background-size: cover;
   }
 }
@@ -93,7 +93,7 @@ header .navbar .header__burger-btn span:nth-child(1) {
 header .navbar .header__burger-btn span:nth-child(3) {
   transform: translateY(10px);
 }
-@media (max-width: 768px) {
+@media (max-width: 1068px) {
   header .navbar .header__burger-btn {
     display: block;
     position: absolute;
@@ -169,7 +169,7 @@ header .mobile-nav ul a {
   font-size: 25px;
   padding: 10px 0;
 }
-@media (max-width: 768px) {
+@media (max-width: 1068px) {
   header .desktop-nav {
     display: none;
   }
@@ -183,7 +183,7 @@ header .main-text-header {
   justify-content: center;
   align-items: center;
   color: white;
-  margin-top: 91px;
+  margin-top: 75px;
   margin-left: 15px;
 }
 header .main-text-header hr {
@@ -199,8 +199,21 @@ header .main-text-header .up-text-block .up-text {
   font-size: 70px;
   text-align: center;
 }
+@media (max-width: 550px) {
+  header .main-text-header .up-text-block .up-text {
+    font-size: 50px !important;
+    margin: 0 auto;
+  }
+}
 header .main-text-header .down-text-block .down-text {
   font-size: 30px;
+}
+@media (max-width: 550px) {
+  header .main-text-header .down-text-block .down-text {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 }
 @media (max-width: 480px) {
   header .logo {
