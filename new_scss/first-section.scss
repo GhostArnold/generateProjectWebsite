@@ -1,292 +1,67 @@
-* {
-  box-sizing: border-box; // Устанавливаем box-sizing для всех элементов
+.first-section {
+  margin: 0 auto;
+  width: 80%;
+  .block-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .four-blocks {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .block {
+        border: 3px solid #273e67;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        max-width: 60%;
+        border-radius: 20px;
+
+        .numb {
+          font-size: 55px;
+          font-weight: 900;
+          color: #273e67;
+        }
+        .text {
+          width: 70%;
+          font-size: 18px;
+        }
+      }
+    }
+    .image-generate {
+      img {
+      }
+    }
+  }
 }
 
 .first-section {
-  .underline {
-    color: #273e67;
-    font-size: 50px;
-    width: 50%; // Замените фиксированную ширину на 100%
-    margin: 0 auto;
-    margin-left: 2%;
-    border-bottom: 3px solid #273e67;
-    @media (max-width: 550px) {
-      font-size: 30px;
-      margin: 0 auto;
-  }
-  }
-
-  .block-one {
-    display: flex;
-    flex-wrap: wrap;
-    position: relative;
-
-    .four-blocks {
-      flex: 1;
-
-      .img1 {
-        display: flex; // img1 отображается по умолчанию
-
-      }
-
-      .block {
-        font-size: 27px;
-        border: 3px solid #273e67;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 20px;
-        width: calc(65% - 40px); // Учитываем отступы
-        margin: 20px;
-        padding: 10px;
-
-        .block-article {
-          font-size: 30px;
-          color: #273e67;
-        }
-
-        .block-text {
-          width: 80%;
-        }
-      }
-    }
-
-    .image {
-      position: absolute;
-      width: 100%; // Измените ширину на 100%
-      height: auto; // Поддержка пропорций изображения
-    }
-  }
-
   .block-two {
     display: flex;
-    flex-wrap: wrap;
-
-    .img2 {
-      display: none;
-    }
+    justify-content: space-between;
+    align-items: center;
 
     .four-blocks {
-      flex: 1.2;
-
-      .first-two-blocks {
-        display: flex;
-
-        .block {
-          font-size: 27px;
-          border: 3px solid #273e67;
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          border-radius: 20px;
-          width: calc(65% - 290px); // Учитываем отступы
-          margin: 20px;
-          padding: 10px;
-          .block-article {
-            padding: 10px;
-            display: flex;
-            font-size: 30px;
-            margin-left: -25px;
-            color: black;
-
-            h1 {
-              color: #273e67 !important;
-            }
-          }
-
-          .block-text {
-            margin-left: -30px;
-            width: 80%;
-          }
-        }
-      }
-
-      .second-two-blocks {
-        display: flex;
-
-        .block {
-        font-size: 27px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      .block {
+        width: 40%;
         border: 3px solid #273e67;
         display: flex;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        max-width: 57%;
         border-radius: 20px;
-        width: calc(65% - 290px); // Учитываем отступы
-        margin: 20px;
-        padding: 10px;
 
-          .block-article {
-            padding: 0;
-            display: flex;
-            font-size: 30px;
-            color: black;
-
-            h1 {
-              color: #273e67 !important;
-            }
-          }
-
-          .block-text {
-            margin-left: 0;
-            width: 80%;
-          }
+        .numb {
+          font-size: 55px;
+          color: #273e67;
+          font-weight: 900;
         }
-      }
-    }
-  }
-
-  @media (max-width: 995px) { // Убедитесь, что у вас есть медиазапрос для ширины 1140px
-    .block {
-      width: 90%; // Увеличиваем ширину блоков для ширины 1140px
-    }
-
-    .img1 {
-      display: none; // Скрываем img1 на ширинах меньше 1140px
-    }
-    
-    .image2 {
-      display: block;
-
-      .img2 {
-        display: block; // Показываем img2 на ширинах меньше 1140px
-        width: 100%; // img2 занимает всю ширину
-        height: auto; // Поддержка пропорций изображения
-      }
-    }
-
-    .block-two {
-      flex-direction: column; // Устанавливаем вертикальное направление для блоков
-
-      .first-two-blocks {
-        flex-direction: column; // Блоки располагаются друг под другом
-      }
-
-      .second-two-blocks {
-        flex-direction: column; // Блоки располагаются друг под другом
-        .block {
-          &:last-child {
-            margin-top: 20px;
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 1024px) { // Плоские устройства
-    .block {
-      width: calc(100% - 30px) !important;
-    }
-
-    .img1 {
-      display: none; // Скрываем img1 на планшетах
-    }
-    
-    .image2 {
-      display: block;
-
-      .img2 {
-        display: block; // Показываем img2 на планшетах
-        width: 100%; // img2 занимает всю ширину
-        height: auto; // Поддержка пропорций изображения
-      }
-    }
-
-    .block-two {
-      flex-direction: column; // Устанавливаем вертикальное направление для блоков
-
-      .img2 {
-        display: block; // Показываем img2 на мобильных устройствах
-        max-width: 280px; // img2 занимает всю ширину
-        max-height: 455px; // Поддержка пропорций изображения
-        margin: 0 auto;
-      }
-
-      .first-two-blocks {
-        flex-direction: column; // Блоки располагаются друг под другом
-        .block{
-          width: calc(100% - 30px) !important;
-        &:last-child{
-          margin-top: 0 !important;
-        }
-        &:first-child{
-          margin-top: 0 !important;
-        }
-        }
-      }
-
-      .second-two-blocks {
-        flex-direction: column; // Блоки располагаются друг под другом
-        .block {
-          width: calc(100% - 30px) !important;
-          &:last-child{
-            margin-top: 0 !important;
-          }
-          &:first-child{
-            margin-top: 0 !important;
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 768px) { // Мобильные устройства
-
-    .img1 {
-      display: none; // Скрываем img1 на мобильных устройствах
-    }
-    
-    .image2 {
-      display: block;
-
-      .img2 {
-        display: block; // Показываем img2 на мобильных устройствах
-        max-width: 280px; // img2 занимает всю ширину
-        max-height: 455px; // Поддержка пропорций изображения
-        margin: 0 auto;
-      }
-    }
-    .block-one{
-
-
-      .block {
-        width:calc(100% - 30px)  !important;; // Увеличиваем ширину блоков для мобильных устройств
-      .block-text{
-        font-size: 22px;
-      }
-      &:last-child {
-        margin-top: 20px;
-      }
-    }
-      
-    }
-
-    .block-two {
-      flex-direction: column; // Устанавливаем вертикальное направление для блоков
-
-      .first-two-blocks {
-        flex-direction: column; // Блоки располагаются друг под другом
-        .block {
-          width:calc(100% - 30px) !important;; // Увеличиваем ширину блоков для мобильных устройств
-        .block-text{
-          font-size: 22px;
-        }
-        &:last-child {
-          margin-top: 20px;
-        }
-      }
-
-      }
-
-      .second-two-blocks {
-        flex-direction: column; // Блоки располагаются друг под другом
-        .block {
-            width:calc(100% - 30px) !important;; // Увеличиваем ширину блоков для мобильных устройств
-          .block-text{
-            font-size: 27px;
-          }
-          &:last-child {
-            margin-top: 20px;
-          }
+        .text {
+          width: 70%;
+          font-size: 18px;
         }
       }
     }
