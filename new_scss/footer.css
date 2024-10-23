@@ -8,94 +8,120 @@ footer {
   width: 100%;
   background: url("./foter-image.png") no-repeat center/cover;
   color: #fff;
-  margin-top: 30px; }
-  footer form {
-    display: flex;
-    flex-direction: row; }
-    footer form .feedback-text {
-      display: flex;
-      border: 3px solid #273E67;
-      border-radius: 20px;
-      justify-content: center;
-      height: 89px;
-      width: 100%;
-      padding: 0 10px;
-      margin-bottom: 20px;
-      margin-right: 50px;
-      font-size: 50px;
-      text-align: center;
-      align-items: center;
-      background-color: white;
-      color: #273E67; }
-      @media (max-width: 380px) {
-        footer form .feedback-text {
-          height: 1000px; } }
-      @media (max-width: 320px) {
-        footer form .feedback-text {
-          height: 1000px; } }
-      @media (max-width: 460px) {
-        footer form .feedback-text {
-          height: 135px;
-          width: 80%;
-          margin: 0 auto 20px auto; } }
-      @media (max-width: 1200px) {
-        footer form .feedback-text {
-          height: 135px;
-          width: 80%;
-          margin: 0 auto 20px auto; } }
-    footer form .feedback-btn {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 100%; }
-      footer form .feedback-btn img {
-        width: 70%; }
-      footer form .feedback-btn .back-form {
-        margin-bottom: 20px;
-        display: flex;
-        background-color: #273E67;
-        color: white;
-        border-radius: 20px;
-        flex-direction: column;
-        align-items: center;
-        width: 95%; }
-        footer form .feedback-btn .back-form .inputs {
-          margin: 20px 45px;
-          width: calc(100% - 60px); }
-          footer form .feedback-btn .back-form .inputs input {
-            margin-top: 10px;
-            border-radius: 18px;
-            width: 100%;
-            background: #fff;
-            border: none;
-            height: 60px; }
-        footer form .feedback-btn .back-form .message {
-          width: calc(100% - 60px);
-          margin: 20px 45px; }
-          footer form .feedback-btn .back-form .message textarea {
-            margin-top: 10px;
-            border-radius: 18px;
-            height: 60px;
-            width: 100%; }
-      footer form .feedback-btn .button-submit {
-        display: flex;
-        background-color: #273E67;
-        color: #fff;
-        border-radius: 20px;
-        padding: 21px 45px;
-        margin-bottom: 50px;
-        width: 80%;
-        cursor: pointer; }
-        footer form .feedback-btn .button-submit img {
-          margin-left: 20px; }
-      footer form .feedback-btn .button-submit input[type="submit"] {
-        all: unset; }
+  margin-top: 30px;
+}
+footer form {
+  display: flex;
+  flex-direction: row;
+}
+footer form .feedback-text {
+  display: flex;
+  border: 3px solid #273E67;
+  border-radius: 20px;
+  justify-content: center;
+  height: 89px;
+  width: 100%;
+  padding: 0 10px;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  font-size: 50px;
+  text-align: center;
+  align-items: center;
+  background-color: white;
+  color: #273E67;
+}
+@media (max-width: 380px) {
+  footer form .feedback-text {
+    height: 1000px;
+  }
+}
+@media (max-width: 320px) {
+  footer form .feedback-text {
+    height: 1000px;
+  }
+}
+@media (max-width: 460px) {
+  footer form .feedback-text {
+    height: 135px;
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+}
+@media (max-width: 1200px) {
+  footer form .feedback-text {
+    height: 135px;
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+}
+footer form .feedback-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+footer form .feedback-btn img {
+  width: 70%;
+}
+footer form .feedback-btn .back-form {
+  margin-bottom: 20px;
+  display: flex;
+  background-color: #273E67;
+  color: white;
+  border-radius: 20px;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+}
+footer form .feedback-btn .back-form .inputs {
+  margin: 20px 45px;
+  width: calc(100% - 60px);
+}
+footer form .feedback-btn .back-form .inputs input {
+  margin-top: 10px;
+  border-radius: 18px;
+  width: 100%;
+  background: #fff;
+  border: none;
+  height: 60px;
+}
+footer form .feedback-btn .back-form .message {
+  width: calc(100% - 60px);
+  margin: 20px 45px;
+}
+footer form .feedback-btn .back-form .message textarea {
+  margin-top: 10px;
+  border-radius: 18px;
+  height: 60px;
+  width: 100%;
+}
+footer form .feedback-btn .button-submit {
+  display: flex;
+  background-color: #273E67;
+  color: #fff;
+  border-radius: 20px;
+  padding: 21px 45px;
+  margin-bottom: 50px;
+  width: 70%;
+  cursor: pointer;
+}
+footer form .feedback-btn .button-submit img {
+  margin-left: 20px;
+}
+@media (max-width: 380px) {
+  footer form .feedback-btn .button-submit img {
+    margin-left: 10px;
+  }
+}
+footer form .feedback-btn .button-submit input[type=submit] {
+  all: unset;
+}
 
 @media (max-width: 768px) {
   img {
-    width: 75%; }
-
+    width: 75%;
+  }
   footer form {
-    flex-direction: column; } }
-
-/*# sourceMappingURL=footer.css.map */
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=footer.css.map */

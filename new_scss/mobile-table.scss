@@ -50,7 +50,8 @@
                 border-collapse: collapse;
                 box-sizing: border-box;
                 text-align: center;
-                border-radius: 10px;
+
+
                 overflow: hidden; // Обрезка углов
                 table-layout: fixed; // Фиксированная компоновка таблицы
             
@@ -62,6 +63,9 @@
             
                     &:first-child {
                         border-top: 1.5px solid white; // Установите границу для первой ячейки
+                    }
+                    &:last-child{
+                        border-bottom-right-radius: 20px;
                     }
                 }
             

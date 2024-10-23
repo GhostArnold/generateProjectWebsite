@@ -27,13 +27,16 @@ section {
         color: white;
         border: 1.5px solid white;
         padding: 5px;
+        border-bottom-color: transparent;
 
         &:first-child {
           border-bottom-left-radius: 10px;
+          border-left-color: #273E67;
         }
 
         &:last-child {
           border-bottom-right-radius: 10px;
+          border-right-color: #273E67;
         }
       }
 
@@ -41,6 +44,7 @@ section {
         border: 1.5px solid #273E67; /* добавить границу для ячеек таблицы */
         text-align: center;
         color: #273E67;
+
       }
     }
   }

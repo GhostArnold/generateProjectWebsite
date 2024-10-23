@@ -45,7 +45,7 @@ section {
             .blocks {
                 margin-right: 15%;
                 border: 3px solid #273E67;
-                height: 179.94px;
+                max-height: 179.94px;
                 border-radius: 25px;
                 display: flex;
                 flex-direction: column;
@@ -53,6 +53,9 @@ section {
                 @media (max-width: 1200px) {
                     margin-bottom: 25px;
                     margin-right: 0;
+                }
+                @media(max-width:380px){
+                    width: calc(100% - 10px)!important;
                 }
 
                 .span {
