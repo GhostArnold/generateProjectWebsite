@@ -1,6 +1,10 @@
 .first-section {
   margin: 0 auto;
   width: 80%;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
   .block-one {
     display: flex;
     justify-content: space-between;
@@ -15,9 +19,16 @@
         display: flex;
         justify-content: space-between;
         padding: 20px;
+        width: 100%;
+        max-width: 460px;
         border-radius: 20px;
-        @media(max-width: 900px){
+        @media (max-width: 900px) {
+          max-width: 100%;
           width: 100%;
+        }
+        @media (max-width: 768px) {
+          margin-left: 0;
+          max-width: 90%;
         }
 
         .numb {
@@ -32,10 +43,9 @@
       }
     }
     .image-generate {
-      @media(max-width: 900px){
+      @media (max-width: 900px) {
         display: none;
       }
-       
     }
   }
 }
@@ -46,15 +56,14 @@
     justify-content: space-between;
     align-items: center;
 
-    .image-generate2{
-      display:none;
-
-      @media(max-width: 900px){
+    .image-generate2 {
+      display: none;
+      @media (max-width: 900px) {
         display: block;
         margin: 0 auto;
       }
     }
-    @media(max-width: 900px){
+    @media (max-width: 900px) {
       display: flex;
       flex-direction: column;
       align-items: unset;
@@ -64,23 +73,36 @@
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
-      @media(max-width: 900px){
+      @media (max-width: 900px) {
         display: flex;
         flex-wrap: unset;
         flex-direction: column;
         gap: 0;
       }
       .block {
-        width: 45.5%;
+        width: 40%;
         border: 3px solid #273e67;
         display: flex;
         justify-content: space-between;
         padding: 20px;
         border-radius: 20px;
-        @media(max-width: 900px){
+        @media (max-width: 768px) {
+          margin-left: 0;
+          max-width: 90% !important;
+        }
+        @media (max-width: 900px) {
           margin-top: 20px;
           width: 100%;
           max-width: 670px;
+        }
+        @media (max-width: 1132px) {
+          &:nth-child(1){
+  
+            margin-top: 20px;
+          }
+          &:nth-child(2){
+            margin-top: 20px;
+          }
         }
 
         .numb {

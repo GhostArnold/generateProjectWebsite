@@ -7,7 +7,7 @@
 
     .main-generator{
         padding: 5px;
-        width: calc(100% - 10px);
+        width: calc(100% - 20px);
         border-radius: 10px;
         margin-left: 5px;
         border: 3px solid #273E67;
@@ -17,6 +17,7 @@
             display: flex;
             flex-direction: column;
             padding: 0 auto;
+            margin: 0 auto;
         }
         @media(max-width: 1200px){
             display: flex;
@@ -39,19 +40,20 @@
         
 
         .first-mobile-img{
-            margin: 0;
+            margin: 0 auto !important;
             display: flex;
             flex-direction: row;
             width: 100%;
             height: 100%;
-            img{
-                width: 70%;
-                height: 100%;
-                margin-top: 200px;
-                @media(max-width:500px) {
-                    margin: 0 auto;
-                }
+            .up-img{
+                display: block;
+                 @media (max-width:769px) {
+                     display:none;
+                 }
+             }
             }
+            
+            
 
             @media(max-width:500px) {
                 flex-wrap: wrap;
@@ -64,6 +66,14 @@
             flex-direction: column;
             width: 100%;
             height: 20%;
+
+            .between-img{
+               display: none;
+                @media (max-width:769px) {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
             .block{
                 border: 3px solid #273E67;
                 border-radius: 20px;
@@ -98,7 +108,7 @@
 
 
     .third-generator{
-        margin-top: 15px;
+        margin-top: 15px !important;
         padding: 5px;
         width: calc(100% - 10px);
         border-radius: 10px;
@@ -106,6 +116,9 @@
         border: 3px solid #273E67;
         display: flex;
         flex-direction: column;
+        @media(max-width: 730px){
+            margin: 0 auto;
+        }
 
         .label{
             float: right;
@@ -167,4 +180,3 @@
         }
     }
     }
-}
