@@ -102,6 +102,10 @@ footer {
                 margin-bottom: 50px;
                 width: 70%;
                 cursor: pointer;
+                @media(max-width: 320px){
+                    flex-wrap: wrap;
+                   justify-content: center;
+                }
                  
 
                 img {
@@ -109,6 +113,11 @@ footer {
                     @media(max-width:380px){
                         margin-left: 10px;
                      }
+                     @media(max-width: 320px){
+                        flex-wrap: wrap;
+                        margin-top: 10px;
+                       justify-content: center;
+                    }
                 }
             }
 

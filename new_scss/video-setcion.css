@@ -86,6 +86,12 @@ section .videos .video-blocks .blocks .video-btn {
   margin-top: auto;
   cursor: pointer;
 }
+@media (max-width: 340px) {
+  section .videos .video-blocks .blocks .video-btn {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 section .videos .video-blocks .blocks .video-btn h2 {
   display: inline;
   flex: 0 0 auto;

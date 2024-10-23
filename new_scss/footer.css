@@ -105,12 +105,25 @@ footer form .feedback-btn .button-submit {
   width: 70%;
   cursor: pointer;
 }
+@media (max-width: 320px) {
+  footer form .feedback-btn .button-submit {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 footer form .feedback-btn .button-submit img {
   margin-left: 20px;
 }
 @media (max-width: 380px) {
   footer form .feedback-btn .button-submit img {
     margin-left: 10px;
+  }
+}
+@media (max-width: 320px) {
+  footer form .feedback-btn .button-submit img {
+    flex-wrap: wrap;
+    margin-top: 10px;
+    justify-content: center;
   }
 }
 footer form .feedback-btn .button-submit input[type=submit] {
