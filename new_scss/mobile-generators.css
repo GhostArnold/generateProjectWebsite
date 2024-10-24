@@ -146,8 +146,13 @@
   }
 }
 .third-generator .block-image img {
-  width: 60%;
+  width: 50%;
   height: 100%;
+}
+@media (min-width: 750px) and (max-width: 1200px) {
+  .third-generator .block-image img {
+    width: 30%;
+  }
 }
 .third-generator .block-image .blocks {
   display: flex;
