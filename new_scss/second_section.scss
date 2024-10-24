@@ -88,6 +88,7 @@
       .two-blocks {
         display: flex;
         justify-content: space-around;
+        flex-wrap: wrap;
         gap: 20px;
         // flex-wrap: wrap;
         .block {
@@ -99,12 +100,19 @@
           color: #fff;
           font-size: 19px;
           line-height: 25px;
+          text-align: center;
+          min-width: 494px;
           p {
             width: 85%;
+          }
+          @media (max-width: 600px) {
+            flex-wrap: wrap;
+            min-width: 100% !important;
           }
         }
         @media (max-width: 600px) {
           flex-wrap: wrap;
+          min-width: 10% !important;
         }
       }
 
