@@ -102,6 +102,11 @@ footer {
                 margin-bottom: 50px;
                 width: 70%;
                 cursor: pointer;
+                transition: 0.3s;
+                    &:hover{
+                        transform: scale(1.1);
+                        background-color: #37578d;
+                    }
                 @media(max-width: 320px){
                     flex-wrap: wrap;
                    justify-content: center;

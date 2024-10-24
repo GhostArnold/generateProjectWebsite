@@ -5,6 +5,33 @@
     display: flex;
     flex-direction: column;
   }
+
+  .first-label{
+    font-size: 50px;
+    font-weight: bold;
+    color: #273e67;
+    hr{
+      margin-top: 20px;
+      border: none;
+      border-top: 3px solid #273e67;
+      max-width: 60%;
+      margin-left: 0;
+      @media(max-width:300px){
+        max-width: 100%;
+      }
+      @media(max-width:340px){
+        max-width: 100%;
+      }
+    }
+    @media(max-width:355px){
+      font-size: 40px;
+      text-align: center;
+    }
+    @media(max-width:300px){
+      font-size: 35px;
+      text-align: center;
+    }
+  }
   .block-one {
     display: flex;
     justify-content: space-between;
@@ -17,7 +44,6 @@
       .block {
         border: 3px solid #273e67;
         display: flex;
-        justify-content: space-between;
         padding: 20px;
         width: 100%;
         max-width: 460px;
@@ -35,6 +61,7 @@
           font-size: 55px;
           font-weight: 900;
           color: #273e67;
+          margin-right: 20px;
         }
         .text {
           width: 70%;
@@ -43,8 +70,21 @@
       }
     }
     .image-generate {
+      margin-left: 10px;
       @media (max-width: 900px) {
         display: none;
+      }
+      animation: float 2s ease-in-out infinite;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+      100% {
+        transform: translateY(0);
       }
     }
   }
@@ -73,26 +113,27 @@
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
+      width: 100%;
+      margin-top: -55px;
       @media (max-width: 900px) {
         display: flex;
         flex-wrap: unset;
         flex-direction: column;
         gap: 0;
+        margin-top: 0;
       }
       .block {
-        width: 40%;
         border: 3px solid #273e67;
         display: flex;
-        justify-content: space-between;
         padding: 20px;
+        max-width: 35%;
         border-radius: 20px;
-        @media (max-width: 768px) {
+        @media (max-widh: 768px) {
           margin-left: 0;
-          max-width: 90% !important;
         }
         @media (max-width: 900px) {
           margin-top: 20px;
-          width: 100%;
+          max-width: 75%;
           max-width: 670px;
         }
         @media (max-width: 1132px) {
@@ -109,6 +150,7 @@
           font-size: 55px;
           color: #273e67;
           font-weight: 900;
+          margin-right: 20px;
         }
         .text {
           width: 70%;

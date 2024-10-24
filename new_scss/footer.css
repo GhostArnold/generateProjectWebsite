@@ -104,6 +104,11 @@ footer form .feedback-btn .button-submit {
   margin-bottom: 50px;
   width: 70%;
   cursor: pointer;
+  transition: 0.3s;
+}
+footer form .feedback-btn .button-submit:hover {
+  transform: scale(1.1);
+  background-color: #37578d;
 }
 @media (max-width: 320px) {
   footer form .feedback-btn .button-submit {

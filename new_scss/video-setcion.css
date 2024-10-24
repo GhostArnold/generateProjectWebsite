@@ -85,6 +85,11 @@ section .videos .video-blocks .blocks .video-btn {
   bottom: 0;
   margin-top: auto;
   cursor: pointer;
+  transition: 0.3s;
+}
+section .videos .video-blocks .blocks .video-btn:hover {
+  transform: scale(1.1);
+  background-color: #37578d;
 }
 @media (max-width: 340px) {
   section .videos .video-blocks .blocks .video-btn {
