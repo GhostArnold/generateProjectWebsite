@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAAA,OAAQ;EACN,OAAO,EAAE,CAAC;EACV,SAAS,EAAE,gBAAgB;EAAE,6BAA6B;EAC1D,UAAU,EAAE,SAAS;;AAGvB,KAAM;EACJ,OAAO,EAAE,CAAC;EACV,SAAS,EAAE,aAAa;EAAE,kCAAkC;;AAG9D,+BAAgC;EAC9B,OAAQ;IACN,UAAU,EAAE,IAAI",
+"sources": ["for-visible.scss"],
+"names": [],
+"file": "for-visible.css"
+}
