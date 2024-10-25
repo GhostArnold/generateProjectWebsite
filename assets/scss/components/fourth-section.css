@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.table {
+  display: block;
+  padding: 30px 0;
+  background-color: #f4f4f4;
+}
+.table table {
+  width: 100%; /* make the table full-width */
+  background-color: #fff;
+  border-collapse: collapse;
+  box-sizing: border-box;
+}
+@media (max-width: 400px) {
+  .table table th, .table table td {
+    font-size: 12px;
+    padding: 5px; /* reduce padding to make the table more compact */
+  }
+  .table table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+  }
+}
+@media (min-width: 401px) and (max-width: 600px) {
+  .table table th, .table table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .table table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+  }
+}
+@media (min-width: 601px) and (max-width: 800px) {
+  .table table th, .table table td {
+    font-size: 16px;
+    padding: 15px;
+  }
+  .table table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+  }
+}
+@media (min-width: 801px) {
+  .table table th, .table table td {
+    font-size: 18px;
+    padding: 20px;
+  }
+  .table table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+  }
+}
+.table th, .table td {
+  border: 1.5px solid black; /* добавить границу для ячеек таблицы */
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .table {
+    max-width: 420px; /* добавить максимальную ширину */
+    margin: 0 auto; /* добавить margin для центрирования */
+  }
+}
+
+.fourth-section {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f4f4f4;
+  padding: 40px 0;
+}
+.fourth-section .block-one {
+  flex: 1.4;
+  display: flex;
+  justify-content: center;
+}
+.fourth-section .block-one .block-one-text {
+  margin: 0 20px;
+  width: 60%;
+  min-width: 200px;
+  border: 2px dashed black;
+  padding: 20px;
+  border-radius: 70px;
+  background-color: #fff;
+}
+.fourth-section .block-two {
+  flex: 1;
+}/*# sourceMappingURL=fourth-section.css.map */
