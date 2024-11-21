@@ -1,0 +1,104 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(to right, 
+  #734C87 14%, 
+  #B98F9B 62%, 
+  #FFD2AF 100%);
+  padding: 45px;
+  min-height: 550px;
+  max-height :900px;
+
+  .footer-container {
+    max-width: 800px; // adjust the width as needed
+    margin: 0 auto;
+    padding: 20px;
+    background: transparent;
+    border: 5px solid black;
+    border-radius: 32px;
+    transition: transform 0.3s ease;
+      &:hover {
+      transform: scale(1.1);
+      border: 2px solid black;
+      } //
+
+     
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin-right: 20px;
+      transition: transform 0.3s ease;
+      &:hover {
+      transform: scale(1.1);
+      } // adjust the margin as needed
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    label {
+      margin-bottom: 10px;
+    }
+    .inputs {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      .input-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        margin-bottom: 10px;
+
+        input{
+          width: 45%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 32px;
+        }
+      }
+      .input-group-text {
+        margin-top: 10px;
+        text-align: center;
+
+      }
+    }
+    textarea {
+      width: 100%;
+      padding: 10px;
+      max-width: 770px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 32px;
+      overflow: auto;
+      resize: both;
+      padding: 15px;
+    }
+
+    button[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
+  }
+}

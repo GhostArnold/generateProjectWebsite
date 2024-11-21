@@ -1,0 +1,42 @@
+section {
+  background: #4178b5;
+  padding: 30px 0 30px 0;
+}
+section .hidden-text {
+  display: flex;
+  justify-content: center;
+}
+section .third-section {
+  margin: 20px 0 20px 0;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+section .third-section .block-one {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+section .third-section .block-one .block-one-img {
+  width: 80%;
+}
+section .third-section .block-two {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+section .third-section .block-two .block-two-text {
+  min-width: 250px;
+  width: 100%;
+  border-radius: 32px;
+  border: 3px solid white;
+  padding: 16px;
+}
+section .third-section .block-three {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+section .third-section .block-three .block-three-img {
+  width: 70%;
+}/*# sourceMappingURL=hiden-section.css.map */

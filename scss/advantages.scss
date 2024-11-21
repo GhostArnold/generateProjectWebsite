@@ -1,0 +1,44 @@
+.advantages{
+    margin: 0;
+    padding:30px 0 30px 0;
+    font-size: 16px;
+    background: #4682B4;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0 !important;
+    .advantages-box{
+        text-align: center;
+        h2{
+            font-size: 25px;
+            font-weight: bold;
+        }        
+        
+    }
+    h2{
+        font-size: 25px;
+        font-weight: bold;
+    }        
+    .text-box{
+        text-align: left !important;
+        z-index: 9999;
+        transition: box-shadow 0.3s, backdrop-filter 0.3s;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        width: 80vh;
+        padding: 16px;
+        border-radius: 32px;
+        border: 3px solid white;
+        h2{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+
+            li{
+                margin-bottom: 10px;            }
+        }
+    }
+    }
