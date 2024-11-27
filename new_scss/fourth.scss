@@ -5,6 +5,38 @@ body {
 section {
   display: flex;
   flex-direction: column;
+  .labels{
+    margin: 0 auto;
+    width: 80%;
+  .label{
+    font-size: 50px;
+    color: #273E67;
+    font-weight: bold !important;
+    display: table;
+    @media (max-width: 1200px) {
+        text-align: center;
+    }
+    @media(max-width:768px){
+      font-size: 40px;
+      font-weight: bold;
+  }
+    hr{
+        width: 100%;
+        background-color: #273E67;
+        height: 3px !important;
+        border-style: none;
+        margin-left: 0;
+        display: table;
+        margin-bottom: 0 !important;
+        @media (max-width: 1200px) {
+            display: table;
+            flex-direction: column !important;
+            margin: 20px auto;
+            margin-bottom: 25px;
+        }
+    }
+  }
+  }
 
   .table {
     display: block;

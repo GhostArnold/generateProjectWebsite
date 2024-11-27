@@ -1,0 +1,170 @@
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    border: 3px solid #273E67;
+    border-radius: 20px;
+    
+}
+
+.label{
+    font-size: 50px;
+    color: #273E67;
+    font-weight: bold;
+    display: table;
+    margin: 0 auto;
+    @media (max-width: 1200px) {
+        text-align: center;
+    }
+    @media(max-width:768px){}
+    hr{
+        width: 100%;
+        background-color: #273E67;
+        height: 3px !important;
+        border-style: none;
+        margin-left: 0;
+        display: table;
+        @media (max-width: 1200px) {
+            display: table;
+            flex-direction: column !important;
+            margin: 20px auto;
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.dropdown-section {
+    margin-bottom: 20px;
+    position: relative;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+
+
+    .dropdown-btn {
+        background-color: #273E67;
+        color: white;
+        padding: 15px 30px;
+        border: 1px solid #37578d;
+        border-radius: 8px;
+        text-align: center;
+        cursor: pointer;
+        font-size: 1.2em;
+        width: 100%;
+        text-align: left;
+        transition: all 0.2s;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            background-color: #37578d;
+        }
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100%;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        z-index: 1000;
+        border-radius: 8px;
+        margin-top: 5px;
+        max-height: 500px;
+        overflow-y: auto;
+
+        &.active {
+            display: block;
+        }
+
+        .item {
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            flex-direction: column;
+            padding: 30px; // Увеличиваем отступы
+            border-bottom: 1px solid #37578d;
+            background-color: #273E67;
+            transition: transform 0.2s;
+            cursor: pointer;
+
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+                background-color: #37578d;
+            }
+
+            img {
+                width: 250px; // Увеличиваем ширину картинки
+                height: 250px; // Увеличиваем высоту картинки
+                object-fit: cover;
+                border-radius: 8px;
+                margin-right: 15px;
+            }
+            .preobr{
+                width: 350px; // Увеличиваем ширину картинки
+                height: 350px; // Увеличиваем высоту картинки
+            }
+
+            p {
+                margin: 0;
+                color: #ffffff;
+                font-size: 1.2em; // Увеличиваем размер шрифта
+            }
+        }
+    }
+}
+
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    z-index: 1001; /* Над другими элементами */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Скрываем прокрутку */
+    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный фон */
+    opacity: 0; /* Начальная прозрачность */
+    transition: opacity 0.3s ease; /* Плавный переход */
+
+    img{
+        margin: 0 auto;
+    }
+    
+    &.active {
+        display: block; /* Показываем модальное окно */
+        opacity: 1; /* Полная непрозрачность */
+    }
+
+    .modal-content {
+        margin: auto;
+        display: block;
+        max-width: 90%;
+        max-height: 90%;
+        animation: fadeIn 0.3s; /* Анимация появления изображения */
+    }
+
+    .close {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

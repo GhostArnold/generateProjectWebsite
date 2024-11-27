@@ -1,4 +1,3 @@
-
 .main-gen {
     margin: auto auto;
     height: auto;
@@ -121,7 +120,7 @@
             margin-right: 15px;
             .block-text{
                 margin: auto 0;
-                font-size: 27px;
+                font-size: 32px;
             }
 
             &:nth-child(1){
@@ -248,7 +247,7 @@
                 border-radius: 20px;
                 height: auto;
                 max-height: 350px;
-                max-width: 200px;
+                max-width: 400px;
                 padding: 10px;
                 margin-left: 80px; // Отрицательный отступ, чтобы "заехать" на изображение
                 z-index: 1;
@@ -273,7 +272,7 @@
             border: 3px solid #273E67;
             border-radius: 20px;
             margin-bottom: 20px;
-            max-width: 250px;
+            max-width: 350px;
             margin-left: 150px;
             padding: 5px;
             .advantages{
@@ -303,7 +302,7 @@
         }
         img{
             height: auto;
-            width: 500px;
+            width: 700px;
             margin-top: -90px;
             margin-left: 45px;
             z-index: 999999;

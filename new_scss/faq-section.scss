@@ -1,0 +1,95 @@
+$main-color: #273E67; // Основной цвет
+$menu-color: #37578d; // Цвет выезжающего меню
+$faq-bg-color: #f9f9f9;
+$faq-border-color: #ddd;
+$faq-question-color: #ffffff; // Цвет текста вопросов
+$faq-answer-color: #555;
+$faq-padding: 20px;
+$faq-margin: 10px 0;
+
+.faq {
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 80%;
+    margin: 0 auto;
+
+    .label{
+        font-size: 50px;
+        color: $main-color;
+        font-weight: bold;
+        display: table;
+        @media (max-width: 1200px) {
+            text-align: center;
+        }
+        @media(max-width:768px){}
+        hr{
+            width: 100%;
+            background-color: #273E67;
+            height: 3px !important;
+            border-style: none;
+            margin-left: 0;
+            display: table;
+            @media (max-width: 1200px) {
+                display: table;
+                flex-direction: column !important;
+                margin: 20px auto;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .faq-item {
+        border: 1px solid $faq-border-color;
+        border-radius: 20px;
+        margin: $faq-margin;
+        padding: $faq-padding;
+        background-color: #273E67;
+
+        .faq-question {
+            cursor: pointer;
+            color: $faq-question-color; // Цвет текста вопросов
+            font-weight: bold;
+            margin: 0;
+            background-color: $main-color; // Фоновый цвет вопросов
+            padding: 10px; // Добавляем отступы для вопросов
+            border-radius: 16px; // Скругляем углы
+
+            &:hover {
+                background-color: darken($main-color, 10%); // Цвет при наведении
+            }
+        }
+
+        .faq-answer {
+            max-height: 0; // Скрыть ответ по умолчанию
+            overflow: hidden; // Скрыть переполнение
+            transition: max-height 0.3s ease; // Плавный переход
+            color: $faq-answer-color;
+            margin-top: 10px;
+            color: white;
+        }
+
+        &.active {
+            .faq-answer {
+                max-height: 200px; // Установить максимальную высоту для раскрытого состояния
+            }
+        }
+    }
+}
+
+// Пример стилей для выезжающего меню
+.menu {
+    background-color: $menu-color; // Цвет выезжающего меню
+    padding: 15px;
+    border-radius: 5px;
+
+    .menu-item {
+        color: #ffffff; // Цвет текста в меню
+        padding: 10px;
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+            background-color: lighten($menu-color, 10%); // Цвет при наведении
+        }
+    }
+}

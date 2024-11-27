@@ -57,7 +57,7 @@
   display: flex;
   padding: 20px;
   width: 100%;
-  max-width: 460px;
+  max-width: 560px;
   border-radius: 20px;
 }
 @media (max-width: 900px) {
@@ -80,7 +80,7 @@
 }
 .first-section .block-one .four-blocks .block .text {
   width: 70%;
-  font-size: 18px;
+  font-size: 22px;
 }
 .first-section .block-one .image-generate {
   margin-left: 10px;

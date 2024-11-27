@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./new_scss/first-section.css" />
     <link rel="stylesheet" href="./new_scss/second_section.css" />
     <link rel="stylesheet" href="./new_scss/third-section.css"/>
+    <link rel="stylesheet" href="./new_scss/faq-section.css"/>
     <link rel="stylesheet" href="./new_scss/base/normalize.css" /> 
     <link rel="stylesheet" href="./new_scss/footer.css" />
     <link rel="stylesheet" href="./new_scss/video-setcion.css" />
@@ -27,10 +28,11 @@
     <link rel="stylesheet" href="./new_scss/mobile-generators.css" /> 
     <link rel="stylesheet" href="./assets/scss/components/for-visible.css">
     <link rel="stylesheet" href="./new_scss/generatots.css">
-    <!-- <link rel="stylesheet" href="./new_scss/scss/style.css"> -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./new_scss/blocks.css">
+    <!-- <link rel="stylesheet" href="./new_scss/style.css">
+    <link rel="stylesheet" href="./new_scss/base/normalize.css"> -->
     <title>Generate</title>
-  </head>
+ </head>
   <body>
     <header>
       <nav class="navbar">
@@ -76,7 +78,6 @@
         </div>
       </div>
     </header>
-    <!-- 1 -->
     <section id="first-section hidden" class="hidden">
       <div class="first-section">
          <div class="first-label">
@@ -273,8 +274,240 @@
       </div>
     </div>
     </div>
-    
 </section>
+
+  
+<section>
+
+  
+  <div class="label">
+    Компоненты
+    <hr>
+  </div>
+  <div class="container">
+    <!-- Электрические компоненты -->
+    <div class="dropdown-section">
+        <button class="dropdown-btn">Электрические компоненты</button>
+        <div class="dropdown-content">
+            <div class="item">
+                <img src="./assets/img/new_img/TurnOff.png" alt="Выключатель работы насоса и заряда АКБ">
+                <p>Выключатель работы насоса и заряда АКБ</p>
+            </div>
+            <div class="item">
+                <img src="./assets/img/new_img/OffOut.png" alt="Выключатель внешней нагрузки">
+                <p>Выключатель внешней нагрузки</p>
+            </div>
+            <div class="item">
+                <img src="./assets/img/new_img/USBHub.png" alt="Блок для подключения входа USB">
+                <p>Блок для подключения входа USB</p>
+            </div>
+            <div class="item">
+                <img src="./assets/img/new_img/watmetr.png" alt="Ваттметр">
+                <p>Ваттметр</p>
+            </div>
+            <div class="item">
+              <img src="./assets/img/new_img/TempDet.png" alt="Индикатор температуры электролита">
+              <p>Индикатор температуры электролита</p>
+          </div>
+          <div class="item">
+            <img class='preobr' src="./assets/img/new_img/preobr.png" alt="Преобразователи напряжения (2 шт)">
+            <p>Преобразователи напряжения (2 шт)</p>
+        </div>
+          <div class="item">
+            <img src="./assets/img/new_img/indicator.png" alt="Индикатор тока и напряжения нагрузки">
+            <p>Индикатор тока и напряжения нагрузки</p>
+        </div>
+        <div class="item">
+          <img src="./assets/img/new_img/akym.jpg" alt="Аккумулятор 1,2 ампера, 12 Вольт">
+          <p>Аккумулятор 1,2 ампера, 12 Вольт</p>
+      </div>
+          
+        </div>
+    </div>
+
+    <!-- Системы охлаждения и вентиляции -->
+    <div class="dropdown-section">
+        <button class="dropdown-btn">Системы охлаждения и вентиляции</button>
+        <div class="dropdown-content">
+          <div class="item">
+            <img src="./assets/img/new_img/freeze(2).png" alt="Кулеры для подачи воздуха">
+            <p>Кулеры охлаждения (2 шт)</p>
+        </div>
+        </div>
+    </div>
+
+    <!-- Топливные элементы и связанные компоненты -->
+    <div class="dropdown-section">
+        <button class="dropdown-btn">Топливные элементы и связанные компоненты</button>
+        <div class="dropdown-content">
+            <div class="item">
+                <img src="./assets/img/new_img/oil_elements.PNG" alt="Топлив ные элементы">
+                <p>Топливные элементы (6 штук)</p>
+            </div>
+          <div class="item">
+            <img src="./assets/img/new_img/bak.png" alt="Бак для электролита">
+            <p>Бак для электролита</p>
+        </div>
+        </div>
+    </div>
+</div>
+
+<!-- Модальное окно -->
+<div class="modal" id="imageModal">
+    <span class="close" id="closeModal">&times;</span>
+    <img class="modal-content" id="modalImage" alt="Enlarged Image">
+</div>
+ 
+</section>
+
+
+</section>
+<section id="fifth-section" class="hidden last">
+  <div class="labels">
+  <div class="label">
+    Общие характеристики
+    <hr>
+  </div>
+</div>
+  <div class="fourth-section">
+    <div class="block-one">
+      <div class="block-one-text">
+          <div class="numbers-text">
+            <div class="numbers">1</div>11гр. алюминия генерирует энергию 3,6 втч,
+          магния - 2,76 втч.</div>
+          <div class="numbers-text">
+            <div class="numbers">2</div>ВремяВремя работы установки, до замены анодного
+          топлива - 16 часов.</div>
+        </div>
+    </div>
+    <div class="block-two">
+      <div class="block-two-img">
+        <img src="./assets/img/last-image (2).png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="table  hidden">
+    <table class="desktop-table">
+      <tr>
+        <th></th>
+        <th>Переносный источник тока<br />ПИХТА - 6 Р</th>
+        <th>Настольный источник тока<br />ПИХТА - 22</th>
+        <th>Напольный, передвижной источник тока<br />ПИХТА - 22 М</th>
+      </tr>
+      <tr>
+        <td>Вес</td>
+        <td>от 12 до 16 кг.</td>
+        <td>40 кг.</td>
+        <td>70 кг.</td>
+      </tr>
+      <tr>
+        <td>Размеры</td>
+        <td>22 * 30 * 60 см.</td>
+        <td>45 * 45 * 50 см.</td>
+        <td>50 * 50 * 125 см.</td>
+      </tr>
+      <tr>
+        <td>Мощность</td>
+        <td>240 втт. max</td>
+        <td>880 втт. max</td>
+        <td>880 втт. max</td>
+      </tr>
+      <tr>
+        <td>Напряжение холостого хода</td>
+        <td>10 вольт</td>
+        <td>33 вольт</td>
+        <td>33 вольт</td>
+      </tr>
+      <tr>
+        <td>Ток короткого замыкания</td>
+        <td>60 ампер</td>
+        <td>60 ампер</td>
+        <td>60 ампер</td>
+      </tr>
+      <tr>
+        <td>Емкость</td>
+        <td>240 Ач</td>
+        <td>320 Ач</td>
+        <td>320 Ач</td>
+      </tr>
+      <tr>
+        <td>Энергоемкость</td>
+        <td>3800 втч.</td>
+        <td>5120 втч.</td>
+        <td>5120 втч.</td>
+      </tr>
+      <tr>
+        <td>Удельная энергоемкость</td>
+        <td>152 втч/кг.</td>
+        <td>113 втч/кг.</td>
+        <td>53 втч/кг.</td>
+      </tr>
+    </table>
+  </div>
+  
+
+<section class="section-slider  hidden" id="fifth-section">
+<div class="slider active" id="slide1">
+<div class="mobile-table">
+  <table>
+      <tr><th></th><th>Переносный<br>источник тока<br>ПИХТА - 6 Р</th></tr>
+      <tr><td>Вес</td><td class="no-border">от 12 до 16 кг.</td></tr>
+      <tr><td>Размеры</td><td>22 * 30 * 60 см.</td></tr>
+      <tr><td>Мощность</td><td>240 втт. max</td></tr>
+      <tr><td>Напряжение<br>холостого хода</td><td>10 вольт</td></tr>
+      <tr><td>Ток короткого<br>замыкания</td><td>60 ампер</td></tr>
+      <tr><td>Емкость</td><td>240 Ач</td></tr>
+      <tr><td>Энергоемкость</td><td>3800 втч.</td></tr>
+      <tr><td>Удельная<br>энергоемкость</td><td>152 втч/кг.</td></tr>
+  </table>
+</div>
+</div>
+
+<div class="slider" id="slide2">
+<div class="mobile-table">
+  <table>
+      <tr><th></th><th>Напольный,<br>передвижной<br>источник тока<br>ПИХТА - 22 М</th></tr>
+      <tr><td>Вес</td><td  class="no-border">40 кг.</td></tr>
+      <tr><td>Размеры</td><td>45 * 45 * 50 см.</td></tr>
+      <tr><td>Мощность</td><td>880 втт. max</td></tr>
+      <tr><td>Напряжение<br>холостого хода</td><td>33 вольт</td></tr>
+      <tr><td>Ток короткого<br>замыкания</td><td>60 ампер</td></tr>
+      <tr><td>Емкость</td><td>320 Ач</td></tr>
+      <tr><td>Энергоемкость</td><td>5120 втч.</td></tr>
+      <tr><td>Удельная<br>энергоемкость</td><td>113 втч/кг.</td></tr>
+  </table>
+  </div>
+</div>
+
+<div class="slider" id="slide3">
+<div class="mobile-table">
+  <table>
+      <tr><th></th><th>ПИХТА - 22 М</th></tr>
+      <tr><td>Вес</td><td class="no-border">70 кг.</td></tr>
+      <tr><td>Размеры</td><td>50 * 50 * 125 см.</td></tr>
+      <tr><td>Мощность</td><td>880 втт. max</td></tr>
+      <tr><td>Напряжение<br>холостого хода</td><td>33 вольт</td></tr>
+      <tr><td>Ток короткого<br>замыкания</td><td>60 ампер</td></tr>
+      <tr><td>Емкость</td><td>320 Ач</td></tr>
+      <tr><td>Энергоемкость</td><td>5120 втч.</td></tr>
+      <tr><td>Удельная<br>энергоемкость</td><td>53 втч/кг.</td></tr>
+  </table> 
+</div>
+</div>
+<div class="slider-indicators">
+<div class="indicator" data-slide="0"></div>
+<div class="indicator" data-slide="1"></div>
+<div class="indicator" data-slide="2"></div>
+</div>
+<div class="navigation">
+<button id="prev">Назад</button>
+<button id="next">Вперед</button>
+</div>
+</div>
+</section>
+</section>
+
+
 
   <div class="generators hidden" id="fourth-section">
     <div class="label-generators">
@@ -678,144 +911,6 @@
 </div>
 
 </section>
-    <section id="fifth-section" class="hidden last">
-      <div class="fourth-section">
-        <div class="block-one">
-          <div class="block-one-text">
-              <div class="numbers-text">
-                <div class="numbers">1</div>11гр. алюминия генерирует энергию 3,6 втч,
-              магния - 2,76 втч.</div>
-              <div class="numbers-text">
-                <div class="numbers">2</div>ВремяВремя работы установки, до замены анодного
-              топлива - 16 часов.</div>
-            </div>
-        </div>
-        <div class="block-two">
-          <div class="block-two-img">
-            <img src="./assets/img/last-image (2).png" alt="" />
-          </div>
-        </div>
-      </div>
-      <div class="table  hidden">
-        <table class="desktop-table">
-          <tr>
-            <th></th>
-            <th>Переносный источник тока<br />ПИХТА - 6 Р</th>
-            <th>Настольный источник тока<br />ПИХТА - 22</th>
-            <th>Напольный, передвижной источник тока<br />ПИХТА - 22 М</th>
-          </tr>
-          <tr>
-            <td>Вес</td>
-            <td>от 12 до 16 кг.</td>
-            <td>40 кг.</td>
-            <td>70 кг.</td>
-          </tr>
-          <tr>
-            <td>Размеры</td>
-            <td>22 * 30 * 60 см.</td>
-            <td>45 * 45 * 50 см.</td>
-            <td>50 * 50 * 125 см.</td>
-          </tr>
-          <tr>
-            <td>Мощность</td>
-            <td>240 втт. max</td>
-            <td>880 втт. max</td>
-            <td>880 втт. max</td>
-          </tr>
-          <tr>
-            <td>Напряжение холостого хода</td>
-            <td>10 вольт</td>
-            <td>33 вольт</td>
-            <td>33 вольт</td>
-          </tr>
-          <tr>
-            <td>Ток короткого замыкания</td>
-            <td>60 ампер</td>
-            <td>60 ампер</td>
-            <td>60 ампер</td>
-          </tr>
-          <tr>
-            <td>Емкость</td>
-            <td>240 Ач</td>
-            <td>320 Ач</td>
-            <td>320 Ач</td>
-          </tr>
-          <tr>
-            <td>Энергоемкость</td>
-            <td>3800 втч.</td>
-            <td>5120 втч.</td>
-            <td>5120 втч.</td>
-          </tr>
-          <tr>
-            <td>Удельная энергоемкость</td>
-            <td>152 втч/кг.</td>
-            <td>113 втч/кг.</td>
-            <td>53 втч/кг.</td>
-          </tr>
-        </table>
-      </div>
-      
-    
-<section class="section-slider  hidden" id="fifth-section">
-  <div class="slider active" id="slide1">
-    <div class="mobile-table">
-      <table>
-          <tr><th></th><th>Переносный<br>источник тока<br>ПИХТА - 6 Р</th></tr>
-          <tr><td>Вес</td><td class="no-border">от 12 до 16 кг.</td></tr>
-          <tr><td>Размеры</td><td>22 * 30 * 60 см.</td></tr>
-          <tr><td>Мощность</td><td>240 втт. max</td></tr>
-          <tr><td>Напряжение<br>холостого хода</td><td>10 вольт</td></tr>
-          <tr><td>Ток короткого<br>замыкания</td><td>60 ампер</td></tr>
-          <tr><td>Емкость</td><td>240 Ач</td></tr>
-          <tr><td>Энергоемкость</td><td>3800 втч.</td></tr>
-          <tr><td>Удельная<br>энергоемкость</td><td>152 втч/кг.</td></tr>
-      </table>
-    </div>
-  </div>
-
-  <div class="slider" id="slide2">
-    <div class="mobile-table">
-      <table>
-          <tr><th></th><th>Напольный,<br>передвижной<br>источник тока<br>ПИХТА - 22 М</th></tr>
-          <tr><td>Вес</td><td  class="no-border">40 кг.</td></tr>
-          <tr><td>Размеры</td><td>45 * 45 * 50 см.</td></tr>
-          <tr><td>Мощность</td><td>880 втт. max</td></tr>
-          <tr><td>Напряжение<br>холостого хода</td><td>33 вольт</td></tr>
-          <tr><td>Ток короткого<br>замыкания</td><td>60 ампер</td></tr>
-          <tr><td>Емкость</td><td>320 Ач</td></tr>
-          <tr><td>Энергоемкость</td><td>5120 втч.</td></tr>
-          <tr><td>Удельная<br>энергоемкость</td><td>113 втч/кг.</td></tr>
-      </table>
-      </div>
-  </div>
-
-  <div class="slider" id="slide3">
-    <div class="mobile-table">
-      <table>
-          <tr><th></th><th>ПИХТА - 22 М</th></tr>
-          <tr><td>Вес</td><td class="no-border">70 кг.</td></tr>
-          <tr><td>Размеры</td><td>50 * 50 * 125 см.</td></tr>
-          <tr><td>Мощность</td><td>880 втт. max</td></tr>
-          <tr><td>Напряжение<br>холостого хода</td><td>33 вольт</td></tr>
-          <tr><td>Ток короткого<br>замыкания</td><td>60 ампер</td></tr>
-          <tr><td>Емкость</td><td>320 Ач</td></tr>
-          <tr><td>Энергоемкость</td><td>5120 втч.</td></tr>
-          <tr><td>Удельная<br>энергоемкость</td><td>53 втч/кг.</td></tr>
-      </table> 
-  </div>
-</div>
-<div class="slider-indicators">
-  <div class="indicator" data-slide="0"></div>
-  <div class="indicator" data-slide="1"></div>
-  <div class="indicator" data-slide="2"></div>
-</div>
-  <div class="navigation">
-    <button id="prev">Назад</button>
-    <button id="next">Вперед</button>
-    </div>
-  </div>
-</section>
-    </section>
 
 
 
@@ -852,6 +947,35 @@
       </div>
 
     </section>
+
+    <section class="faq">
+      <div class="label">Часто задаваемые вопросы 
+          <hr>
+      </div>
+      <div class="faq-item">
+          <h3 class="faq-question">1. Как создать учетную запись?</h3>
+          <p class="faq-answer">Чтобы создать учетную запись, перейдите на страницу регистрации, заполните необходимые поля (имя, электронная почта, пароль) и нажмите кнопку "Зарегистрироваться". Вам придет подтверждение на указанный адрес электронной почты.</p>
+      </div>
+      <div class="faq-item">
+          <h3 class="faq-question">2. Как восстановить пароль?</h3>
+          <p class="faq-answer">Если вы забыли пароль, нажмите на ссылку "Забыли пароль?" на странице входа. Введите свой адрес электронной почты, и мы отправим вам инструкции по восстановлению пароля.</p>
+      </div>
+      <div class="faq-item">
+          <h3 class="faq-question">3. Как оформить заказ?</h3>
+          <p class="faq-answer">Выберите товары, которые хотите купить, и добавьте их в корзину. После этого перейдите в корзину, проверьте свои товары и нажмите "Оформить заказ". Следуйте инструкциям на экране для завершения покупки.</p>
+      </div>
+      <div class="faq-item">
+          <h3 class="faq-question">4. Какие способы оплаты вы принимаете?</h3>
+          <p class="faq-answer">Мы принимаем различные способы оплаты, включая кредитные карты (Visa, MasterCard), PayPal и банковские переводы. Выберите удобный способ на этапе оформления заказа.</p>
+      </div>
+      <div class="faq-item">
+          <h3 class="faq-question">5. Как отслеживать свой заказ?</h3>
+          <p class="faq-answer">После отправки заказа вы получите электронное письмо с номером для отслеживания. Используйте этот номер на сайте курьерской службы, чтобы узнать статус доставки.</p>
+      </div>
+      </div>
+  </section>
+
+
     <footer id="six-section" class="hidden">
       <form id='myForm' method="post" >
 
@@ -876,7 +1000,7 @@
     </div>
   </div>
         </div>
-  </footer>
+      </footer>
 
   
   
@@ -889,5 +1013,7 @@
     <script src="./assets/js/burger.js"></script>
     <script src="./assets/js/slider-table.js"></script>
     <script src="./assets/js/click-div.js"></script>
+    <script src="./assets/js/blocks.js"></script>
+    <script src="./assets/js/faq.js"></script>
   </body>
 </html>
