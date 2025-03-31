@@ -1,0 +1,186 @@
+.mobile-generators{
+    display: none;
+    @media(max-width: 1200px){
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-generator{
+        padding: 5px;
+        width: calc(100% - 20px);
+        border-radius: 10px;
+        margin-left: 5px;
+        border: 3px solid #273E67;
+        display: flex;
+        flex-direction: row;
+        @media(max-width: 730px){
+            display: flex;
+            flex-direction: column;
+            padding: 0 auto;
+            margin: 0 auto;
+        }
+        @media(max-width: 1200px){
+            display: flex;
+            flex-direction: column;
+            padding: 0 auto;
+        }
+        .label{
+            float: right;
+            font-weight: bold;
+            color: white;
+            border-radius: 20px;
+            background-color: #273E67;
+            padding: 15px;
+            font-size: 27px;
+            margin-left: 20px;
+            margin-top: 5px;
+            margin: 0 auto;
+           
+        }
+
+        
+
+        .first-mobile-img{
+            margin: 0 auto !important;
+            display: flex;
+            flex-direction: row;
+            width: calc(100% - 40px);
+            height: 100%;
+            .up-img{
+                display: block;
+                 @media (max-width:769px) {
+                     display:none;
+                 }
+             }
+            }
+            
+            
+
+            @media(max-width:500px) {
+                flex-wrap: wrap;
+            }
+            
+        
+        .blocks{
+            margin-top: -80px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 20%;
+
+            .between-img{
+               display: none;
+                @media (max-width:769px) {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+            .block{
+                border: 3px solid #273E67;
+                border-radius: 20px;
+                margin-top: 10px;
+                margin-left: 15px;
+                margin-right: 0;
+                padding: 3px;
+                display: flex;
+                flex-direction: row;
+                right: 0;
+                align-items: center;
+                width: 90%;
+                &:first-child{
+                    margin-top: 100px;
+                }
+                .advantages{
+                    margin-left: 5px;
+                    margin-right: 10px;
+                    font-weight: bold;
+                    color: #273E67;
+                    font-size: 30px;
+                }
+                .block-text{
+                    font-size: 17px;
+                    color: black;
+                }
+            }
+
+        }
+    }
+    }
+
+
+    .third-generator{
+        margin-top: 15px !important;
+        padding: 5px;
+        width: calc(100% - 40px);
+        border-radius: 10px;
+        margin-left: 5px;
+        border: 3px solid #273E67;
+        display: flex;
+        flex-direction: column;
+        @media(max-width: 730px){
+            margin: 0 auto;
+        }
+
+        .label{
+            float: right;
+            font-weight: bold;
+            color: white;
+            border-radius: 20px;
+            background-color: #273E67;
+            padding: 15px;
+            font-size: 27px;
+            margin-left: 20px;
+            margin-top: 5px;
+            margin: 0 auto;
+        }
+
+        .block-image{
+            display: flex;
+            margin-top: 15px;
+            flex-direction: row;
+            justify-content: center;
+            @media(max-width:500px) {
+                flex-wrap: wrap;
+            }
+            img{
+                width: 50%;
+                height: 100%;
+                @media (min-width:750px)and (max-width: 1200px){
+                    width: 30%;
+                }
+            }
+        
+        .blocks{
+            display: flex;
+            margin-top: -80px;
+            flex-direction: column;
+            .block{
+                border: 3px solid #273E67;
+                border-radius: 20px;
+                margin-top: 10px;
+                margin-left: 15px;
+                margin-right: 0;
+                padding: 3px;
+                display: flex;
+                flex-direction: row;
+                right: 0;
+                align-items: center;
+                width: 90%;
+                &:first-child{
+                    margin-top: 100px;
+                }
+                .advantages{
+                    margin-left: 5px;
+                    margin-right: 10px;
+                    font-weight: bold;
+                    color: #273E67;
+                    font-size: 30px;
+                }
+                .block-text{
+                    font-size: 17px;
+                    color: black;
+                }
+            }
+        }
+    }
+    }
